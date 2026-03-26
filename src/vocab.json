@@ -1,0 +1,713 @@
+[
+  { "word": "etätyö", "meaning": "remote work", "example": "Monet ihmiset tekevät nykyään etätyötä.", "exampleTranslation": "Many people work remotely nowadays.", "category": "noun", "difficulty": "medium" },
+  { "word": "opiskella", "meaning": "to study", "example": "Opiskelen suomea joka päivä.", "exampleTranslation": "I study Finnish every day.", "category": "verb", "difficulty": "easy" },
+  { "word": "kaupunki", "meaning": "city / town", "example": "Helsinki on Suomen suurin kaupunki.", "exampleTranslation": "Helsinki is Finland's largest city.", "category": "noun", "difficulty": "easy" },
+  { "word": "tärkeä", "meaning": "important", "example": "On tärkeää nukkua tarpeeksi.", "exampleTranslation": "It is important to sleep enough.", "category": "adjective", "difficulty": "medium" },
+  { "word": "ymmärtää", "meaning": "to understand", "example": "En ymmärrä tätä lausetta.", "exampleTranslation": "I don't understand this sentence.", "category": "verb", "difficulty": "medium" },
+  { "word": "kansainvälinen", "meaning": "international", "example": "Hän työskentelee kansainvälisessä yrityksessä.", "exampleTranslation": "He works in an international company.", "category": "adjective", "difficulty": "hard" },
+  { "word": "ympäristö", "meaning": "environment", "example": "Meidän täytyy suojella ympäristöä.", "exampleTranslation": "We must protect the environment.", "category": "noun", "difficulty": "hard" },
+  { "word": "sairaala", "meaning": "hospital", "example": "Lääkäri työskentelee sairaalassa.", "exampleTranslation": "The doctor works at the hospital.", "category": "noun", "difficulty": "easy" },
+  { "word": "harrastus", "meaning": "hobby", "example": "Minun harrastukseni on lukeminen.", "exampleTranslation": "My hobby is reading.", "category": "noun", "difficulty": "medium" },
+  { "word": "myöhässä", "meaning": "late / delayed", "example": "Juna on myöhässä.", "exampleTranslation": "The train is late.", "category": "adverb", "difficulty": "easy" },
+  { "word": "kehittyä", "meaning": "to develop / improve", "example": "Kielitaitoni kehittyy hitaasti.", "exampleTranslation": "My language skills improve slowly.", "category": "verb", "difficulty": "hard" },
+  { "word": "yhteiskunta", "meaning": "society", "example": "Yhteiskunta muuttuu jatkuvasti.", "exampleTranslation": "Society changes constantly.", "category": "noun", "difficulty": "hard" },
+
+  {
+    "word": "etätyö",
+    "meaning": "remote work",
+    "example": "Monet ihmiset tekevät nykyään etätyötä.",
+    "exampleTranslation": "Many people work remotely nowadays.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "lisääntyä",
+    "meaning": "to increase",
+    "example": "Etätyö on lisääntynyt viime vuosina paljon.",
+    "exampleTranslation": "Remote work has increased a lot in recent years.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "säästää aikaa",
+    "meaning": "to save time",
+    "example": "Työntekijät voivat säästää aikaa kotona työskennellessä.",
+    "exampleTranslation": "Employees can save time when working at home.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "haastava",
+    "meaning": "challenging",
+    "example": "Kotona työskentely voi olla myös haastavaa.",
+    "exampleTranslation": "Working at home can also be challenging.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "sekoittua",
+    "meaning": "to mix / get mixed",
+    "example": "Työ ja vapaa-aika voivat helposti sekoittua.",
+    "exampleTranslation": "Work and free time can easily get mixed.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "työntekijä",
+    "meaning": "employee",
+    "example": "Jokainen työntekijä tarvitsee taukoja.",
+    "exampleTranslation": "Every employee needs breaks.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sopii hyvin",
+    "meaning": "suits well / fits well",
+    "example": "Joillekin ihmisille etätyö sopii hyvin.",
+    "exampleTranslation": "For some people, remote work suits them well.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kaivata",
+    "meaning": "to miss / long for",
+    "example": "Osa ihmisistä kaipaa työpaikan sosiaalisia tilanteita.",
+    "exampleTranslation": "Some people miss social situations at the workplace.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "sosiaalinen tilanne",
+    "meaning": "social situation",
+    "example": "Työpaikalla on monia sosiaalisia tilanteita.",
+    "exampleTranslation": "There are many social situations at the workplace.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "häiriötekijä",
+    "meaning": "distraction",
+    "example": "Kotona voi olla vaikea keskittyä häiriötekijöiden takia.",
+    "exampleTranslation": "At home it can be difficult to concentrate because of distractions.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "keskittyä",
+    "meaning": "to concentrate",
+    "example": "On tärkeää keskittyä työn tekemiseen.",
+    "exampleTranslation": "It is important to concentrate on doing work.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ympärillä",
+    "meaning": "around / surrounding",
+    "example": "Jos ympärillä on paljon häiriöitä, keskittyminen vaikeutuu.",
+    "exampleTranslation": "If there are many disturbances around, concentrating becomes difficult.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vapaa-aika",
+    "meaning": "free time",
+    "example": "Työn ja vapaa-ajan raja voi hämärtyä kotona.",
+    "exampleTranslation": "The boundary between work and free time can blur at home.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vaikea",
+    "meaning": "difficult",
+    "example": "Joillekin etätyö voi olla vaikeaa.",
+    "exampleTranslation": "For some, remote work can be difficult.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+    {
+    "word": "kylpyhuone",
+    "meaning": "bathroom",
+    "example": "Kylpyhuoneessa on suihku ja pesuallas.",
+    "exampleTranslation": "There is a shower and a sink in the bathroom.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "makuuhuone",
+    "meaning": "bedroom",
+    "example": "Makuuhuone on rauhallinen ja hiljainen.",
+    "exampleTranslation": "The bedroom is calm and quiet.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "parveke",
+    "meaning": "balcony",
+    "example": "Asunnossa on iso parveke.",
+    "exampleTranslation": "The apartment has a big balcony.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "verhot",
+    "meaning": "curtains",
+    "example": "Verhot ovat valkoiset ja kauniit.",
+    "exampleTranslation": "The curtains are white and beautiful.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "taulu",
+    "meaning": "painting/picture",
+    "example": "Seinällä on kaunis taulu.",
+    "exampleTranslation": "There is a beautiful painting on the wall.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "suihku",
+    "meaning": "shower",
+    "example": "Käyn suihkussa joka aamu.",
+    "exampleTranslation": "I take a shower every morning.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kylpyamme",
+    "meaning": "bathtub",
+    "example": "Kylpyhuoneessa on iso kylpyamme.",
+    "exampleTranslation": "There is a big bathtub in the bathroom.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pesuallas",
+    "meaning": "sink",
+    "example": "Pesuallas on kylpyhuoneessa.",
+    "exampleTranslation": "The sink is in the bathroom.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pakastin",
+    "meaning": "freezer",
+    "example": "Pakastimessa on paljon ruokaa.",
+    "exampleTranslation": "There is a lot of food in the freezer.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hella",
+    "meaning": "stove",
+    "example": "Hella on uusi ja toimii hyvin.",
+    "exampleTranslation": "The stove is new and works well.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "uuni",
+    "meaning": "oven",
+    "example": "Laitan ruoan uuniin.",
+    "exampleTranslation": "I put the food in the oven.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mikroaaltouuni",
+    "meaning": "microwave",
+    "example": "Lämmitän ruoan mikroaaltouunissa.",
+    "exampleTranslation": "I heat the food in the microwave.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kahvinkeitin",
+    "meaning": "coffee maker",
+    "example": "Kahvinkeitin on keittiössä.",
+    "exampleTranslation": "The coffee maker is in the kitchen.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vedenkeitin",
+    "meaning": "electric kettle",
+    "example": "Keitän vettä vedenkeittimellä.",
+    "exampleTranslation": "I boil water with a kettle.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "leivänpaahdin",
+    "meaning": "toaster",
+    "example": "Paahdan leipää leivänpaahtimella.",
+    "exampleTranslation": "I toast bread with a toaster.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kaukosäädin",
+    "meaning": "remote control",
+    "example": "Missä on television kaukosäädin?",
+    "exampleTranslation": "Where is the TV remote control?",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "astianpesukone",
+    "meaning": "dishwasher",
+    "example": "Astianpesukone on täynnä.",
+    "exampleTranslation": "The dishwasher is full.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "jääkaappi",
+    "meaning": "refrigerator",
+    "example": "Jääkaapissa on maitoa ja juustoa.",
+    "exampleTranslation": "There is milk and cheese in the fridge.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "alakerta",
+    "meaning": "downstairs",
+    "example": "Olohuone on alakerrassa.",
+    "exampleTranslation": "The living room is downstairs.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yläkerta",
+    "meaning": "upstairs",
+    "example": "Makuuhuone on yläkerrassa.",
+    "exampleTranslation": "The bedroom is upstairs.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kellari",
+    "meaning": "basement",
+    "example": "Varasto on kellarissa.",
+    "exampleTranslation": "The storage is in the basement.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "autotalli",
+    "meaning": "garage",
+    "example": "Auto on autotallissa.",
+    "exampleTranslation": "The car is in the garage.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rappukäytävä",
+    "meaning": "stairwell",
+    "example": "Rappukäytävä on siisti.",
+    "exampleTranslation": "The stairwell is clean.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kerrostalo",
+    "meaning": "apartment building",
+    "example": "Asun kerrostalossa Helsingissä.",
+    "exampleTranslation": "I live in an apartment building in Helsinki.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rivitalo",
+    "meaning": "row house",
+    "example": "Rivitalossa on oma piha.",
+    "exampleTranslation": "A row house has its own yard.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "omakotitalo",
+    "meaning": "detached house",
+    "example": "Haluan asua omakotitalossa tulevaisuudessa.",
+    "exampleTranslation": "I want to live in a detached house in the future.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "huoltomies",
+    "meaning": "maintenance worker",
+    "example": "Huoltomies tulee korjaamaan vesihanan.",
+    "exampleTranslation": "The maintenance worker comes to fix the faucet.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "huoltoyhtiö",
+    "meaning": "maintenance company",
+    "example": "Huoltoyhtiö hoitaa talon korjaukset.",
+    "exampleTranslation": "The maintenance company handles building repairs.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "asukas",
+    "meaning": "resident",
+    "example": "Talossa on paljon asukkaita.",
+    "exampleTranslation": "There are many residents in the building.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tuota",
+    "meaning": "well / um (filler word)",
+    "example": "Tuota… en ole varma tästä.",
+    "exampleTranslation": "Well… I'm not sure about this.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vesihana",
+    "meaning": "water tap / faucet",
+    "example": "Vesihana on rikki keittiössä.",
+    "exampleTranslation": "The water tap is broken in the kitchen.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vika",
+    "meaning": "fault / defect",
+    "example": "Laitteessa on vika.",
+    "exampleTranslation": "There is a fault in the device.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kunnolla",
+    "meaning": "properly / well",
+    "example": "Tee työ kunnolla.",
+    "exampleTranslation": "Do the work properly.",
+    "category": "adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kiinni",
+    "meaning": "closed / attached",
+    "example": "Ovi on kiinni.",
+    "exampleTranslation": "The door is closed.",
+    "category": "adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rikki",
+    "meaning": "broken",
+    "example": "Pesukone on rikki.",
+    "exampleTranslation": "The washing machine is broken.",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "word": "koko ajan",
+    "meaning": "all the time",
+    "example": "Sataa koko ajan.",
+    "exampleTranslation": "It is raining all the time.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "selvä juttu",
+    "meaning": "clear / no problem",
+    "example": "Selvä juttu, hoidan sen.",
+    "exampleTranslation": "No problem, I'll take care of it.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "korjata",
+    "meaning": "to fix / repair",
+    "example": "Minun pitää korjata tämä laite.",
+    "exampleTranslation": "I need to fix this device.",
+    "category": "verbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sopia",
+    "meaning": "to agree / to suit",
+    "example": "Voimmeko sopia ajasta?",
+    "exampleTranslation": "Can we agree on a time?",
+    "category": "verbs",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hieno",
+    "meaning": "fine / nice / great",
+    "example": "Tämä on hieno asunto.",
+    "exampleTranslation": "This is a nice apartment.",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rappu",
+    "meaning": "staircase / entrance",
+    "example": "Asun toisessa rapussa.",
+    "exampleTranslation": "I live in the second stairwell.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "huomiseen",
+    "meaning": "until tomorrow",
+    "example": "Nähdään huomiseen!",
+    "exampleTranslation": "See you tomorrow!",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lelu",
+    "meaning": "toy",
+    "example": "Lapsi leikkii uudella lelulla.",
+    "exampleTranslation": "The child plays with a new toy.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kirjoituspöytä",
+    "meaning": "desk",
+    "example": "Minulla on kirjoituspöytä ikkunan vieressä.",
+    "exampleTranslation": "I have a desk next to the window.",
+    "category": "nouns",
+    "difficulty": "medium"
+  },
+  {
+    "word": "lattia",
+    "meaning": "floor",
+    "example": "Lattia on puhdas ja siisti.",
+    "exampleTranslation": "The floor is clean and tidy.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pehmeä",
+    "meaning": "soft",
+    "example": "Tämä sänky on todella pehmeä.",
+    "exampleTranslation": "This bed is really soft.",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "word": "leveä",
+    "meaning": "wide",
+    "example": "Tie on leveä ja turvallinen.",
+    "exampleTranslation": "The road is wide and safe.",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "word": "matala",
+    "meaning": "low/short",
+    "example": "Pöytä on liian matala minulle.",
+    "exampleTranslation": "The table is too low for me.",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aika",
+    "meaning": "time",
+    "example": "Minulla ei ole paljon aikaa tänään.",
+    "exampleTranslation": "I don't have much time today.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "seinä",
+    "meaning": "wall",
+    "example": "Seinä on maalattu valkoiseksi.",
+    "exampleTranslation": "The wall is painted white.",
+    "category": "nouns",
+    "difficulty": "easy"
+  },
+  {
+    "word": "viihtyisä",
+    "meaning": "cozy/comfortable",
+    "example": "Tämä asunto on todella viihtyisä.",
+    "exampleTranslation": "This apartment is really cozy.",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kantaa",
+    "meaning": "to carry",
+    "example": "Voin kantaa nämä laukut autoon.",
+    "exampleTranslation": "I can carry these bags to the car.",
+    "category": "verbs",
+    "difficulty": "medium"
+  },
+  {
+    "word": "viedä",
+    "meaning": "to take (away) / to bring",
+    "example": "Voitko viedä roskat ulos?",
+    "exampleTranslation": "Can you take the trash outside?",
+    "category": "verbs",
+    "difficulty": "medium"
+  },
+  {
+    "word": "harrastaa",
+    "meaning": "to do (a hobby)",
+    "example": "Monet ihmiset harrastavat liikuntaa vapaa-ajallaan.",
+    "exampleTranslation": "Many people do sports in their free time.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "liikunta",
+    "meaning": "exercise / physical activity",
+    "example": "Liikunta parantaa terveyttä.",
+    "exampleTranslation": "Exercise improves health.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vapaa-aika",
+    "meaning": "free time",
+    "example": "Hän lukee kirjoja vapaa-ajalla.",
+    "exampleTranslation": "He/She reads books in free time.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hyvinvointi",
+    "meaning": "well-being",
+    "example": "Liikunta parantaa hyvinvointia.",
+    "exampleTranslation": "Exercise improves well-being.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "fyysinen",
+    "meaning": "physical",
+    "example": "Liikunta parantaa fyysistä kuntoa.",
+    "exampleTranslation": "Exercise improves physical condition.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "henkinen",
+    "meaning": "mental",
+    "example": "Uni on tärkeää henkiselle hyvinvoinnille.",
+    "exampleTranslation": "Sleep is important for mental well-being.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "säännöllinen",
+    "meaning": "regular",
+    "example": "Säännöllinen liikunta on tärkeää.",
+    "exampleTranslation": "Regular exercise is important.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "jaksaa",
+    "meaning": "to have energy / to cope",
+    "example": "Hän jaksaa paremmin liikkua joka päivä.",
+    "exampleTranslation": "He/She has more energy to exercise every day.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "arki",
+    "meaning": "everyday life",
+    "example": "Liikunta auttaa jaksamaan arjessa.",
+    "exampleTranslation": "Exercise helps cope in everyday life.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "motivaatio",
+    "meaning": "motivation",
+    "example": "Hänellä ei ole motivaatiota liikkua.",
+    "exampleTranslation": "He/She has no motivation to exercise.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "velvollisuus",
+    "meaning": "obligation / duty",
+    "example": "Työ ja perhe ovat tärkeitä velvollisuuksia.",
+    "exampleTranslation": "Work and family are important obligations.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vähentää",
+    "meaning": "to reduce",
+    "example": "Pitkät työpäivät vähentävät vapaa-aikaa.",
+    "exampleTranslation": "Long workdays reduce free time.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "käytettävä aika",
+    "meaning": "time available / time used",
+    "example": "Hänellä ei ole paljon käytettävää aikaa.",
+    "exampleTranslation": "He/She does not have much available time.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kokea",
+    "meaning": "to feel / experience",
+    "example": "Hän kokee liikunnan vaikeaksi.",
+    "exampleTranslation": "He/She finds exercise difficult.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "aloittaminen",
+    "meaning": "starting / beginning",
+    "example": "Liikunnan aloittaminen voi olla vaikeaa.",
+    "exampleTranslation": "Starting exercise can be difficult.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tarjolla",
+    "meaning": "available / offered",
+    "example": "Kurssilla on paljon vaihtoehtoja tarjolla.",
+    "exampleTranslation": "There are many options available in the course.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "liikuntamuoto",
+    "meaning": "type of exercise",
+    "example": "Juoksu on suosittu liikuntamuoto.",
+    "exampleTranslation": "Running is a popular form of exercise.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ryhmäliikunta",
+    "meaning": "group exercise",
+    "example": "Ryhmäliikunta on hauskaa.",
+    "exampleTranslation": "Group exercise is fun.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "löytää",
+    "meaning": "to find",
+    "example": "Jokainen voi löytää sopivan harrastuksen.",
+    "exampleTranslation": "Everyone can find a suitable hobby.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "itselleen sopiva",
+    "meaning": "suitable for oneself",
+    "example": "Hän löysi itselleen sopivan liikuntamuodon.",
+    "exampleTranslation": "He/She found a suitable form of exercise for themselves.",
+    "category": "expression",
+    "difficulty": "medium"
+  }
+]
+
+
