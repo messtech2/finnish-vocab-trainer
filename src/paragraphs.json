@@ -1,0 +1,44 @@
+[
+  {
+    "id": "intro",
+    "topic": "introduction",
+    "label": "Kerro itsestäsi",
+    "text": "Olen Mesfin, ja olen asunut Suomessa yli kymmenen vuotta. Olen opiskellut media-alan insinööriksi sekä Business Information Technology -tutkinnon. Opinnot olivat englanniksi, joten suomen kielen taitoni ei kehittynyt paljon silloin. Viime aikoina olen kuitenkin opiskellut suomea aktiivisesti, koska haluan parantaa kielitaitoani.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "omnia",
+    "topic": "why_omnia",
+    "label": "Miksi Omnia?",
+    "text": "Olen kiinnostunut opiskelemaan Omniassa, koska haluan kehittää taitojani ja parantaa mahdollisuuksiani työllistyä Suomessa. Tällä hetkellä työtilanne on haastava erityisesti IT-alalla, joten haluan oppia lisää ja pysyä mukana työelämässä. Lisäksi uskon, että opiskelu Omniassa auttaa minua käyttämään suomen kieltä enemmän arjessa ja työssä.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "daily",
+    "topic": "daily_life",
+    "label": "Arki Suomessa",
+    "text": "Arjessani teen monia tavallisia asioita, kuten käyn kaupassa, teen ruokaa ja opiskelen suomea. Lisäksi vietän aikaa perheeni kanssa ja yritän liikkua säännöllisesti. Kuitenkin joskus arki on kiireistä, joten vapaa-aikaa ei ole paljon. Yritän silti löytää aikaa levätä ja kehittää itseäni.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "work",
+    "topic": "work_and_studies",
+    "label": "Työ ja opinnot",
+    "text": "Minulla on kokemusta opiskelusta ja työskentelystä eri aloilla. Aiemmin opiskelin englanniksi, mutta nyt keskityn suomen kieleen. Työelämässä on tärkeää osata kommunikoida selkeästi, joten haluan kehittää tätä taitoa. Lisäksi uskon, että jatkuva oppiminen on tärkeää nykypäivänä.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "future",
+    "topic": "future_plans",
+    "label": "Tulevaisuuden suunnitelmat",
+    "text": "Tulevaisuudessa haluan työskennellä Suomessa ja käyttää sekä teknisiä taitojani että suomen kieltä. Haluan kehittyä ammatillisesti ja löytää vakaan työn. Lisäksi toivon, että voin oppia uusia asioita ja edetä urallani.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "finnish",
+    "topic": "learning_finnish",
+    "label": "Suomen kielen oppiminen",
+    "text": "Suomen kielen oppiminen on minulle tärkeää, koska se auttaa arjessa ja työelämässä. Opiskelen suomea päivittäin ja yritän käyttää sitä mahdollisimman paljon. Kuitenkin joskus kieli on vaikeaa, mutta en luovuta. Lisäksi uskon, että harjoittelu auttaa minua kehittymään koko ajan.",
+    "difficulty": "easy"
+  }
+]

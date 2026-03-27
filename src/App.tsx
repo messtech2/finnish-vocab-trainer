@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo, useEffect } from "react";
 import vocabData from "./vocab.json";
+import Paragraphs from "./Paragraphs";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Word {
@@ -50,6 +51,7 @@ function DiffBadge({ d }: { d: string }) {
 const IconBook  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>;
 const IconCards = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>;
 const IconQuiz  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>;
+const IconParagraph = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>;
 const IconStar   = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>;
 const IconSun   = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
 const IconMoon  = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
@@ -818,7 +820,7 @@ function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSe
 // APP SHELL
 // ════════════════════════════════════════════════════════════════════════════
 export default function App() {
-  const [tab, setTab] = useState<"daily" | "list" | "flash" | "quiz">("daily");
+  const [tab, setTab] = useState<"daily" | "list" | "flash" | "quiz" | "para">("daily");
   const [dark,       setDark]       = useState(() => { try { return localStorage.getItem("fi_dark") === "1"; } catch { return false; } });
   const [progress,   setProgress]   = useState<Progress>(loadProgress);
   // Timer state lifted here so header chip stays live even when panel is closed
@@ -843,10 +845,11 @@ export default function App() {
   const timerIdle = !timerOn && remaining === totalSecs;
 
   const tabs = [
-    { id: "daily" as const, label: "Daily",  icon: <IconStar  /> },
-    { id: "list"  as const, label: "Words",  icon: <IconBook  /> },
-    { id: "flash" as const, label: "Cards",  icon: <IconCards /> },
-    { id: "quiz"  as const, label: "Quiz",   icon: <IconQuiz  /> },
+    { id: "daily" as const, label: "Daily",  icon: <IconStar      /> },
+    { id: "list"  as const, label: "Words",  icon: <IconBook      /> },
+    { id: "flash" as const, label: "Cards",  icon: <IconCards     /> },
+    { id: "quiz"  as const, label: "Quiz",   icon: <IconQuiz      /> },
+    { id: "para"  as const, label: "Texts",  icon: <IconParagraph /> },
   ];
 
   return (
@@ -937,18 +940,21 @@ export default function App() {
             {tab === "list"  && "Vocabulary List"}
             {tab === "flash" && "Flashcards"}
             {tab === "quiz"  && "Quiz Mode"}
+            {tab === "para"  && "Paragraph Practice"}
           </h1>
           <p style={{ fontSize: 15, color: sub, lineHeight: 1.5 }}>
             {tab === "daily" && "10 words picked for you based on what you need most."}
             {tab === "list"  && "Tap any word to reveal its example sentence."}
             {tab === "flash" && "Known words appear less often. Tricky ones come back more."}
             {tab === "quiz"  && "Adaptive — missed words appear more until you master them."}
+            {tab === "para"  && "Read, fill blanks & rebuild sentences. YKI / Omnia exam prep."}
           </p>
         </div>
         {tab === "daily" && <DailySet   progress={progress} setProgress={setProgress} dark={dark} />}
         {tab === "list"  && <VocabList  progress={progress} dark={dark} />}
         {tab === "flash" && <Flashcards key="flash" progress={progress} setProgress={setProgress} dark={dark} />}
         {tab === "quiz"  && <Quiz       progress={progress} setProgress={setProgress} dark={dark} />}
+        {tab === "para"  && <Paragraphs dark={dark} />}
       </main>
 
       {/* ── Bottom nav ── */}
