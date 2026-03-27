@@ -915,6 +915,134 @@
     "exampleTranslation": "It rained a lot, but we walked in the park nevertheless.",
     "category": "connector",
     "difficulty": "medium"
+  },
+  {
+    "word": "koska",
+    "meaning": "because / since",
+    "example": "Opiskelen suomea, koska haluan työskennellä Suomessa.",
+    "exampleTranslation": "I study Finnish because I want to work in Finland.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "siksi että",
+    "meaning": "because / due to the fact that",
+    "example": "Hän jäi kotiin, siksi että oli sairas.",
+    "exampleTranslation": "He stayed home because he was sick.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "mutta",
+    "meaning": "but",
+    "example": "Sää on kylmä, mutta kävelimme silti.",
+    "exampleTranslation": "The weather is cold, but we walked anyway.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kuitenkin",
+    "meaning": "however / nevertheless",
+    "example": "Satoi paljon, mutta kävelimme kuitenkin puistossa.",
+    "exampleTranslation": "It rained a lot, but we walked in the park nevertheless.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "lisäksi",
+    "meaning": "in addition / furthermore",
+    "example": "Opiskelen suomea, lisäksi teen harjoituksia päivittäin.",
+    "exampleTranslation": "I study Finnish; in addition, I do exercises daily.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "myös",
+    "meaning": "also",
+    "example": "Myös ystäväni tuli mukaan.",
+    "exampleTranslation": "My friend also came along.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ja",
+    "meaning": "and",
+    "example": "Hän osti omenan ja banaanin.",
+    "exampleTranslation": "He bought an apple and a banana.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sekä",
+    "meaning": "as well as",
+    "example": "Hän osaa suomea sekä englantia.",
+    "exampleTranslation": "He knows Finnish as well as English.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kun",
+    "meaning": "when",
+    "example": "Kun satoi, jäimme kotiin.",
+    "exampleTranslation": "When it rained, we stayed home.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ennen kuin",
+    "meaning": "before",
+    "example": "Pese kädet ennen kuin syöt.",
+    "exampleTranslation": "Wash your hands before eating.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "sen jälkeen kun",
+    "meaning": "after",
+    "example": "Menimme ulos sen jälkeen kun sade loppui.",
+    "exampleTranslation": "We went outside after the rain stopped.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "milloin tahansa",
+    "meaning": "at any time",
+    "example": "Voit soittaa minulle milloin tahansa.",
+    "exampleTranslation": "You can call me at any time.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "joten",
+    "meaning": "so / therefore",
+    "example": "Satoi, joten jäimme kotiin.",
+    "exampleTranslation": "It rained, so we stayed home.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tästä syystä",
+    "meaning": "for this reason",
+    "example": "Hän myöhästyi, tästä syystä hän jäi luokasta pois.",
+    "exampleTranslation": "He was late; for this reason, he missed class.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "siis",
+    "meaning": "so / therefore",
+    "example": "Hän ei tullut, siis aloitimme ilman häntä.",
+    "exampleTranslation": "He didn’t come, so we started without him.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "siitä huolimatta",
+    "meaning": "despite that",
+    "example": "Hän ei harjoitellut, siitä huolimatta hän voitti kilpailun.",
+    "exampleTranslation": "He didn’t practice; despite that, he won the competition.",
+    "category": "connector",
+    "difficulty": "medium"
   }
 ]
 
