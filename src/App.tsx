@@ -322,7 +322,7 @@ function Flashcards({ progress, setProgress, dark }: { progress: Progress; setPr
         <div style={{ width: `${pct}%`, height: 7, borderRadius: 99, background: accent, transition: "width 0.3s" }} />
       </div>
       <div onClick={() => setFlipped(f => !f)}
-        style={{ background: dark ? "#2a2a3e" : "#fff", border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 250, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 28px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent" }}>
+        style={{ background: dark ? "#2a2a3e" : "#fff", border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 210, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "32px 24px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent" }}>
         {!flipped ? (
           <>
             <div style={{ fontSize: 13, color: sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>Finnish word</div>
@@ -345,11 +345,10 @@ function Flashcards({ progress, setProgress, dark }: { progress: Progress; setPr
         )}
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 16 }}>
-        <button onClick={() => markKnown(false)} style={btn("#fee2e2", "#dc2626", { padding: "16px", fontSize: 16 })}>✗ Still learning</button>
-        <button onClick={() => markKnown(true)}  style={btn("#dcfce7", "#16a34a", { padding: "16px", fontSize: 16 })}>✓ Know it!</button>
-        <button onClick={() => setFlipped(f => !f)} style={btn(dark ? "#383858" : "#ede9ff", dark ? "#c4b8ff" : accent, { padding: "14px", fontSize: 16 })}>{flipped ? "Hide" : "Flip"}</button>
-        <button onClick={next} style={btn(dark ? "#2a2a3e" : "#f0eff8", dark ? "#9898b8" : "#555", { padding: "14px", fontSize: 16 })}>Skip →</button>
+        <button onClick={() => markKnown(false)} style={btn("#fee2e2", "#dc2626", { padding: "15px", fontSize: 16 })}>✗ Still learning</button>
+        <button onClick={() => markKnown(true)}  style={btn("#dcfce7", "#16a34a", { padding: "15px", fontSize: 16 })}>✓ Know it!</button>
       </div>
+      <button onClick={() => setFlipped(f => !f)} style={btn(dark ? "#383858" : "#ede9ff", dark ? "#c4b8ff" : accent, { width: "100%", marginTop: 10, padding: "12px", fontSize: 15 })}>{flipped ? "Hide" : "Flip card"}</button>
     </div>
   );
 }
@@ -358,22 +357,22 @@ function Flashcards({ progress, setProgress, dark }: { progress: Progress; setPr
 // QUIZ
 // ════════════════════════════════════════════════════════════════════════════
 function Quiz({ progress, setProgress, dark }: { progress: Progress; setProgress: (p: Progress) => void; dark: boolean }) {
-  const [current, setCurrent] = useState<Word | null>(null);
-  const [options,  setOptions]  = useState<string[]>([]);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [score,    setScore]    = useState({ right: 0, wrong: 0 });
-  const [streak,   setStreak]   = useState(0);
+  const [current,   setCurrent]  = useState<Word | null>(null);
+  const [options,   setOptions]  = useState<string[]>([]);
+  const [selected,  setSelected] = useState<string | null>(null);
+  const [score,     setScore]    = useState({ right: 0, wrong: 0 });
+  const [streak,    setStreak]   = useState(0);
+  const [feedback,  setFeedback] = useState<"correct" | "wrong" | null>(null);
 
   const text = dark ? "#e8e8f8" : "#1a1a2e", sub = dark ? "#9898b8" : "#777";
-  const bg = dark ? "#2a2a3e" : "#f8f8fc", border = dark ? "#383858" : "#e0ddf8";
-  const accent = "#7c5cfc";
+  const border = dark ? "#383858" : "#e0ddf8", accent = "#7c5cfc";
 
   const pickQuestion = useCallback(() => {
     const pool = weightedShuffle(WORDS, progress);
     const q = pool[0];
     const wrong = WORDS.filter(w => w.word !== q.word).sort(() => Math.random() - 0.5).slice(0, 3);
     const opts = [...wrong.map(w => w.meaning), q.meaning].sort(() => Math.random() - 0.5);
-    setCurrent(q); setOptions(opts); setSelected(null);
+    setCurrent(q); setOptions(opts); setSelected(null); setFeedback(null);
   }, [progress]);
 
   useState(() => { pickQuestion(); });
@@ -383,58 +382,81 @@ function Quiz({ progress, setProgress, dark }: { progress: Progress; setProgress
     setSelected(opt);
     const correct = opt === current.meaning;
     const p = progress[current.word] || {};
-    const newP = { ...progress, [current.word]: { ...p, right: (p.right || 0) + (correct ? 1 : 0), wrong: (p.wrong || 0) + (correct ? 0 : 1) } };
+    const newP = { ...progress, [current.word]: { ...p, right: (p.right||0)+(correct?1:0), wrong: (p.wrong||0)+(correct?0:1) } };
     setProgress(newP); saveProgress(newP);
-    if (correct) { setScore(s => ({ ...s, right: s.right + 1 })); setStreak(s => s + 1); }
-    else         { setScore(s => ({ ...s, wrong: s.wrong + 1 })); setStreak(0); }
+    setFeedback(correct ? "correct" : "wrong");
+    if (correct) { setScore(s => ({ ...s, right: s.right+1 })); setStreak(s => s+1); }
+    else         { setScore(s => ({ ...s, wrong: s.wrong+1 })); setStreak(0); }
+    // Auto-advance after 1.4s
+    setTimeout(() => pickQuestion(), 1400);
   }
 
-  if (!current) return <div style={{ textAlign: "center", padding: 40, color: sub, fontSize: 17 }}>Loading…</div>;
-  const total = score.right + score.wrong, pct = total > 0 ? Math.round((score.right / total) * 100) : 0;
+  if (!current) return <div style={{ textAlign: "center", padding: 40, color: sub }}>Loading…</div>;
+
+  const total = score.right + score.wrong;
+  const pct   = total > 0 ? Math.round((score.right / total) * 100) : 0;
 
   return (
     <div style={{ maxWidth: 500, margin: "0 auto" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 8, marginBottom: 20 }}>
-        {[{ label: "Correct", val: score.right, color: "#22c55e" }, { label: "Wrong", val: score.wrong, color: "#ef4444" }, { label: "Accuracy", val: `${pct}%`, color: accent }, { label: "🔥 Streak", val: streak, color: "#f59e0b" }].map(s => (
-          <div key={s.label} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 12, padding: "12px 6px", textAlign: "center" }}>
-            <div style={{ fontSize: 22, fontWeight: 700, color: s.color }}>{s.val}</div>
-            <div style={{ fontSize: 12, color: sub, marginTop: 3, lineHeight: 1.2 }}>{s.label}</div>
-          </div>
-        ))}
+
+      {/* Compact score strip */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, padding: "10px 14px", background: dark ? "#1e1e2e" : "#f0eeff", borderRadius: 12 }}>
+        <span style={{ color: "#22c55e", fontWeight: 700, fontSize: 16 }}>✓ {score.right}</span>
+        <span style={{ color: "#ef4444", fontWeight: 700, fontSize: 16 }}>✗ {score.wrong}</span>
+        <span style={{ color: accent,    fontWeight: 700, fontSize: 16 }}>{pct}%</span>
+        <span style={{ color: "#f59e0b", fontWeight: 700, fontSize: 16 }}>🔥 {streak}</span>
       </div>
-      <div style={{ background: dark ? "#2a2a3e" : "#fff", border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 20, padding: "30px 24px", textAlign: "center", marginBottom: 16, boxShadow: dark ? "0 4px 24px #00000055" : "0 4px 24px #c4b5fd33" }}>
-        <div style={{ fontSize: 13, color: sub, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1.5 }}>What does this mean?</div>
-        <div style={{ fontSize: 36, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 12 }}>{current.word}</div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10 }}>
+
+      {/* Question card */}
+      <div style={{
+        background: feedback === "correct" ? "#dcfce7" : feedback === "wrong" ? "#fee2e2" : (dark ? "#2a2a3e" : "#fff"),
+        border: `2px solid ${feedback === "correct" ? "#22c55e" : feedback === "wrong" ? "#ef4444" : (dark ? "#5540cc" : "#c4b5fd")}`,
+        borderRadius: 20, padding: "26px 20px", textAlign: "center", marginBottom: 14,
+        transition: "background 0.25s, border-color 0.25s",
+        boxShadow: dark ? "0 4px 24px #00000055" : "0 4px 24px #c4b5fd33",
+      }}>
+        <div style={{ fontSize: 12, color: sub, marginBottom: 8, textTransform: "uppercase", letterSpacing: 1.5 }}>What does this mean?</div>
+        <div style={{ fontSize: 34, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 10 }}>{current.word}</div>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 8 }}>
           <DiffBadge d={current.difficulty} />
           <SpeakBtn text={current.word} dark={dark} size="sm" />
         </div>
+        {feedback && (
+          <div style={{ marginTop: 12, fontSize: 14, color: feedback === "correct" ? "#15803d" : "#dc2626", fontStyle: "italic", lineHeight: 1.5 }}>
+            {current.example}
+          </div>
+        )}
       </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 16 }}>
+
+      {/* Answer options */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
         {options.map(opt => {
-          const isCorrect = opt === current.meaning, isSelected = opt === selected;
-          let obg = dark ? "#2a2a3e" : "#fff", bc = dark ? "#383858" : "#ddd8f8", tc = text;
+          const isCorrect  = opt === current.meaning;
+          const isSelected = opt === selected;
+          let obg = dark ? "#2a2a3e" : "#fff";
+          let bc  = dark ? "#383858" : border;
+          let tc  = text;
           if (selected !== null) {
             if (isCorrect)       { obg = "#dcfce7"; bc = "#22c55e"; tc = "#15803d"; }
             else if (isSelected) { obg = "#fee2e2"; bc = "#ef4444"; tc = "#dc2626"; }
           }
           return (
             <button key={opt} onClick={() => answer(opt)}
-              style={{ background: obg, border: `2px solid ${bc}`, borderRadius: 14, padding: "17px 18px", fontSize: 17, color: tc, cursor: selected ? "default" : "pointer", textAlign: "left", transition: "all 0.15s", fontWeight: (isSelected || (selected !== null && isCorrect)) ? 700 : 400, WebkitTapHighlightColor: "transparent", lineHeight: 1.4 }}>
-              {opt}{selected !== null && isCorrect && "  ✓"}{selected !== null && isSelected && !isCorrect && "  ✗"}
+              style={{
+                background: obg, border: `2px solid ${bc}`, borderRadius: 14,
+                padding: "15px 16px", fontSize: 16, color: tc,
+                cursor: selected ? "default" : "pointer", textAlign: "left",
+                transition: "all 0.2s",
+                fontWeight: isSelected || (selected !== null && isCorrect) ? 700 : 400,
+                WebkitTapHighlightColor: "transparent", lineHeight: 1.4,
+              }}>
+              {opt}
+              {selected !== null && isCorrect  && " ✓"}
+              {selected !== null && isSelected && !isCorrect && " ✗"}
             </button>
           );
         })}
       </div>
-      {selected !== null && (
-        <div style={{ textAlign: "center" }}>
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 16, textAlign: "left" }}>
-            <div style={{ color: sub, fontSize: 15, fontStyle: "italic", lineHeight: 1.6, flex: 1 }}>"{current.example}"<br /><span style={{ fontStyle: "normal" }}>{current.exampleTranslation}</span></div>
-            <SpeakBtn text={current.example} dark={dark} size="sm" />
-          </div>
-          <button onClick={pickQuestion} style={btn(accent, "#fff", { width: "100%", padding: "16px", fontSize: 18 })}>Next question →</button>
-        </div>
-      )}
     </div>
   );
 }
@@ -634,7 +656,7 @@ function DailySet({ progress, setProgress, dark }: { progress: Progress; setProg
 
       {/* Card */}
       <div onClick={() => setFlipped(f => !f)}
-        style={{ background: cardBg, border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 240, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 28px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent", transition: "box-shadow 0.2s" }}>
+        style={{ background: cardBg, border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 210, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "32px 24px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent", transition: "box-shadow 0.2s" }}>
         {!flipped ? (
           <>
             <div style={{ fontSize: 13, color: sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 16 }}>Do you know this word?</div>
@@ -659,15 +681,13 @@ function DailySet({ progress, setProgress, dark }: { progress: Progress; setProg
 
       {/* Actions */}
       {!flipped ? (
-        <div style={{ marginTop: 16 }}>
-          <button onClick={() => setFlipped(true)} style={btn(dark ? "#383858" : "#ede9ff", dark ? "#c4b8ff" : accent, { width: "100%", padding: "15px", fontSize: 17 })}>
-            Reveal answer
-          </button>
-        </div>
+        <button onClick={() => setFlipped(true)} style={btn(dark ? "#383858" : "#ede9ff", dark ? "#c4b8ff" : accent, { width: "100%", marginTop: 14, padding: "15px", fontSize: 17 })}>
+          Reveal →
+        </button>
       ) : (
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 16 }}>
-          <button onClick={() => mark("missed")} style={btn("#fee2e2", "#dc2626", { padding: "16px", fontSize: 16 })}>✗ Didn't know</button>
-          <button onClick={() => mark("got")}    style={btn("#dcfce7", "#16a34a", { padding: "16px", fontSize: 16 })}>✓ Got it!</button>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 14 }}>
+          <button onClick={() => mark("missed")} style={btn("#fee2e2", "#dc2626", { padding: "15px", fontSize: 16 })}>✗ Didn't know</button>
+          <button onClick={() => mark("got")}    style={btn("#dcfce7", "#16a34a", { padding: "15px", fontSize: 16 })}>✓ Got it!</button>
         </div>
       )}
     </div>
