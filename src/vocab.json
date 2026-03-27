@@ -1043,6 +1043,166 @@
     "exampleTranslation": "He didn’t practice; despite that, he won the competition.",
     "category": "connector",
     "difficulty": "medium"
+  },
+  {
+    "word": "merkitys",
+    "meaning": "importance / significance",
+    "example": "Liikunnan merkitys terveydelle on suuri.",
+    "exampleTranslation": "The importance of exercise for health is great.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "säännöllinen",
+    "meaning": "regular",
+    "example": "Säännöllinen liikunta parantaa kuntoa.",
+    "exampleTranslation": "Regular exercise improves fitness.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ehkäistä",
+    "meaning": "to prevent",
+    "example": "Liikunta auttaa ehkäisemään sairauksia.",
+    "exampleTranslation": "Exercise helps prevent diseases.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tästä huolimatta",
+    "meaning": "despite this",
+    "example": "Hän oli väsynyt. Tästä huolimatta hän meni töihin.",
+    "exampleTranslation": "He was tired. Despite this, he went to work.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vähäinen",
+    "meaning": "low / little",
+    "example": "Hänen liikuntansa on vähäistä.",
+    "exampleTranslation": "His exercise is minimal.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kiireinen elämäntapa",
+    "meaning": "busy lifestyle",
+    "example": "Kiireinen elämäntapa vaikeuttaa liikkumista.",
+    "exampleTranslation": "A busy lifestyle makes exercising difficult.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "viettää aikaa",
+    "meaning": "to spend time",
+    "example": "Hän viettää paljon aikaa kotona.",
+    "exampleTranslation": "He spends a lot of time at home.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "digitaalinen laite",
+    "meaning": "digital device",
+    "example": "Monet käyttävät digitaalisia laitteita iltaisin.",
+    "exampleTranslation": "Many people use digital devices in the evenings.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "keskittyä",
+    "meaning": "to concentrate",
+    "example": "On vaikea keskittyä melussa.",
+    "exampleTranslation": "It is hard to concentrate in noise.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "toisaalta",
+    "meaning": "on the other hand",
+    "example": "Työ on raskasta, mutta toisaalta palkka on hyvä.",
+    "exampleTranslation": "The job is hard, but on the other hand the salary is good.",
+    "category": "connector",
+    "difficulty": "medium"
+  },
+  {
+    "word": "merkittävästi",
+    "meaning": "significantly",
+    "example": "Tilanne parani merkittävästi.",
+    "exampleTranslation": "The situation improved significantly.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "lisätä motivaatiota",
+    "meaning": "to increase motivation",
+    "example": "Ystävät voivat lisätä motivaatiota liikkua.",
+    "exampleTranslation": "Friends can increase motivation to exercise.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "järjestää",
+    "meaning": "to organize",
+    "example": "Kaupunki järjestää kurssin.",
+    "exampleTranslation": "The city organizes a course.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "maksuton",
+    "meaning": "free of charge",
+    "example": "Kurssi on maksuton.",
+    "exampleTranslation": "The course is free.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "osallistua",
+    "meaning": "to participate",
+    "example": "Haluan osallistua kurssille.",
+    "exampleTranslation": "I want to participate in the course.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ilmoittautua",
+    "meaning": "to register",
+    "example": "Sinun täytyy ilmoittautua etukäteen.",
+    "exampleTranslation": "You must register in advance.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "etukäteen",
+    "meaning": "in advance",
+    "example": "Maksa kurssi etukäteen.",
+    "exampleTranslation": "Pay for the course in advance.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "rajoitettu",
+    "meaning": "limited",
+    "example": "Paikkoja on rajoitetusti.",
+    "exampleTranslation": "Places are limited.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "aktiivinen",
+    "meaning": "active",
+    "example": "Ole aktiivinen tunnilla.",
+    "exampleTranslation": "Be active in class.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kotitehtävä",
+    "meaning": "homework",
+    "example": "Teen kotitehtävät illalla.",
+    "exampleTranslation": "I do homework in the evening.",
+    "category": "noun",
+    "difficulty": "easy"
   }
 ]
 
