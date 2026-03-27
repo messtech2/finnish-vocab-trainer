@@ -883,6 +883,38 @@
     "exampleTranslation": "This is one of the most important reasons.",
     "category": "expression",
     "difficulty": "medium"
+  },
+  {
+    "word": "syistä",
+    "meaning": "for reasons / because of reasons",
+    "example": "Hän ei tullut kokoukseen henkilökohtaisista syistä.",
+    "exampleTranslation": "He/She did not come to the meeting for personal reasons.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tärkeimmistä",
+    "meaning": "from the most important / of the main ones",
+    "example": "Yksi tärkeimmistä syistä opiskeluun on tulevaisuus.",
+    "exampleTranslation": "One of the main reasons for studying is the future.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "milloin tahansa",
+    "meaning": "at any time",
+    "example": "Voit soittaa minulle milloin tahansa.",
+    "exampleTranslation": "You can call me at any time.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kuitenkin",
+    "meaning": "however / nevertheless",
+    "example": "Satoi paljon, mutta kävelimme kuitenkin puistossa.",
+    "exampleTranslation": "It rained a lot, but we walked in the park nevertheless.",
+    "category": "connector",
+    "difficulty": "medium"
   }
 ]
 
