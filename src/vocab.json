@@ -707,6 +707,182 @@
     "exampleTranslation": "He/She found a suitable form of exercise for themselves.",
     "category": "expression",
     "difficulty": "medium"
+  },
+  {
+    "word": "nettikauppa",
+    "meaning": "online store",
+    "example": "Nettikauppa on kasvanut nopeasti viime vuosina.",
+    "exampleTranslation": "Online shopping has grown rapidly in recent years.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tehdä ostoksia",
+    "meaning": "to shop / make purchases",
+    "example": "Monet ihmiset tekevät ostoksia internetissä.",
+    "exampleTranslation": "Many people shop online.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kasvaa",
+    "meaning": "to grow",
+    "example": "Nettikauppa kasvaa koko ajan.",
+    "exampleTranslation": "Online shopping is growing all the time.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vaivaton",
+    "meaning": "easy / effortless",
+    "example": "Nettikauppa on vaivaton tapa ostaa tuotteita.",
+    "exampleTranslation": "Online shopping is an easy way to buy products.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hankkia",
+    "meaning": "to obtain / to get",
+    "example": "Ihmiset hankkivat tuotteita netistä.",
+    "exampleTranslation": "People get products from the internet.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vertailla",
+    "meaning": "to compare",
+    "example": "Tuotteita voi vertailla eri kauppojen välillä.",
+    "exampleTranslation": "Products can be compared between different shops.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "haitta",
+    "meaning": "disadvantage",
+    "example": "Nettikaupassa on myös haittoja.",
+    "exampleTranslation": "There are also disadvantages in online shopping.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kokeilla",
+    "meaning": "to try",
+    "example": "Asiakas ei voi kokeilla tuotetta ennen ostamista.",
+    "exampleTranslation": "The customer cannot try the product before buying.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "johtaa (johonkin)",
+    "meaning": "to lead to",
+    "example": "Tämä voi johtaa ongelmiin.",
+    "exampleTranslation": "This can lead to problems.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vastata odotuksia",
+    "meaning": "to meet expectations",
+    "example": "Tuote ei aina vastaa odotuksia.",
+    "exampleTranslation": "The product does not always meet expectations.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "palauttaminen",
+    "meaning": "returning (a product)",
+    "example": "Palauttaminen voi viedä aikaa.",
+    "exampleTranslation": "Returning can take time.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "viedä aikaa",
+    "meaning": "to take time",
+    "example": "Korjaaminen vie paljon aikaa.",
+    "exampleTranslation": "Fixing takes a lot of time.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "turvallisuus",
+    "meaning": "safety / security",
+    "example": "Maksamisen turvallisuus on tärkeää.",
+    "exampleTranslation": "Payment security is important.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "huolissaan",
+    "meaning": "worried",
+    "example": "Jotkut ihmiset ovat huolissaan maksamisesta.",
+    "exampleTranslation": "Some people are worried about payment.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "luottaa",
+    "meaning": "to trust",
+    "example": "Kaikki eivät luota verkkokauppoihin.",
+    "exampleTranslation": "Not everyone trusts online stores.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ostoksia",
+    "meaning": "purchases (partitive plural of 'ostos')",
+    "example": "Teen ostoksia viikonloppuna.",
+    "exampleTranslation": "I do shopping on the weekend.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lisäksi",
+    "meaning": "in addition / furthermore",
+    "example": "Lisäksi voit säästää aikaa.",
+    "exampleTranslation": "In addition, you can save time.",
+    "category": "connector",
+    "difficulty": "easy"
+  },
+  {
+    "word": "useimmat",
+    "meaning": "most (people/things)",
+    "example": "Useimmat ihmiset käyttävät internetiä.",
+    "exampleTranslation": "Most people use the internet.",
+    "category": "pronoun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "huolissaan",
+    "meaning": "worried",
+    "example": "Hän on huolissaan rahasta.",
+    "exampleTranslation": "He/She is worried about money.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vaivattomuus",
+    "meaning": "ease / effortlessness",
+    "example": "Nettikaupan vaivattomuus houkuttelee ihmisiä.",
+    "exampleTranslation": "The ease of online shopping attracts people.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "suosio",
+    "meaning": "popularity",
+    "example": "Nettikaupan suosio kasvaa.",
+    "exampleTranslation": "The popularity of online shopping is growing.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tärkeimmistä",
+    "meaning": "from the most important (partitive plural of 'tärkein')",
+    "example": "Tämä on yksi tärkeimmistä syistä.",
+    "exampleTranslation": "This is one of the most important reasons.",
+    "category": "expression",
+    "difficulty": "medium"
   }
 ]
 

@@ -371,6 +371,143 @@ function Quiz({ progress, setProgress, dark }: { progress: Progress; setProgress
 // ════════════════════════════════════════════════════════════════════════════
 // APP SHELL
 // ════════════════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════════════════════════
+// EXAM TIMER
+// ════════════════════════════════════════════════════════════════════════════
+const PRESETS = [
+  { label: "30 min", seconds: 30 * 60 },
+  { label: "1 hr",   seconds: 60 * 60 },
+  { label: "1.5 hr", seconds: 90 * 60 },
+];
+
+function ExamTimer({ dark }: { dark: boolean }) {
+  const [totalSecs,  setTotalSecs]  = useState(30 * 60);
+  const [remaining,  setRemaining]  = useState(30 * 60);
+  const [running,    setRunning]    = useState(false);
+  const [editing,    setEditing]    = useState(false);
+  const [customMins, setCustomMins] = useState("30");
+
+  const accent  = "#7c5cfc";
+  const danger  = "#ef4444";
+  const warning = "#f59e0b";
+  const text    = dark ? "#e8e8f8" : "#1a1a2e";
+  const sub     = dark ? "#9898b8" : "#777";
+  const cardBg  = dark ? "#1e1e2e" : "#fff";
+  const border  = dark ? "#383858" : "#e4e0f8";
+
+  // Tick
+  useEffect(() => {
+    if (!running) return;
+    if (remaining <= 0) { setRunning(false); return; }
+    const id = setInterval(() => setRemaining(r => r - 1), 1000);
+    return () => clearInterval(id);
+  }, [running, remaining]);
+
+  const pct      = remaining / totalSecs;
+  const mins     = Math.floor(remaining / 60);
+  const secs     = remaining % 60;
+  const timeStr  = `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  const isDanger = remaining <= 300;   // last 5 min
+  const isWarn   = remaining <= 600;   // last 10 min
+  const timerColor = isDanger ? danger : isWarn ? warning : accent;
+  const done     = remaining === 0;
+
+  function applyPreset(s: number) {
+    setTotalSecs(s); setRemaining(s); setRunning(false); setEditing(false);
+  }
+  function applyCustom() {
+    const m = parseFloat(customMins);
+    if (!isNaN(m) && m > 0) { applyPreset(Math.round(m * 60)); }
+    setEditing(false);
+  }
+  function reset() { setRemaining(totalSecs); setRunning(false); }
+
+  return (
+    <div style={{ background: cardBg, border: `2px solid ${done ? danger : isDanger ? danger + "88" : border}`, borderRadius: 20, padding: "20px 20px 16px", marginBottom: 24, boxShadow: done ? `0 0 0 4px ${danger}33` : isDanger ? `0 0 0 3px ${danger}22` : "none", transition: "all 0.3s" }}>
+
+      {/* Header row */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontSize: 20 }}>⏱️</span>
+          <span style={{ fontSize: 15, fontWeight: 700, color: text }}>Exam Timer</span>
+          {running && !done && <span style={{ fontSize: 12, background: timerColor + "22", color: timerColor, borderRadius: 20, padding: "2px 9px", fontWeight: 700 }}>LIVE</span>}
+          {done    && <span style={{ fontSize: 12, background: danger + "22", color: danger, borderRadius: 20, padding: "2px 9px", fontWeight: 700 }}>TIME'S UP</span>}
+        </div>
+        <button onClick={() => setEditing(e => !e)}
+          style={{ background: dark ? "#2a2a3e" : "#f0eeff", border: "none", borderRadius: 8, padding: "5px 12px", fontSize: 13, color: accent, fontWeight: 600, cursor: "pointer" }}>
+          {editing ? "Cancel" : "Edit"}
+        </button>
+      </div>
+
+      {/* Edit panel */}
+      {editing && (
+        <div style={{ marginBottom: 16, display: "flex", flexDirection: "column", gap: 10 }}>
+          {/* Presets */}
+          <div style={{ display: "flex", gap: 8 }}>
+            {PRESETS.map(p => (
+              <button key={p.label} onClick={() => applyPreset(p.seconds)}
+                style={{ flex: 1, background: totalSecs === p.seconds ? accent : (dark ? "#2a2a3e" : "#f0eeff"), color: totalSecs === p.seconds ? "#fff" : accent, border: `2px solid ${totalSecs === p.seconds ? accent : "transparent"}`, borderRadius: 10, padding: "10px 4px", fontSize: 15, fontWeight: 700, cursor: "pointer" }}>
+                {p.label}
+              </button>
+            ))}
+          </div>
+          {/* Custom */}
+          <div style={{ display: "flex", gap: 8 }}>
+            <input
+              type="number" min="1" max="300"
+              value={customMins}
+              onChange={e => setCustomMins(e.target.value)}
+              placeholder="Custom minutes…"
+              style={{ flex: 1, background: dark ? "#2a2a3e" : "#f8f8fc", border: `1px solid ${border}`, borderRadius: 10, padding: "10px 14px", color: text, fontSize: 16, outline: "none" }}
+            />
+            <button onClick={applyCustom}
+              style={{ background: accent, color: "#fff", border: "none", borderRadius: 10, padding: "10px 18px", fontSize: 15, fontWeight: 700, cursor: "pointer" }}>
+              Set
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Big countdown */}
+      <div style={{ textAlign: "center", marginBottom: 14 }}>
+        <div style={{
+          fontSize: done ? 52 : 58, fontWeight: 900, letterSpacing: -1, color: timerColor,
+          fontVariantNumeric: "tabular-nums", lineHeight: 1,
+          animation: done ? "none" : isDanger && running ? "pulse 1s infinite" : "none",
+        }}>
+          {done ? "⏰ 00:00" : timeStr}
+        </div>
+        {!done && (
+          <div style={{ fontSize: 13, color: sub, marginTop: 6 }}>
+            {isDanger ? "🔥 Final stretch!" : isWarn ? "⚡ 10 minutes left" : `${Math.ceil(remaining / 60)} minutes remaining`}
+          </div>
+        )}
+      </div>
+
+      {/* Progress bar */}
+      <div style={{ background: dark ? "#2a2a3e" : "#f0eeff", borderRadius: 99, height: 8, marginBottom: 16, overflow: "hidden" }}>
+        <div style={{ width: `${pct * 100}%`, height: 8, borderRadius: 99, background: timerColor, transition: "width 1s linear, background 0.5s" }} />
+      </div>
+
+      {/* Controls */}
+      <div style={{ display: "flex", gap: 8 }}>
+        <button onClick={() => setRunning(r => !r)} disabled={done}
+          style={{ flex: 2, background: running ? (dark ? "#2a2a3e" : "#fee2e2") : accent, color: running ? danger : "#fff", border: running ? `2px solid ${danger}` : "none", borderRadius: 12, padding: "13px", fontSize: 17, fontWeight: 700, cursor: done ? "not-allowed" : "pointer", opacity: done ? 0.5 : 1, transition: "all 0.2s" }}>
+          {running ? "⏸ Pause" : done ? "Done" : "▶ Start"}
+        </button>
+        <button onClick={reset}
+          style={{ flex: 1, background: dark ? "#2a2a3e" : "#f0eeff", color: sub, border: "none", borderRadius: 12, padding: "13px", fontSize: 17, fontWeight: 600, cursor: "pointer" }}>
+          ↺ Reset
+        </button>
+      </div>
+
+      <style>{`
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.55} }
+      `}</style>
+    </div>
+  );
+}
+
 export default function App() {
   const [tab,      setTab]      = useState<"list" | "flash" | "quiz">("list");
   const [dark,     setDark]     = useState(() => { try { return localStorage.getItem("fi_dark") === "1"; } catch { return false; } });
@@ -447,6 +584,8 @@ export default function App() {
             {tab === "quiz"  && "Adaptive — missed words appear more until you master them."}
           </p>
         </div>
+
+        <ExamTimer dark={dark} />
 
         {tab === "list"  && <VocabList  progress={progress} dark={dark} />}
         {tab === "flash" && <Flashcards key="flash" progress={progress} setProgress={setProgress} dark={dark} />}
