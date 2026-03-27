@@ -50,8 +50,134 @@ function DiffBadge({ d }: { d: string }) {
 const IconBook  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>;
 const IconCards = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>;
 const IconQuiz  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>;
+const IconStar   = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>;
 const IconSun   = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
 const IconMoon  = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
+
+// ════════════════════════════════════════════════════════════════════════════
+// AUDIO ENGINE  — Web Speech API, Finnish female voice
+// ════════════════════════════════════════════════════════════════════════════
+type SpeakState = "idle" | "playing" | "paused";
+
+// Singleton utterance tracker so only one thing plays at a time
+let _currentUtterance: SpeechSynthesisUtterance | null = null;
+
+function pickFinnishVoice(): SpeechSynthesisVoice | null {
+  if (!window.speechSynthesis) return null;
+  const voices = window.speechSynthesis.getVoices();
+  // Priority: fi-FI female > fi-FI any > fi any > null
+  const fiFemale = voices.find(v => v.lang.startsWith("fi") && /female|nais|nainen|satu|aino|anna|heidi/i.test(v.name));
+  const fiAny    = voices.find(v => v.lang.startsWith("fi"));
+  return fiFemale || fiAny || null;
+}
+
+function useSpeak(text: string) {
+  const [state, setState] = useState<SpeakState>("idle");
+
+  // When text changes, stop whatever was playing for this hook
+  useEffect(() => { return () => { /* cleanup on unmount */ }; }, [text]);
+
+  function play() {
+    if (!window.speechSynthesis) return;
+    // If we're paused on THIS text, resume
+    if (state === "paused" && _currentUtterance?.text === text) {
+      window.speechSynthesis.resume();
+      setState("playing");
+      return;
+    }
+    // Stop anything currently playing
+    window.speechSynthesis.cancel();
+    setState("idle");
+
+    const utter = new SpeechSynthesisUtterance(text);
+    // Best quality Finnish female settings
+    const voice = pickFinnishVoice();
+    if (voice) utter.voice = voice;
+    utter.lang  = "fi-FI";
+    utter.rate  = 0.82;   // slightly slower → clearer pronunciation
+    utter.pitch = 1.08;   // slightly higher → more feminine
+    utter.volume = 1;
+
+    utter.onstart = () => setState("playing");
+    utter.onend   = () => { setState("idle"); _currentUtterance = null; };
+    utter.onerror = () => { setState("idle"); _currentUtterance = null; };
+    utter.onpause = () => setState("paused");
+
+    _currentUtterance = utter;
+    window.speechSynthesis.speak(utter);
+    setState("playing");
+  }
+
+  function pause() {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.pause();
+    setState("paused");
+  }
+
+  function stop() {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    setState("idle");
+    _currentUtterance = null;
+  }
+
+  return { state, play, pause, stop };
+}
+
+// Preload voices (Chrome loads them async)
+if (typeof window !== "undefined" && window.speechSynthesis) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.addEventListener("voiceschanged", () => window.speechSynthesis.getVoices());
+}
+
+// ── SpeakBtn — reusable play/pause/stop button ────────────────────────────
+interface SpeakBtnProps { text: string; dark: boolean; size?: "sm" | "md"; }
+function SpeakBtn({ text, dark, size = "md" }: SpeakBtnProps) {
+  const { state, play, pause, stop } = useSpeak(text);
+  const accent = "#7c5cfc";
+  const sz = size === "sm" ? 15 : 19;
+  const pad = size === "sm" ? "5px 9px" : "7px 13px";
+  const gap = size === "sm" ? 4 : 6;
+
+  const isPlaying = state === "playing";
+  const isPaused  = state === "paused";
+  const isActive  = isPlaying || isPaused;
+
+  return (
+    <div style={{ display: "inline-flex", alignItems: "center", gap, flexShrink: 0 }}>
+      {/* Play / Pause */}
+      <button
+        onClick={e => { e.stopPropagation(); isPlaying ? pause() : play(); }}
+        title={isPlaying ? "Pause" : isPaused ? "Resume" : "Listen"}
+        style={{
+          display: "flex", alignItems: "center", gap: 4,
+          background: isActive ? accent : (dark ? "#2a2a3e" : "#ede9ff"),
+          color: isActive ? "#fff" : accent,
+          border: "none", borderRadius: 20, padding: pad,
+          cursor: "pointer", fontSize: sz, fontWeight: 700,
+          transition: "all 0.15s", WebkitTapHighlightColor: "transparent",
+        }}>
+        {isPlaying ? (
+          // Pause icon
+          <svg width={sz} height={sz} viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        ) : (
+          // Play icon
+          <svg width={sz} height={sz} viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        )}
+        {isPaused && <span style={{ fontSize: sz - 4 }}>‥</span>}
+      </button>
+      {/* Stop — only when active */}
+      {isActive && (
+        <button
+          onClick={e => { e.stopPropagation(); stop(); }}
+          title="Stop"
+          style={{ display: "flex", alignItems: "center", background: dark ? "#2a2a3e" : "#fee2e2", color: "#ef4444", border: "none", borderRadius: 20, padding: pad, cursor: "pointer", transition: "all 0.15s", WebkitTapHighlightColor: "transparent" }}>
+          <svg width={sz} height={sz} viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+        </button>
+      )}
+    </div>
+  );
+}
 
 // ════════════════════════════════════════════════════════════════════════════
 // VOCABULARY LIST
@@ -119,6 +245,7 @@ function VocabList({ progress, dark }: { progress: Progress; dark: boolean }) {
                   <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", marginBottom: 5 }}>
                     <span style={{ fontFamily: "'Newsreader', Georgia, serif", fontSize: 22, fontWeight: 700, color: text }}>{w.word}</span>
                     {p.known && <span style={{ fontSize: 16, color: "#22c55e", fontWeight: 700 }}>✓</span>}
+                    <SpeakBtn text={w.word} dark={dark} size="sm" />
                   </div>
                   <div style={{ color: sub, fontSize: 16, lineHeight: 1.4 }}>{w.meaning}</div>
                 </div>
@@ -129,7 +256,10 @@ function VocabList({ progress, dark }: { progress: Progress; dark: boolean }) {
               </div>
               {isExp && (
                 <div style={{ marginTop: 14, paddingTop: 14, borderTop: `1px dashed ${border}` }}>
-                  <div style={{ fontStyle: "italic", color: text, fontSize: 16, lineHeight: 1.6, marginBottom: 6 }}>"{w.example}"</div>
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 6 }}>
+                    <div style={{ fontStyle: "italic", color: text, fontSize: 16, lineHeight: 1.6, flex: 1 }}>"{w.example}"</div>
+                    <SpeakBtn text={w.example} dark={dark} size="sm" />
+                  </div>
                   <div style={{ color: sub, fontSize: 15 }}>{w.exampleTranslation}</div>
                   {(p.wrong || 0) > 0 && <div style={{ marginTop: 8, fontSize: 14, color: "#ef4444" }}>Missed {p.wrong}× in quiz</div>}
                 </div>
@@ -195,15 +325,22 @@ function Flashcards({ progress, setProgress, dark }: { progress: Progress; setPr
         style={{ background: dark ? "#2a2a3e" : "#fff", border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 250, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 28px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent" }}>
         {!flipped ? (
           <>
-            <div style={{ fontSize: 40, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 16 }}>{card.word}</div>
-            <DiffBadge d={card.difficulty} />
-            <div style={{ color: sub, fontSize: 16, marginTop: 20 }}>Tap to reveal</div>
+            <div style={{ fontSize: 13, color: sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>Finnish word</div>
+            <div style={{ fontSize: 40, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 14 }}>{card.word}</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <DiffBadge d={card.difficulty} />
+              <SpeakBtn text={card.word} dark={dark} />
+            </div>
+            <div style={{ color: sub, fontSize: 15, marginTop: 18 }}>Tap card to reveal</div>
           </>
         ) : (
           <>
-            <div style={{ fontSize: 28, fontWeight: 700, color: text, marginBottom: 14 }}>{card.meaning}</div>
-            <div style={{ fontStyle: "italic", color: dark ? "#c4b8ff" : accent, fontSize: 17, lineHeight: 1.6, marginBottom: 8 }}>"{card.example}"</div>
-            <div style={{ color: sub, fontSize: 16, lineHeight: 1.5 }}>{card.exampleTranslation}</div>
+            <div style={{ fontSize: 28, fontWeight: 700, color: text, marginBottom: 10 }}>{card.meaning}</div>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 8 }}>
+              <div style={{ fontStyle: "italic", color: dark ? "#c4b8ff" : accent, fontSize: 16, lineHeight: 1.6, flex: 1 }}>"{card.example}"</div>
+              <SpeakBtn text={card.example} dark={dark} size="sm" />
+            </div>
+            <div style={{ color: sub, fontSize: 15, lineHeight: 1.5 }}>{card.exampleTranslation}</div>
           </>
         )}
       </div>
@@ -268,7 +405,10 @@ function Quiz({ progress, setProgress, dark }: { progress: Progress; setProgress
       <div style={{ background: dark ? "#2a2a3e" : "#fff", border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 20, padding: "30px 24px", textAlign: "center", marginBottom: 16, boxShadow: dark ? "0 4px 24px #00000055" : "0 4px 24px #c4b5fd33" }}>
         <div style={{ fontSize: 13, color: sub, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1.5 }}>What does this mean?</div>
         <div style={{ fontSize: 36, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 12 }}>{current.word}</div>
-        <DiffBadge d={current.difficulty} />
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10 }}>
+          <DiffBadge d={current.difficulty} />
+          <SpeakBtn text={current.word} dark={dark} size="sm" />
+        </div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 16 }}>
         {options.map(opt => {
@@ -288,8 +428,246 @@ function Quiz({ progress, setProgress, dark }: { progress: Progress; setProgress
       </div>
       {selected !== null && (
         <div style={{ textAlign: "center" }}>
-          <div style={{ color: sub, fontSize: 15, marginBottom: 16, fontStyle: "italic", lineHeight: 1.6 }}>"{current.example}"<br />{current.exampleTranslation}</div>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 16, textAlign: "left" }}>
+            <div style={{ color: sub, fontSize: 15, fontStyle: "italic", lineHeight: 1.6, flex: 1 }}>"{current.example}"<br /><span style={{ fontStyle: "normal" }}>{current.exampleTranslation}</span></div>
+            <SpeakBtn text={current.example} dark={dark} size="sm" />
+          </div>
           <button onClick={pickQuestion} style={btn(accent, "#fff", { width: "100%", padding: "16px", fontSize: 18 })}>Next question →</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// DAILY SET  — 10 smart-picked words, spaced-repetition style
+// ════════════════════════════════════════════════════════════════════════════
+const SET_SIZE = 10;
+const LS_STREAK = "fi_streak_v1";
+
+function loadStreak() { try { return JSON.parse(localStorage.getItem(LS_STREAK) || '{"count":0,"lastDate":""}'); } catch { return { count: 0, lastDate: "" }; } }
+function todayStr() { return new Date().toISOString().slice(0, 10); }
+
+// Score each word: higher = needs more practice
+function urgencyScore(w: Word, p: WordProgress): number {
+  const right = p.right || 0, wrong = p.wrong || 0, total = right + wrong;
+  if (p.known && total > 3) return 0.1;           // mastered — barely show
+  if (total === 0) return 2;                        // never seen — high priority
+  const errorRate = wrong / total;
+  const recency = total < 3 ? 1.5 : 1;             // seen fewer than 3 times → boost
+  const diffBoost = w.difficulty === "hard" ? 1.3 : w.difficulty === "medium" ? 1.1 : 1;
+  return (0.5 + errorRate * 2) * recency * diffBoost;
+}
+
+function buildDailySet(progress: Progress): Word[] {
+  const scored = WORDS.map(w => ({ word: w, score: urgencyScore(w, progress[w.word] || {}) }));
+  scored.sort((a, b) => b.score - a.score);
+  // Take top priority words, but sprinkle in 2 "known" words for confidence
+  const needsPractice = scored.filter(x => x.score > 0.3).slice(0, SET_SIZE - 2).map(x => x.word);
+  const easy = scored.filter(x => x.score <= 0.3).slice(0, 2).map(x => x.word);
+  const set = [...needsPractice, ...easy].slice(0, SET_SIZE);
+  // Shuffle
+  return set.sort(() => Math.random() - 0.5);
+}
+
+function DailySet({ progress, setProgress, dark }: { progress: Progress; setProgress: (p: Progress) => void; dark: boolean }) {
+  const [phase,     setPhase]     = useState<"intro" | "learn" | "done">("intro");
+  const [set,       setSet]       = useState<Word[]>([]);
+  const [idx,       setIdx]       = useState(0);
+  const [flipped,   setFlipped]   = useState(false);
+  const [results,   setResults]   = useState<Record<string, "got" | "missed">>({});
+  const [streak,    setStreak]    = useState(loadStreak);
+
+  const accent = "#7c5cfc", text = dark ? "#e8e8f8" : "#1a1a2e";
+  const sub = dark ? "#9898b8" : "#777", border = dark ? "#383858" : "#e4e0f8";
+  const cardBg = dark ? "#2a2a3e" : "#fff", bg = dark ? "#1e1e2e" : "#f8f8fc";
+
+  // Stats for intro screen
+  const neverSeen  = WORDS.filter(w => !(progress[w.word]?.right || 0) && !(progress[w.word]?.wrong || 0)).length;
+  const struggling = WORDS.filter(w => { const p = progress[w.word] || {}; const t = (p.right||0)+(p.wrong||0); return t > 0 && (p.wrong||0)/t > 0.4; }).length;
+  const mastered   = WORDS.filter(w => progress[w.word]?.known).length;
+
+  function startSet() {
+    const s = buildDailySet(progress);
+    setSet(s); setIdx(0); setFlipped(false); setResults({}); setPhase("learn");
+  }
+
+  function mark(outcome: "got" | "missed") {
+    const word = set[idx];
+    const newResults = { ...results, [word.word]: outcome };
+    setResults(newResults);
+
+    // Update progress
+    const p = progress[word.word] || {};
+    const newP: Progress = {
+      ...progress,
+      [word.word]: {
+        ...p,
+        right: (p.right || 0) + (outcome === "got" ? 1 : 0),
+        wrong: (p.wrong || 0) + (outcome === "missed" ? 1 : 0),
+        known: outcome === "got" && (p.right || 0) >= 2 ? true : p.known,
+      }
+    };
+    setProgress(newP);
+    saveProgress(newP);
+
+    if (idx + 1 >= set.length) {
+      // Update streak
+      const today = todayStr();
+      const s = loadStreak();
+      const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toISOString().slice(0, 10);
+      const newStreak = { count: s.lastDate === today ? s.count : s.lastDate === yesterdayStr ? s.count + 1 : 1, lastDate: today };
+      localStorage.setItem(LS_STREAK, JSON.stringify(newStreak));
+      setStreak(newStreak);
+      setPhase("done");
+    } else {
+      setFlipped(false);
+      setTimeout(() => setIdx(i => i + 1), 120);
+    }
+  }
+
+  const gotCount    = Object.values(results).filter(r => r === "got").length;
+  const missedCount = Object.values(results).filter(r => r === "missed").length;
+
+  // ── INTRO ──
+  if (phase === "intro") return (
+    <div>
+      {/* Streak banner */}
+      <div style={{ background: streak.count > 0 ? "linear-gradient(135deg, #f59e0b22, #ef444422)" : (dark ? "#1e1e2e" : "#fff"), border: `2px solid ${streak.count > 0 ? "#f59e0b" : border}`, borderRadius: 16, padding: "16px 20px", marginBottom: 16, display: "flex", alignItems: "center", gap: 14 }}>
+        <span style={{ fontSize: 38 }}>{streak.count >= 7 ? "🏆" : streak.count >= 3 ? "🔥" : "⭐"}</span>
+        <div>
+          <div style={{ fontSize: 18, fontWeight: 800, color: streak.count > 0 ? "#f59e0b" : text }}>{streak.count} day streak</div>
+          <div style={{ fontSize: 14, color: sub }}>{streak.count === 0 ? "Start your streak today!" : streak.count >= 7 ? "Incredible consistency!" : streak.count >= 3 ? "You're on fire! Keep going." : "Building momentum…"}</div>
+        </div>
+      </div>
+
+      {/* Stats overview */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10, marginBottom: 20 }}>
+        {[
+          { label: "New words", val: neverSeen,  color: "#7c5cfc", emoji: "🆕" },
+          { label: "Struggling", val: struggling, color: "#ef4444", emoji: "💪" },
+          { label: "Mastered",   val: mastered,   color: "#22c55e", emoji: "✅" },
+        ].map(s => (
+          <div key={s.label} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 14, padding: "14px 10px", textAlign: "center" }}>
+            <div style={{ fontSize: 22 }}>{s.emoji}</div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: s.color, marginTop: 4 }}>{s.val}</div>
+            <div style={{ fontSize: 12, color: sub, marginTop: 2 }}>{s.label}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Today's set info */}
+      <div style={{ background: cardBg, border: `2px solid ${accent}22`, borderRadius: 18, padding: "20px", marginBottom: 20 }}>
+        <div style={{ fontSize: 16, fontWeight: 700, color: text, marginBottom: 8 }}>📚 Today's set</div>
+        <div style={{ fontSize: 14, color: sub, lineHeight: 1.7 }}>
+          {SET_SIZE} words hand-picked by difficulty and your past mistakes.<br />
+          Focus on what you actually struggle with — not random review.
+        </div>
+        <div style={{ marginTop: 14, display: "flex", flexWrap: "wrap", gap: 6 }}>
+          {buildDailySet(progress).map(w => (
+            <span key={w.word} style={{ background: dark ? "#383858" : "#ede9ff", color: dark ? "#c4b8ff" : accent, borderRadius: 20, padding: "4px 12px", fontSize: 14, fontWeight: 600 }}>{w.word}</span>
+          ))}
+        </div>
+      </div>
+
+      <button onClick={startSet} style={btn(accent, "#fff", { width: "100%", padding: "17px", fontSize: 18, borderRadius: 16 })}>
+        Start today's set →
+      </button>
+    </div>
+  );
+
+  // ── DONE ──
+  if (phase === "done") {
+    const pct = Math.round((gotCount / set.length) * 100);
+    const grade = pct === 100 ? "🏆 Perfect!" : pct >= 80 ? "🔥 Great work!" : pct >= 60 ? "👍 Good effort!" : "💪 Keep going!";
+    return (
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: 56, marginBottom: 12 }}>{pct === 100 ? "🏆" : pct >= 80 ? "🌟" : "💪"}</div>
+        <div style={{ fontSize: 26, fontWeight: 800, color: text, marginBottom: 6 }}>{grade}</div>
+        <div style={{ fontSize: 16, color: sub, marginBottom: 24 }}>
+          {streak.count} day streak · {gotCount}/{set.length} words nailed
+        </div>
+
+        {/* Score bar */}
+        <div style={{ background: dark ? "#2a2a3e" : "#f0eeff", borderRadius: 99, height: 12, marginBottom: 24, overflow: "hidden" }}>
+          <div style={{ width: `${pct}%`, height: 12, borderRadius: 99, background: pct >= 80 ? "#22c55e" : pct >= 60 ? "#f59e0b" : "#ef4444", transition: "width 1s ease" }} />
+        </div>
+
+        {/* Per-word results */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 28, textAlign: "left" }}>
+          {set.map(w => {
+            const r = results[w.word];
+            return (
+              <div key={w.word} style={{ background: r === "got" ? "#dcfce7" : "#fee2e2", borderRadius: 12, padding: "12px 16px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <span style={{ fontFamily: "'Newsreader', Georgia, serif", fontSize: 18, fontWeight: 700, color: r === "got" ? "#15803d" : "#dc2626" }}>{w.word}</span>
+                  <span style={{ fontSize: 14, color: r === "got" ? "#15803d" : "#dc2626", marginLeft: 10 }}>{w.meaning}</span>
+                </div>
+                <span style={{ fontSize: 20 }}>{r === "got" ? "✓" : "✗"}</span>
+              </div>
+            );
+          })}
+        </div>
+
+        <button onClick={() => setPhase("intro")} style={btn(accent, "#fff", { width: "100%", padding: "16px", fontSize: 17 })}>
+          ← Back to overview
+        </button>
+      </div>
+    );
+  }
+
+  // ── LEARN (flashcard-style) ──
+  const card = set[idx];
+  const pctDone = Math.round((idx / set.length) * 100);
+
+  return (
+    <div style={{ maxWidth: 500, margin: "0 auto" }}>
+      {/* Progress */}
+      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
+        <span style={{ fontSize: 15, color: sub }}>Word {idx + 1} of {set.length}</span>
+        <span style={{ fontSize: 15, color: sub }}>✓ {gotCount} &nbsp; ✗ {missedCount}</span>
+      </div>
+      <div style={{ background: dark ? "#383858" : "#e8e4ff", borderRadius: 99, height: 7, marginBottom: 22 }}>
+        <div style={{ width: `${pctDone}%`, height: 7, borderRadius: 99, background: accent, transition: "width 0.4s" }} />
+      </div>
+
+      {/* Card */}
+      <div onClick={() => setFlipped(f => !f)}
+        style={{ background: cardBg, border: `2px solid ${dark ? "#5540cc" : "#c4b5fd"}`, borderRadius: 22, minHeight: 240, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 28px", cursor: "pointer", textAlign: "center", boxShadow: dark ? "0 8px 40px #00000066" : "0 8px 40px #c4b5fd44", userSelect: "none", WebkitTapHighlightColor: "transparent", transition: "box-shadow 0.2s" }}>
+        {!flipped ? (
+          <>
+            <div style={{ fontSize: 13, color: sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 16 }}>Do you know this word?</div>
+            <div style={{ fontSize: 40, fontFamily: "'Newsreader', Georgia, serif", fontWeight: 700, color: text, marginBottom: 14 }}>{card.word}</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <DiffBadge d={card.difficulty} />
+              <SpeakBtn text={card.word} dark={dark} />
+            </div>
+            <div style={{ color: sub, fontSize: 15, marginTop: 20 }}>Tap to reveal</div>
+          </>
+        ) : (
+          <>
+            <div style={{ fontSize: 28, fontWeight: 700, color: text, marginBottom: 10 }}>{card.meaning}</div>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 6 }}>
+              <div style={{ fontStyle: "italic", color: dark ? "#c4b8ff" : accent, fontSize: 16, lineHeight: 1.6, flex: 1 }}>"{card.example}"</div>
+              <SpeakBtn text={card.example} dark={dark} size="sm" />
+            </div>
+            <div style={{ color: sub, fontSize: 15 }}>{card.exampleTranslation}</div>
+          </>
+        )}
+      </div>
+
+      {/* Actions */}
+      {!flipped ? (
+        <div style={{ marginTop: 16 }}>
+          <button onClick={() => setFlipped(true)} style={btn(dark ? "#383858" : "#ede9ff", dark ? "#c4b8ff" : accent, { width: "100%", padding: "15px", fontSize: 17 })}>
+            Reveal answer
+          </button>
+        </div>
+      ) : (
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 16 }}>
+          <button onClick={() => mark("missed")} style={btn("#fee2e2", "#dc2626", { padding: "16px", fontSize: 16 })}>✗ Didn't know</button>
+          <button onClick={() => mark("got")}    style={btn("#dcfce7", "#16a34a", { padding: "16px", fontSize: 16 })}>✓ Got it!</button>
         </div>
       )}
     </div>
@@ -420,7 +798,7 @@ function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSe
 // APP SHELL
 // ════════════════════════════════════════════════════════════════════════════
 export default function App() {
-  const [tab,        setTab]        = useState<"list" | "flash" | "quiz">("list");
+  const [tab, setTab] = useState<"daily" | "list" | "flash" | "quiz">("daily");
   const [dark,       setDark]       = useState(() => { try { return localStorage.getItem("fi_dark") === "1"; } catch { return false; } });
   const [progress,   setProgress]   = useState<Progress>(loadProgress);
   // Timer state lifted here so header chip stays live even when panel is closed
@@ -445,9 +823,10 @@ export default function App() {
   const timerIdle = !timerOn && remaining === totalSecs;
 
   const tabs = [
-    { id: "list"  as const, label: "Words", icon: <IconBook  /> },
-    { id: "flash" as const, label: "Cards", icon: <IconCards /> },
-    { id: "quiz"  as const, label: "Quiz",  icon: <IconQuiz  /> },
+    { id: "daily" as const, label: "Daily",  icon: <IconStar  /> },
+    { id: "list"  as const, label: "Words",  icon: <IconBook  /> },
+    { id: "flash" as const, label: "Cards",  icon: <IconCards /> },
+    { id: "quiz"  as const, label: "Quiz",   icon: <IconQuiz  /> },
   ];
 
   return (
@@ -534,14 +913,19 @@ export default function App() {
       <main style={{ maxWidth: 600, margin: "0 auto", padding: "22px 16px 110px" }}>
         <div style={{ marginBottom: 22 }}>
           <h1 style={{ fontSize: 24, fontWeight: 700, color: text, marginBottom: 5 }}>
-            {tab === "list" && "Vocabulary List"}{tab === "flash" && "Flashcards"}{tab === "quiz" && "Quiz Mode"}
+            {tab === "daily" && "Daily Set"}
+            {tab === "list"  && "Vocabulary List"}
+            {tab === "flash" && "Flashcards"}
+            {tab === "quiz"  && "Quiz Mode"}
           </h1>
           <p style={{ fontSize: 15, color: sub, lineHeight: 1.5 }}>
-            {tab === "list" && "Tap any word to reveal its example sentence."}
+            {tab === "daily" && "10 words picked for you based on what you need most."}
+            {tab === "list"  && "Tap any word to reveal its example sentence."}
             {tab === "flash" && "Known words appear less often. Tricky ones come back more."}
-            {tab === "quiz" && "Adaptive — missed words appear more until you master them."}
+            {tab === "quiz"  && "Adaptive — missed words appear more until you master them."}
           </p>
         </div>
+        {tab === "daily" && <DailySet   progress={progress} setProgress={setProgress} dark={dark} />}
         {tab === "list"  && <VocabList  progress={progress} dark={dark} />}
         {tab === "flash" && <Flashcards key="flash" progress={progress} setProgress={setProgress} dark={dark} />}
         {tab === "quiz"  && <Quiz       progress={progress} setProgress={setProgress} dark={dark} />}
