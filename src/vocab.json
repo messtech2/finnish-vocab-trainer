@@ -1203,6 +1203,150 @@
     "exampleTranslation": "I do homework in the evening.",
     "category": "noun",
     "difficulty": "easy"
+  },
+  {
+    "word": "varmempi",
+    "meaning": "more confident",
+    "example": "Olen nyt varmempi suomen kielessä.",
+    "exampleTranslation": "I am now more confident in Finnish.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "onnistua",
+    "meaning": "to succeed",
+    "example": "Haluan onnistua kokeessa.",
+    "exampleTranslation": "I want to succeed in the exam.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tavoite",
+    "meaning": "goal",
+    "example": "Minun tavoitteeni on oppia suomea.",
+    "exampleTranslation": "My goal is to learn Finnish.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "koe",
+    "meaning": "test / exam",
+    "example": "Minulla on koe ensi viikolla.",
+    "exampleTranslation": "I have a test next week.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pisteet",
+    "meaning": "points",
+    "example": "Sain hyvät pisteet kokeesta.",
+    "exampleTranslation": "I got good points in the exam.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tulos",
+    "meaning": "result",
+    "example": "Testin tulos oli hyvä.",
+    "exampleTranslation": "The test result was good.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "valmistautua",
+    "meaning": "to prepare",
+    "example": "Valmistaudun kokeeseen joka päivä.",
+    "exampleTranslation": "I prepare for the exam every day.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kielikurssi",
+    "meaning": "language course",
+    "example": "Käyn suomen kielikurssilla.",
+    "exampleTranslation": "I attend a Finnish language course.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ymmärtää",
+    "meaning": "to understand",
+    "example": "Ymmärrän tekstin paremmin nyt.",
+    "exampleTranslation": "I understand the text better now.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tykätä jostakin",
+    "meaning": "to like something",
+    "example": "Tykkään suomen kielestä.",
+    "exampleTranslation": "I like the Finnish language.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "toivoa",
+    "meaning": "to hope",
+    "example": "Toivon, että onnistun kokeessa.",
+    "exampleTranslation": "I hope that I succeed in the exam.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tulevaisuudessa",
+    "meaning": "in the future",
+    "example": "Haluan työskennellä Suomessa tulevaisuudessa.",
+    "exampleTranslation": "I want to work in Finland in the future.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "itselleen",
+    "meaning": "for oneself",
+    "example": "Haluan oppia suomea itselleni.",
+    "exampleTranslation": "I want to learn Finnish for myself.",
+    "category": "pronoun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pystyä tekemään",
+    "meaning": "to be able to do",
+    "example": "Haluan pystyä puhumaan suomea.",
+    "exampleTranslation": "I want to be able to speak Finnish.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "harrastaa",
+    "meaning": "to have a hobby / to do regularly",
+    "example": "Harrastan liikuntaa kolme kertaa viikossa.",
+    "exampleTranslation": "I exercise three times a week.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "liikunta",
+    "meaning": "exercise",
+    "example": "Liikunta on tärkeää terveydelle.",
+    "exampleTranslation": "Exercise is important for health.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "levätä",
+    "meaning": "to rest",
+    "example": "Minä lepään viikonloppuna.",
+    "exampleTranslation": "I rest on the weekend.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mennä kävelylle",
+    "meaning": "to go for a walk",
+    "example": "Menen kävelylle illalla.",
+    "exampleTranslation": "I go for a walk in the evening.",
+    "category": "expression",
+    "difficulty": "easy"
   }
 ]
 

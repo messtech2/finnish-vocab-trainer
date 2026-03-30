@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo, useEffect } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import vocabData from "./vocab.json";
 import Paragraphs from "./Paragraphs";
 import Writing from "./Writing";
@@ -705,13 +705,17 @@ const PRESETS = [{ label: "30 min", seconds: 1800 }, { label: "1 hr", seconds: 3
 
 interface TimerProps {
   dark: boolean;
-  remaining: number; setRemaining: (n: number) => void;
-  running: boolean;  setRunning:   (b: boolean) => void;
-  totalSecs: number; setTotalSecs: (n: number) => void;
+  remaining: number;
+  running: boolean;
+  totalSecs: number;
+  onStart: () => void;
+  onPause: () => void;
+  onReset: (secs?: number) => void;
+  onSetTotal: (secs: number) => void;
   onClose: () => void;
 }
 
-function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSecs, setTotalSecs, onClose }: TimerProps) {
+function ExamTimer({ dark, remaining, running, totalSecs, onStart, onPause, onReset, onSetTotal, onClose }: TimerProps) {
   const [editing,    setEditing]    = useState(false);
   const [customMins, setCustomMins] = useState("30");
 
@@ -719,12 +723,7 @@ function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSe
   const text = dark ? "#e8e8f8" : "#1a1a2e", sub = dark ? "#9898b8" : "#777";
   const cardBg = dark ? "#1e1e2e" : "#fff", border = dark ? "#383858" : "#e4e0f8";
 
-  useEffect(() => {
-    if (!running) return;
-    if (remaining <= 0) { setRunning(false); return; }
-    const id = setInterval(() => setRemaining(remaining - 1), 1000);
-    return () => clearInterval(id);
-  }, [running, remaining]);
+  // No tick here — tick lives in App using wall clock
 
   const mins = Math.floor(remaining / 60), secs = remaining % 60;
   const timeStr = `${String(mins).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
@@ -732,7 +731,7 @@ function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSe
   const isDanger = remaining <= 300, isWarn = remaining <= 600, done = remaining === 0;
   const timerColor = isDanger ? danger : isWarn ? warning : accent;
 
-  function applyPreset(s: number) { setTotalSecs(s); setRemaining(s); setRunning(false); setEditing(false); }
+  function applyPreset(s: number) { onSetTotal(s); onReset(s); setEditing(false); }
   function applyCustom() {
     const m = parseFloat(customMins);
     if (!isNaN(m) && m > 0) applyPreset(Math.round(m * 60));
@@ -778,11 +777,11 @@ function ExamTimer({ dark, remaining, setRemaining, running, setRunning, totalSe
       <div style={{ padding: "16px 20px 20px", display: "flex", flexDirection: "column", gap: 10 }}>
         {/* Start / Pause + Reset */}
         <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={() => setRunning(!running)} disabled={done}
+          <button onClick={() => running ? onPause() : onStart()} disabled={done}
             style={{ flex: 2, background: running ? (dark ? "#2a2a3e" : "#fee2e2") : accent, color: running ? danger : "#fff", border: running ? `2px solid ${danger}` : "none", borderRadius: 12, padding: "13px", fontSize: 17, fontWeight: 700, cursor: done ? "not-allowed" : "pointer", opacity: done ? 0.5 : 1, transition: "all 0.2s" }}>
             {running ? "⏸ Pause" : done ? "Done" : "▶ Start"}
           </button>
-          <button onClick={() => { setRemaining(totalSecs); setRunning(false); }}
+          <button onClick={() => onReset()}
             style={{ flex: 1, background: dark ? "#2a2a3e" : "#f0eeff", color: sub, border: "none", borderRadius: 12, padding: "13px", fontSize: 17, fontWeight: 600, cursor: "pointer" }}>
             ↺
           </button>
@@ -830,6 +829,42 @@ export default function App() {
   const [totalSecs,  setTotalSecs]  = useState(1800);
   const [remaining,  setRemaining]  = useState(1800);
   const [timerOn,    setTimerOn]    = useState(false);
+  // Wall-clock start: stores the Date.now() value when timer was last started/resumed
+  const timerStartedAt = useRef<number | null>(null);
+  const timerSnapshotRemaining = useRef<number>(1800); // remaining at the moment timer was started
+
+  // Wall-clock tick — immune to browser tab throttling
+  useEffect(() => {
+    if (!timerOn) return;
+    function tick() {
+      if (!timerStartedAt.current) return;
+      const elapsed = Math.floor((Date.now() - timerStartedAt.current) / 1000);
+      const next = Math.max(0, timerSnapshotRemaining.current - elapsed);
+      setRemaining(next);
+      if (next === 0) setTimerOn(false);
+    }
+    tick(); // fire immediately so no 1s lag when tab comes back
+    const id = setInterval(tick, 500); // 500ms polling catches up fast after tab switch
+    return () => clearInterval(id);
+  }, [timerOn]);
+
+  // Wrap setTimerOn so we record wall-clock start time
+  function startTimer() {
+    timerSnapshotRemaining.current = remaining;
+    timerStartedAt.current = Date.now();
+    setTimerOn(true);
+  }
+  function pauseTimer() {
+    timerStartedAt.current = null;
+    setTimerOn(false);
+  }
+  function resetTimer(secs?: number) {
+    const s = secs ?? totalSecs;
+    timerStartedAt.current = null;
+    timerSnapshotRemaining.current = s;
+    setRemaining(s);
+    setTimerOn(false);
+  }
 
   function toggleDark() { setDark(d => { localStorage.setItem("fi_dark", d ? "0" : "1"); return !d; }); }
 
@@ -917,9 +952,13 @@ export default function App() {
           <div style={{ position: "fixed", top: 68, right: 12, zIndex: 150, width: "min(360px, calc(100vw - 24px))", animation: "dropIn 0.18s ease" }}>
             <ExamTimer
               dark={dark}
-              remaining={remaining}  setRemaining={setRemaining}
-              running={timerOn}      setRunning={setTimerOn}
-              totalSecs={totalSecs}  setTotalSecs={setTotalSecs}
+              remaining={remaining}
+              running={timerOn}
+              totalSecs={totalSecs}
+              onStart={startTimer}
+              onPause={pauseTimer}
+              onReset={resetTimer}
+              onSetTotal={setTotalSecs}
               onClose={() => setTimerOpen(false)}
             />
           </div>
