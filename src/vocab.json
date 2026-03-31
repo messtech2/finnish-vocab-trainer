@@ -1347,6 +1347,199 @@
     "exampleTranslation": "I go for a walk in the evening.",
     "category": "expression",
     "difficulty": "easy"
+  },
+
+  {
+    "word": "muuttaa",
+    "meaning": "to move (house/location)",
+    "example": "Hän muutti uuteen asuntoon.",
+    "exampleTranslation": "He moved to a new apartment.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "asunto",
+    "meaning": "apartment",
+    "example": "Minulla on uusi asunto.",
+    "exampleTranslation": "I have a new apartment.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yksiö",
+    "meaning": "studio apartment",
+    "example": "Asuin ennen pienessä yksiössä.",
+    "exampleTranslation": "I lived in a small studio before.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kaksio",
+    "meaning": "two-room apartment",
+    "example": "Nyt asun kaksiossa.",
+    "exampleTranslation": "Now I live in a two-room apartment.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "rauhallinen",
+    "meaning": "calm, peaceful",
+    "example": "Alue on rauhallinen.",
+    "exampleTranslation": "The area is peaceful.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lähellä",
+    "meaning": "near, close to",
+    "example": "Asun lähellä kauppaa.",
+    "exampleTranslation": "I live near a shop.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rakennusala",
+    "meaning": "construction field",
+    "example": "Hän työskentelee rakennusalalla.",
+    "exampleTranslation": "He works in the construction field.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "herätä",
+    "meaning": "to wake up",
+    "example": "Herään aikaisin aamulla.",
+    "exampleTranslation": "I wake up early in the morning.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yrittää",
+    "meaning": "to try",
+    "example": "Yritän oppia suomea.",
+    "exampleTranslation": "I try to learn Finnish.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "liikkua",
+    "meaning": "to exercise / move",
+    "example": "Liikun viikonloppuisin.",
+    "exampleTranslation": "I exercise on weekends.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "miettiä",
+    "meaning": "to think, consider",
+    "example": "Hän miettii tulevaisuutta.",
+    "exampleTranslation": "He is thinking about the future.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "päättää",
+    "meaning": "to decide",
+    "example": "En ole vielä päättänyt.",
+    "exampleTranslation": "I have not decided yet.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kiinnostunut",
+    "meaning": "interested",
+    "example": "Olen kiinnostunut tekniikasta.",
+    "exampleTranslation": "I am interested in technology.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lisäkoulutus",
+    "meaning": "further education",
+    "example": "Lisäkoulutus auttaa työssä.",
+    "exampleTranslation": "Further education helps at work.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "jaksaa",
+    "meaning": "to have energy, cope",
+    "example": "Liikunta auttaa jaksamaan.",
+    "exampleTranslation": "Exercise helps to cope.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "toimistossa",
+    "meaning": "in the office",
+    "example": "Hän työskentelee toimistossa.",
+    "exampleTranslation": "She works in an office.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "suurin osa",
+    "meaning": "most of",
+    "example": "Istun suurimman osan päivästä.",
+    "exampleTranslation": "I sit most of the day.",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vapaa-aika",
+    "meaning": "free time",
+    "example": "Liikun vapaa-ajalla.",
+    "exampleTranslation": "I exercise in my free time.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ruokailutottumukset",
+    "meaning": "eating habits",
+    "example": "Hän muutti ruokailutottumuksiaan.",
+    "exampleTranslation": "She changed her eating habits.",
+    "category": "noun",
+    "difficulty": "hard"
+  },
+  {
+    "word": "terveellisemmin",
+    "meaning": "more healthily",
+    "example": "Syön nyt terveellisemmin.",
+    "exampleTranslation": "I eat more healthily now.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "osallistua",
+    "meaning": "to participate",
+    "example": "Osallistuin tapahtumaan.",
+    "exampleTranslation": "I participated in an event.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tapahtuma",
+    "meaning": "event",
+    "example": "Se oli suuri tapahtuma.",
+    "exampleTranslation": "It was a big event.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "suoritus",
+    "meaning": "performance",
+    "example": "Olin tyytyväinen suoritukseeni.",
+    "exampleTranslation": "I was satisfied with my performance.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tyytyväinen",
+    "meaning": "satisfied",
+    "example": "Olen tyytyväinen tulokseen.",
+    "exampleTranslation": "I am satisfied with the result.",
+    "category": "adjective",
+    "difficulty": "easy"
   }
 ]
 
