@@ -1540,6 +1540,254 @@
     "exampleTranslation": "I am satisfied with the result.",
     "category": "adjective",
     "difficulty": "easy"
+  },
+   {
+    "word": "työntekijä",
+    "meaning": "employee",
+    "example": "Työntekijät ovat usein kiireisiä.",
+    "exampleTranslation": "Employees are often busy.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kiire",
+    "meaning": "rush, busyness",
+    "example": "Minulla on paljon kiirettä.",
+    "exampleTranslation": "I am very busy.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kokea",
+    "meaning": "to experience, to feel",
+    "example": "Hän kokee stressiä työssä.",
+    "exampleTranslation": "She experiences stress at work.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "stressi",
+    "meaning": "stress",
+    "example": "Stressi vaikuttaa jaksamiseen.",
+    "exampleTranslation": "Stress affects coping.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ylityö",
+    "meaning": "overtime",
+    "example": "Hän tekee paljon ylitöitä.",
+    "exampleTranslation": "He does a lot of overtime.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tarpeeksi",
+    "meaning": "enough",
+    "example": "En nuku tarpeeksi.",
+    "exampleTranslation": "I do not sleep enough.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "keskittyminen",
+    "meaning": "concentration",
+    "example": "Keskittyminen on vaikeaa.",
+    "exampleTranslation": "Concentration is difficult.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hyvinvointi",
+    "meaning": "well-being",
+    "example": "Hyvinvointi on tärkeää.",
+    "exampleTranslation": "Well-being is important.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "esimies",
+    "meaning": "supervisor, boss",
+    "example": "Esimies auttaa työntekijöitä.",
+    "exampleTranslation": "The supervisor helps employees.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ehdottaa",
+    "meaning": "to suggest",
+    "example": "Esimies ehdottaa muutosta.",
+    "exampleTranslation": "The supervisor suggests a change.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tauko",
+    "meaning": "break",
+    "example": "Pidän tauon työssä.",
+    "exampleTranslation": "I take a break at work.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lyhyempi",
+    "meaning": "shorter",
+    "example": "Haluan lyhyemmän työpäivän.",
+    "exampleTranslation": "I want a shorter workday.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tilanne",
+    "meaning": "situation",
+    "example": "Tilanne on parantunut.",
+    "exampleTranslation": "The situation has improved.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "projekti",
+    "meaning": "project",
+    "example": "Koulussa on uusi projekti.",
+    "exampleTranslation": "There is a new project at school.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ryhmä",
+    "meaning": "group",
+    "example": "Työskentelemme ryhmässä.",
+    "exampleTranslation": "We work in a group.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tavoite",
+    "meaning": "goal",
+    "example": "Tavoite on oppia enemmän.",
+    "exampleTranslation": "The goal is to learn more.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yhteistyötaidot",
+    "meaning": "cooperation skills",
+    "example": "Yhteistyötaidot ovat tärkeitä.",
+    "exampleTranslation": "Cooperation skills are important.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "oppilas",
+    "meaning": "student (school)",
+    "example": "Oppilaat tekevät tehtäviä.",
+    "exampleTranslation": "Students do tasks.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "osallistua",
+    "meaning": "to take part",
+    "example": "Haluan osallistua projektiin.",
+    "exampleTranslation": "I want to participate in the project.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "sopia",
+    "meaning": "to agree",
+    "example": "On vaikea sopia asioista.",
+    "exampleTranslation": "It is hard to agree on things.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vastuu",
+    "meaning": "responsibility",
+    "example": "Minulla on paljon vastuuta.",
+    "exampleTranslation": "I have a lot of responsibility.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "onnistunut",
+    "meaning": "successful",
+    "example": "Projekti oli onnistunut.",
+    "exampleTranslation": "The project was successful.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "jatkaa",
+    "meaning": "to continue",
+    "example": "Haluan jatkaa opiskelua.",
+    "exampleTranslation": "I want to continue studying.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "osa-aikaisesti",
+    "meaning": "part-time",
+    "example": "Työskentelen osa-aikaisesti.",
+    "exampleTranslation": "I work part-time.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "yhdistää",
+    "meaning": "to combine",
+    "example": "Yhdistän työn ja perheen.",
+    "exampleTranslation": "I combine work and family.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "perhe-elämä",
+    "meaning": "family life",
+    "example": "Perhe-elämä on tärkeää.",
+    "exampleTranslation": "Family life is important.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "läksyt",
+    "meaning": "homework",
+    "example": "Lapset tekevät läksyjä.",
+    "exampleTranslation": "Children do homework.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kotityöt",
+    "meaning": "housework",
+    "example": "Kotityöt vievät aikaa.",
+    "exampleTranslation": "Housework takes time.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ratkaisu",
+    "meaning": "solution",
+    "example": "Tarvitsen ratkaisun.",
+    "exampleTranslation": "I need a solution.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "joustava",
+    "meaning": "flexible",
+    "example": "Työajat ovat joustavat.",
+    "exampleTranslation": "Working hours are flexible.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "työvuoro",
+    "meaning": "work shift",
+    "example": "Minulla on iltavuoro.",
+    "exampleTranslation": "I have an evening shift.",
+    "category": "noun",
+    "difficulty": "medium"
   }
 ]
 
