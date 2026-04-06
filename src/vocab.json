@@ -1788,7 +1788,110 @@
     "exampleTranslation": "I have an evening shift.",
     "category": "noun",
     "difficulty": "medium"
-  }
+  },
+  { "word": "rikas", "meaning": "rich", "type": "adjective" },
+  { "word": "köyhä", "meaning": "poor", "type": "adjective" },
+  { "word": "varakas", "meaning": "wealthy", "type": "adjective" },
+  { "word": "varaton", "meaning": "without money", "type": "adjective" },
+
+  { "word": "miellyttävä", "meaning": "pleasant", "type": "adjective" },
+  { "word": "epämiellyttävä", "meaning": "unpleasant", "type": "adjective" },
+
+  { "word": "kevyt", "meaning": "light (not heavy)", "type": "adjective" },
+  { "word": "painava", "meaning": "heavy", "type": "adjective" },
+
+  { "word": "ystävällinen", "meaning": "friendly", "type": "adjective" },
+  { "word": "epäystävällinen", "meaning": "unfriendly", "type": "adjective" },
+
+  { "word": "ahkera", "meaning": "hardworking", "type": "adjective" },
+  { "word": "laiska", "meaning": "lazy", "type": "adjective" },
+
+  { "word": "myönteinen", "meaning": "positive", "type": "adjective" },
+  { "word": "kielteinen", "meaning": "negative", "type": "adjective" },
+
+  { "word": "antelias", "meaning": "generous", "type": "adjective" },
+  { "word": "saita", "meaning": "stingy", "type": "adjective" },
+  { "word": "pihi", "meaning": "stingy (informal)", "type": "adjective" },
+
+  { "word": "ylpeä", "meaning": "proud", "type": "adjective" },
+  { "word": "nöyrä", "meaning": "humble", "type": "adjective" },
+
+  { "word": "iloinen", "meaning": "happy", "type": "adjective" },
+  { "word": "surullinen", "meaning": "sad", "type": "adjective" },
+
+  { "word": "hauska", "meaning": "funny", "type": "adjective" },
+  { "word": "tylsä", "meaning": "boring", "type": "adjective" },
+
+  { "word": "terve", "meaning": "healthy", "type": "adjective" },
+  { "word": "sairas", "meaning": "sick", "type": "adjective" },
+
+  { "word": "korkea", "meaning": "high/tall", "type": "adjective" },
+  { "word": "matala", "meaning": "low", "type": "adjective" },
+
+  { "word": "lihava", "meaning": "fat", "type": "adjective" },
+  { "word": "laiha", "meaning": "thin", "type": "adjective" },
+
+  { "word": "luotettava", "meaning": "reliable", "type": "adjective" },
+  { "word": "epäluotettava", "meaning": "unreliable", "type": "adjective" },
+
+  { "word": "kuuma", "meaning": "hot", "type": "adjective" },
+  { "word": "kylmä", "meaning": "cold", "type": "adjective" },
+
+  { "word": "märkä", "meaning": "wet", "type": "adjective" },
+  { "word": "kuiva", "meaning": "dry", "type": "adjective" },
+
+  { "word": "valoisa", "meaning": "bright", "type": "adjective" },
+  { "word": "pimeä", "meaning": "dark", "type": "adjective" },
+
+  { "word": "puhdas", "meaning": "clean", "type": "adjective" },
+  { "word": "likainen", "meaning": "dirty", "type": "adjective" },
+
+  { "word": "pehmeä", "meaning": "soft", "type": "adjective" },
+  { "word": "kova", "meaning": "hard", "type": "adjective" },
+
+  { "word": "nuori", "meaning": "young", "type": "adjective" },
+  { "word": "vanha", "meaning": "old", "type": "adjective" },
+
+  { "word": "nopea", "meaning": "fast", "type": "adjective" },
+  { "word": "hidas", "meaning": "slow", "type": "adjective" },
+
+  { "word": "hiljainen", "meaning": "quiet", "type": "adjective" },
+  { "word": "kookas", "meaning": "large-sized", "type": "adjective" },
+  { "word": "pikkuruinen", "meaning": "tiny", "type": "adjective" },
+
+  { "word": "mukava", "meaning": "nice/comfortable", "type": "adjective" },
+  { "word": "lumoava", "meaning": "charming", "type": "adjective" },
+  { "word": "seesteinen", "meaning": "calm/peaceful", "type": "adjective" },
+
+  { "word": "hermostunut", "meaning": "nervous", "type": "adjective" },
+
+  { "word": "tukeva", "meaning": "sturdy", "type": "adjective" },
+  { "word": "hutera", "meaning": "unstable", "type": "adjective" },
+
+  { "word": "vino", "meaning": "crooked", "type": "adjective" },
+  { "word": "kulmikas", "meaning": "angular", "type": "adjective" },
+
+  { "word": "taitamaton", "meaning": "unskilled", "type": "adjective" },
+  { "word": "viisas", "meaning": "wise", "type": "adjective" },
+
+  { "word": "ilo", "meaning": "joy", "type": "noun" },
+  { "word": "suru", "meaning": "sadness", "type": "noun" },
+  { "word": "pelko", "meaning": "fear", "type": "noun" },
+  { "word": "viha", "meaning": "anger", "type": "noun" },
+  { "word": "inho", "meaning": "disgust", "type": "noun" },
+  { "word": "hämmästys", "meaning": "surprise", "type": "noun" },
+
+  { "word": "tunteet", "meaning": "emotions", "type": "noun" },
+  { "word": "häpeä", "meaning": "shame", "type": "noun" },
+  { "word": "syyllisyys", "meaning": "guilt", "type": "noun" },
+  { "word": "nolous", "meaning": "embarrassment", "type": "noun" },
+
+  { "word": "pukeutuminen", "meaning": "dressing/clothing", "type": "noun" },
+  { "word": "pipo", "meaning": "beanie", "type": "noun" },
+  { "word": "hanskat", "meaning": "gloves", "type": "noun" },
+  { "word": "kaulahuivi", "meaning": "scarf", "type": "noun" },
+
+  { "word": "laittaa", "meaning": "to put", "type": "verb" }
 ]
 
 

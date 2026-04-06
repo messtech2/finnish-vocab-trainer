@@ -1,6 +1,7 @@
 [
   {
     "id": "job_interview",
+    "mode": "interactive",
     "title": "Työhaastattelu",
     "category": "work",
     "difficulty": "B1",
@@ -9,103 +10,98 @@
     "description": "Practise a Finnish job interview from start to finish.",
     "dialogue": [
       { "speaker": "Haastattelija", "line": "Hyvää huomenta. Istukaa, olkaa hyvä.", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Good morning and thank you (Hyvää huomenta, kiitos.)" },
+      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Hyvää huomenta, kiitos." },
       { "speaker": "Haastattelija", "line": "Esitelkää itsenne lyhyesti.", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Say your name, background and why you're here." },
+      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Kerro nimesi ja taustasi." },
       { "speaker": "Haastattelija", "line": "Miksi haluatte työskennellä meillä?", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Explain your motivation. Use: koska, lisäksi, joten." },
-      { "speaker": "Haastattelija", "line": "Millainen kokemus teillä on alalta?", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Describe your experience. Use: Minulla on kokemusta..." },
-      { "speaker": "Haastattelija", "line": "Mitkä ovat vahvuutenne?", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Name 2–3 strengths. Use: Olen hyvä... / Osaan..." },
-      { "speaker": "Haastattelija", "line": "Onko teillä kysyttävää?", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Ask something: Milloin työ alkaa? / Millainen tiimi...?" },
-      { "speaker": "Haastattelija", "line": "Kiitos haastattelusta. Otamme teihin yhteyttä.", "type": "fixed" },
-      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Thank them and say goodbye." }
+      { "speaker": "Hakija", "line": "", "type": "user_input", "hint": "Käytä: koska, lisäksi, joten." }
     ]
   },
-  {
-    "id": "omnia_enrollment",
-    "title": "Omnia-ilmoittautuminen",
-    "category": "education",
-    "difficulty": "B1",
-    "userRole": "Opiskelija",
-    "otherRole": "Toimihenkilö",
-    "description": "Enrol in a course at Omnia adult education centre.",
-    "dialogue": [
-      { "speaker": "Toimihenkilö", "line": "Hei, kuinka voin auttaa?", "type": "fixed" },
-      { "speaker": "Opiskelija", "line": "", "type": "user_input", "hint": "Say you want to enrol in a Finnish course. (Haluaisin ilmoittautua...)" },
-      { "speaker": "Toimihenkilö", "line": "Mikä on nykyinen suomen kielen tasonne?", "type": "fixed" },
-      { "speaker": "Opiskelija", "line": "", "type": "user_input", "hint": "Describe your level: Puhun suomea hieman / Olen A2-tasolla." },
-      { "speaker": "Toimihenkilö", "line": "Milloin pystytte osallistumaan? Aamulla vai illalla?", "type": "fixed" },
-      { "speaker": "Opiskelija", "line": "", "type": "user_input", "hint": "Say when you're available. (Pystyn tulemaan illalla, koska...)" },
-      { "speaker": "Toimihenkilö", "line": "Hyvä. Tarvitsemme henkilötietonne. Mikä on nimenne?", "type": "fixed" },
-      { "speaker": "Opiskelija", "line": "", "type": "user_input", "hint": "Give your name. (Nimeni on...)" },
-      { "speaker": "Toimihenkilö", "line": "Kiitos. Lähetämme vahvistuksen sähköpostiin.", "type": "fixed" },
-      { "speaker": "Opiskelija", "line": "", "type": "user_input", "hint": "Thank them and confirm. (Kiitos paljon! Odotankin...)"}
-    ]
-  },
+
   {
     "id": "daily_routine",
+    "mode": "interactive",
     "title": "Arjen rutiinit",
     "category": "daily_life",
     "difficulty": "A2",
     "userRole": "Mesfin",
     "otherRole": "Naapuri",
-    "description": "Small talk with your neighbour about your daily life.",
+    "description": "Small talk practice.",
     "dialogue": [
       { "speaker": "Naapuri", "line": "Hei! Miten menee?", "type": "fixed" },
-      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Greet back and say how you are. (Hei! Ihan hyvin, kiitos.)" },
-      { "speaker": "Naapuri", "line": "Mitä sinulle kuuluu tänään?", "type": "fixed" },
-      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Say what you're doing today. (Tänään minä...)" },
-      { "speaker": "Naapuri", "line": "Opiskeletko vielä suomea?", "type": "fixed" },
-      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Answer yes and explain why it matters to you." },
-      { "speaker": "Naapuri", "line": "Hienoa! Suomi on kyllä vaikea kieli.", "type": "fixed" },
-      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Agree but say you don't give up. (Kyllä, mutta en luovuta...)" },
-      { "speaker": "Naapuri", "line": "No onnea matkaan! Nähdään.", "type": "fixed" },
-      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Say goodbye warmly. (Kiitos! Nähdään.)" }
+      { "speaker": "Mesfin", "line": "", "type": "user_input", "hint": "Hei! Ihan hyvin, kiitos." }
     ]
   },
+
   {
-    "id": "doctor_appointment",
-    "title": "Lääkärikäynti",
+    "id": "job_interview_full",
+    "mode": "full_dialogue",
+    "title": "Työhaastattelu (Full)",
+    "category": "work",
+    "difficulty": "B1",
+    "dialogue": [
+      { "speaker": "Haastattelija", "line": "Hyvää huomenta." },
+      { "speaker": "Kalle", "line": "Hyvää huomenta." },
+      { "speaker": "Haastattelija", "line": "Tulkaa sisään." },
+      { "speaker": "Kalle", "line": "Kiitos paljon." },
+      { "speaker": "Haastattelija", "line": "Olkaa hyvä ja istukaa." },
+      { "speaker": "Kalle", "line": "Kiitos." },
+      { "speaker": "Haastattelija", "line": "Haluatteko kahvia tai vettä?" },
+      { "speaker": "Kalle", "line": "Kyllä, mielelläni vettä." },
+      { "speaker": "Haastattelija", "line": "Esitelkää itsenne lyhyesti." },
+      { "speaker": "Kalle", "line": "Minun nimeni on Kalle ja olen 29." },
+      { "speaker": "Haastattelija", "line": "Mitä olette opiskelleet?" },
+      { "speaker": "Kalle", "line": "Olen opiskellut taloustiedettä." },
+      { "speaker": "Haastattelija", "line": "Milloin valmistuitte?" },
+      { "speaker": "Kalle", "line": "Kolme vuotta sitten." },
+      { "speaker": "Haastattelija", "line": "Mitä teette nyt?" },
+      { "speaker": "Kalle", "line": "Työskentelen markkinoinnissa." }
+    ]
+  },
+
+  {
+    "id": "weekend_morning",
+    "mode": "full_dialogue",
+    "title": "Viikonlopun aamurutiini",
+    "category": "daily_life",
+    "difficulty": "A2",
+    "dialogue": [
+      { "speaker": "Mikko", "line": "Huomenta." },
+      { "speaker": "Sari", "line": "Huomenta. Olet tänään aikaisin hereillä." },
+      { "speaker": "Mikko", "line": "Niin, en voinut enää nukkua." },
+      { "speaker": "Sari", "line": "Miksi?" },
+      { "speaker": "Mikko", "line": "Aurinko paistoi tosi kirkkaasti." },
+      { "speaker": "Sari", "line": "Haluatko kahvia?" },
+      { "speaker": "Mikko", "line": "Kyllä kiitos." }
+    ]
+  },
+
+  {
+    "id": "taxi",
+    "mode": "full_dialogue",
+    "title": "Taksissa asemalle",
+    "category": "travel",
+    "difficulty": "A2",
+    "dialogue": [
+      { "speaker": "Kuljettaja", "line": "Hyvää päivää." },
+      { "speaker": "Matkustaja", "line": "Hyvää päivää. Oletteko vapaa?" },
+      { "speaker": "Kuljettaja", "line": "Kyllä, nouskaa sisään." },
+      { "speaker": "Matkustaja", "line": "Rautatieasemalle kiitos." },
+      { "speaker": "Kuljettaja", "line": "Selvä." }
+    ]
+  },
+
+  {
+    "id": "doctor",
+    "mode": "full_dialogue",
+    "title": "Lääkärissä",
     "category": "health",
     "difficulty": "B1",
-    "userRole": "Potilas",
-    "otherRole": "Lääkäri",
-    "description": "Describe your symptoms and understand doctor's advice.",
     "dialogue": [
-      { "speaker": "Lääkäri", "line": "Hyvää päivää. Mikä teitä vaivaa?", "type": "fixed" },
-      { "speaker": "Potilas", "line": "", "type": "user_input", "hint": "Describe your symptom. (Minulla on... / Tuntuu kuin...)" },
-      { "speaker": "Lääkäri", "line": "Kuinka kauan teillä on ollut näitä oireita?", "type": "fixed" },
-      { "speaker": "Potilas", "line": "", "type": "user_input", "hint": "Say how long: Noin kaksi päivää / Viikon ajan..." },
-      { "speaker": "Lääkäri", "line": "Onko teillä kuumetta?", "type": "fixed" },
-      { "speaker": "Potilas", "line": "", "type": "user_input", "hint": "Answer yes or no with detail. (Kyllä, noin 38 astetta.)" },
-      { "speaker": "Lääkäri", "line": "Kirjoitan teille reseptin. Levätkää ja juokaa paljon vettä.", "type": "fixed" },
-      { "speaker": "Potilas", "line": "", "type": "user_input", "hint": "Thank the doctor and confirm you understood." }
-    ]
-  },
-  {
-    "id": "yki_speaking",
-    "title": "YKI-puhetilanne",
-    "category": "exam",
-    "difficulty": "B1",
-    "userRole": "Kokeljas",
-    "otherRole": "Tutkija",
-    "description": "Simulate a YKI oral exam speaking task.",
-    "dialogue": [
-      { "speaker": "Tutkija", "line": "Hei, aloitetaan. Kerro ensin hieman itsestäsi.", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Introduce yourself fully: name, background, how long in Finland." },
-      { "speaker": "Tutkija", "line": "Mitä teet vapaa-ajalla?", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Describe 2–3 hobbies. Use connectors: lisäksi, myös, ja." },
-      { "speaker": "Tutkija", "line": "Mikä on mielestäsi tärkeintä suomen kielen oppimisessa?", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Give your opinion. Use: Mielestäni... / Uskon, että... / koska." },
-      { "speaker": "Tutkija", "line": "Millaisia suunnitelmia sinulla on tulevaisuudessa?", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Talk about future plans. Use: Haluan... / Toivon, että... / joten." },
-      { "speaker": "Tutkija", "line": "Kiitos. Se oli hyvä. Meillä on vielä yksi tehtävä.", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Respond positively. (Hyvä, olen valmis.)" },
-      { "speaker": "Tutkija", "line": "Kuvittele, että olet kaupassa ja kassalla on ongelma. Mitä sanot?", "type": "fixed" },
-      { "speaker": "Kokeljas", "line": "", "type": "user_input", "hint": "Handle the situation naturally. (Anteeksi, luulen että...)" }
+      { "speaker": "Lääkäri", "line": "Mikä on vaivasi?" },
+      { "speaker": "Cecilia", "line": "Minulla on vatsakipu ja vähän kuumetta." },
+      { "speaker": "Lääkäri", "line": "Sinun pitää levätä ja juoda paljon." },
+      { "speaker": "Cecilia", "line": "Selvä, kiitos." }
     ]
   }
 ]
