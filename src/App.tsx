@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import vocabData from "./vocab.json";
 import Paragraphs from "./Paragraphs";
 import Writing from "./Writing";
+import Speaking from "./Speaking";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Word {
@@ -52,6 +53,7 @@ function DiffBadge({ d }: { d: string }) {
 const IconBook  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>;
 const IconCards = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>;
 const IconQuiz  = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>;
+const IconSpeak     = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>;
 const IconWrite     = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>;
 const IconParagraph = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>;
 const IconStar   = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>;
@@ -821,7 +823,7 @@ function ExamTimer({ dark, remaining, running, totalSecs, onStart, onPause, onRe
 // APP SHELL
 // ════════════════════════════════════════════════════════════════════════════
 export default function App() {
-  const [tab, setTab] = useState<"daily" | "list" | "flash" | "quiz" | "para" | "write">("daily");
+  const [tab, setTab] = useState<"daily" | "list" | "flash" | "quiz" | "para" | "write" | "speak">("daily");
   const [dark,       setDark]       = useState(() => { try { return localStorage.getItem("fi_dark") === "1"; } catch { return false; } });
   const [progress,   setProgress]   = useState<Progress>(loadProgress);
   // Timer state lifted here so header chip stays live even when panel is closed
@@ -888,6 +890,7 @@ export default function App() {
     { id: "quiz"  as const, label: "Quiz",   icon: <IconQuiz      /> },
     { id: "para"  as const, label: "Texts",  icon: <IconParagraph /> },
     { id: "write" as const, label: "Write",  icon: <IconWrite     /> },
+    { id: "speak" as const, label: "Speak",  icon: <IconSpeak     /> },
   ];
 
   return (
@@ -984,6 +987,7 @@ export default function App() {
             {tab === "quiz"  && "Quiz Mode"}
             {tab === "para"  && "Paragraph Practice"}
             {tab === "write" && "Writing Practice"}
+            {tab === "speak" && "Speaking Practice"}
           </h1>
           <p style={{ fontSize: 15, color: sub, lineHeight: 1.5 }}>
             {tab === "daily" && "10 words picked for you based on what you need most."}
@@ -992,6 +996,7 @@ export default function App() {
             {tab === "quiz"  && "Adaptive — missed words appear more until you master them."}
             {tab === "para"  && "Read, fill blanks & rebuild sentences. YKI / Omnia exam prep."}
             {tab === "write" && "Write Finnish from scratch. Exam simulation + connector feedback."}
+            {tab === "speak" && "Practice real Finnish conversations. Job interview, YKI, daily life."}
           </p>
         </div>
         {tab === "daily" && <DailySet   progress={progress} setProgress={setProgress} dark={dark} />}
@@ -1000,6 +1005,7 @@ export default function App() {
         {tab === "quiz"  && <Quiz       progress={progress} setProgress={setProgress} dark={dark} />}
         {tab === "para"  && <Paragraphs dark={dark} />}
         {tab === "write" && <Writing    dark={dark} />}
+        {tab === "speak" && <Speaking   dark={dark} />}
       </main>
 
       {/* ── Bottom nav ── */}
