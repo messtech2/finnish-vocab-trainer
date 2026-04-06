@@ -1789,109 +1789,239 @@
     "category": "noun",
     "difficulty": "medium"
   },
-  { "word": "rikas", "meaning": "rich", "type": "adjective" },
-  { "word": "köyhä", "meaning": "poor", "type": "adjective" },
-  { "word": "varakas", "meaning": "wealthy", "type": "adjective" },
-  { "word": "varaton", "meaning": "without money", "type": "adjective" },
-
-  { "word": "miellyttävä", "meaning": "pleasant", "type": "adjective" },
-  { "word": "epämiellyttävä", "meaning": "unpleasant", "type": "adjective" },
-
-  { "word": "kevyt", "meaning": "light (not heavy)", "type": "adjective" },
-  { "word": "painava", "meaning": "heavy", "type": "adjective" },
-
-  { "word": "ystävällinen", "meaning": "friendly", "type": "adjective" },
-  { "word": "epäystävällinen", "meaning": "unfriendly", "type": "adjective" },
-
-  { "word": "ahkera", "meaning": "hardworking", "type": "adjective" },
-  { "word": "laiska", "meaning": "lazy", "type": "adjective" },
-
-  { "word": "myönteinen", "meaning": "positive", "type": "adjective" },
-  { "word": "kielteinen", "meaning": "negative", "type": "adjective" },
-
-  { "word": "antelias", "meaning": "generous", "type": "adjective" },
-  { "word": "saita", "meaning": "stingy", "type": "adjective" },
-  { "word": "pihi", "meaning": "stingy (informal)", "type": "adjective" },
-
-  { "word": "ylpeä", "meaning": "proud", "type": "adjective" },
-  { "word": "nöyrä", "meaning": "humble", "type": "adjective" },
-
-  { "word": "iloinen", "meaning": "happy", "type": "adjective" },
-  { "word": "surullinen", "meaning": "sad", "type": "adjective" },
-
-  { "word": "hauska", "meaning": "funny", "type": "adjective" },
-  { "word": "tylsä", "meaning": "boring", "type": "adjective" },
-
-  { "word": "terve", "meaning": "healthy", "type": "adjective" },
-  { "word": "sairas", "meaning": "sick", "type": "adjective" },
-
-  { "word": "korkea", "meaning": "high/tall", "type": "adjective" },
-  { "word": "matala", "meaning": "low", "type": "adjective" },
-
-  { "word": "lihava", "meaning": "fat", "type": "adjective" },
-  { "word": "laiha", "meaning": "thin", "type": "adjective" },
-
-  { "word": "luotettava", "meaning": "reliable", "type": "adjective" },
-  { "word": "epäluotettava", "meaning": "unreliable", "type": "adjective" },
-
-  { "word": "kuuma", "meaning": "hot", "type": "adjective" },
-  { "word": "kylmä", "meaning": "cold", "type": "adjective" },
-
-  { "word": "märkä", "meaning": "wet", "type": "adjective" },
-  { "word": "kuiva", "meaning": "dry", "type": "adjective" },
-
-  { "word": "valoisa", "meaning": "bright", "type": "adjective" },
-  { "word": "pimeä", "meaning": "dark", "type": "adjective" },
-
-  { "word": "puhdas", "meaning": "clean", "type": "adjective" },
-  { "word": "likainen", "meaning": "dirty", "type": "adjective" },
-
-  { "word": "pehmeä", "meaning": "soft", "type": "adjective" },
-  { "word": "kova", "meaning": "hard", "type": "adjective" },
-
-  { "word": "nuori", "meaning": "young", "type": "adjective" },
-  { "word": "vanha", "meaning": "old", "type": "adjective" },
-
-  { "word": "nopea", "meaning": "fast", "type": "adjective" },
-  { "word": "hidas", "meaning": "slow", "type": "adjective" },
-
-  { "word": "hiljainen", "meaning": "quiet", "type": "adjective" },
-  { "word": "kookas", "meaning": "large-sized", "type": "adjective" },
-  { "word": "pikkuruinen", "meaning": "tiny", "type": "adjective" },
-
-  { "word": "mukava", "meaning": "nice/comfortable", "type": "adjective" },
-  { "word": "lumoava", "meaning": "charming", "type": "adjective" },
-  { "word": "seesteinen", "meaning": "calm/peaceful", "type": "adjective" },
-
-  { "word": "hermostunut", "meaning": "nervous", "type": "adjective" },
-
-  { "word": "tukeva", "meaning": "sturdy", "type": "adjective" },
-  { "word": "hutera", "meaning": "unstable", "type": "adjective" },
-
-  { "word": "vino", "meaning": "crooked", "type": "adjective" },
-  { "word": "kulmikas", "meaning": "angular", "type": "adjective" },
-
-  { "word": "taitamaton", "meaning": "unskilled", "type": "adjective" },
-  { "word": "viisas", "meaning": "wise", "type": "adjective" },
-
-  { "word": "ilo", "meaning": "joy", "type": "noun" },
-  { "word": "suru", "meaning": "sadness", "type": "noun" },
-  { "word": "pelko", "meaning": "fear", "type": "noun" },
-  { "word": "viha", "meaning": "anger", "type": "noun" },
-  { "word": "inho", "meaning": "disgust", "type": "noun" },
-  { "word": "hämmästys", "meaning": "surprise", "type": "noun" },
-
-  { "word": "tunteet", "meaning": "emotions", "type": "noun" },
-  { "word": "häpeä", "meaning": "shame", "type": "noun" },
-  { "word": "syyllisyys", "meaning": "guilt", "type": "noun" },
-  { "word": "nolous", "meaning": "embarrassment", "type": "noun" },
-
-  { "word": "pukeutuminen", "meaning": "dressing/clothing", "type": "noun" },
-  { "word": "pipo", "meaning": "beanie", "type": "noun" },
-  { "word": "hanskat", "meaning": "gloves", "type": "noun" },
-  { "word": "kaulahuivi", "meaning": "scarf", "type": "noun" },
-
-  { "word": "laittaa", "meaning": "to put", "type": "verb" }
+  {
+    "word": "rikas",
+    "meaning": "rich",
+    "example": "Hän on rikas mies.",
+    "exampleTranslation": "He is a rich man.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "köyhä",
+    "meaning": "poor",
+    "example": "Hän elää köyhässä perheessä.",
+    "exampleTranslation": "He lives in a poor family.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ystävällinen",
+    "meaning": "friendly",
+    "example": "Opettaja on todella ystävällinen.",
+    "exampleTranslation": "The teacher is very friendly.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "epäystävällinen",
+    "meaning": "unfriendly",
+    "example": "Myyjä oli epäystävällinen.",
+    "exampleTranslation": "The seller was unfriendly.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ahkera",
+    "meaning": "hardworking",
+    "example": "Hän on ahkera opiskelija.",
+    "exampleTranslation": "He is a hardworking student.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "laiska",
+    "meaning": "lazy",
+    "example": "Joskus olen laiska viikonloppuna.",
+    "exampleTranslation": "Sometimes I am lazy on weekends.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "iloinen",
+    "meaning": "happy",
+    "example": "Olen iloinen tänään.",
+    "exampleTranslation": "I am happy today.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "surullinen",
+    "meaning": "sad",
+    "example": "Hän näyttää surulliselta.",
+    "exampleTranslation": "He looks sad.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "nopea",
+    "meaning": "fast",
+    "example": "Tämä juna on erittäin nopea.",
+    "exampleTranslation": "This train is very fast.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hidas",
+    "meaning": "slow",
+    "example": "Internet on tänään hidas.",
+    "exampleTranslation": "The internet is slow today.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kylmä",
+    "meaning": "cold",
+    "example": "Ulkona on todella kylmä.",
+    "exampleTranslation": "It is really cold outside.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kuuma",
+    "meaning": "hot",
+    "example": "Kesällä Suomessa voi olla kuuma.",
+    "exampleTranslation": "In summer it can be hot in Finland.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "puhdas",
+    "meaning": "clean",
+    "example": "Huone on puhdas.",
+    "exampleTranslation": "The room is clean.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "likainen",
+    "meaning": "dirty",
+    "example": "Auto on likainen.",
+    "exampleTranslation": "The car is dirty.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "nuori",
+    "meaning": "young",
+    "example": "Hän on vielä nuori.",
+    "exampleTranslation": "He is still young.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vanha",
+    "meaning": "old",
+    "example": "Tämä talo on hyvin vanha.",
+    "exampleTranslation": "This house is very old.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "luotettava",
+    "meaning": "reliable",
+    "example": "Hän on luotettava työntekijä.",
+    "exampleTranslation": "He is a reliable worker.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "epäluotettava",
+    "meaning": "unreliable",
+    "example": "Palvelu oli epäluotettava.",
+    "exampleTranslation": "The service was unreliable.",
+    "category": "adjective",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tunteet",
+    "meaning": "emotions",
+    "example": "On tärkeää ymmärtää omat tunteet.",
+    "exampleTranslation": "It is important to understand your emotions.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ilo",
+    "meaning": "joy",
+    "example": "Hän tuntee suurta iloa.",
+    "exampleTranslation": "He feels great joy.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "suru",
+    "meaning": "sadness",
+    "example": "Suru voi kestää pitkään.",
+    "exampleTranslation": "Sadness can last long.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pelko",
+    "meaning": "fear",
+    "example": "Pelko voi estää ihmistä toimimasta.",
+    "exampleTranslation": "Fear can prevent a person from acting.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "viha",
+    "meaning": "anger",
+    "example": "Viha ei ratkaise ongelmia.",
+    "exampleTranslation": "Anger does not solve problems.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "häpeä",
+    "meaning": "shame",
+    "example": "Hän tunsi häpeää virheestään.",
+    "exampleTranslation": "He felt shame about his mistake.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pukeutuminen",
+    "meaning": "clothing/dressing",
+    "example": "Suomessa pukeutuminen riippuu säästä.",
+    "exampleTranslation": "In Finland clothing depends on the weather.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pipo",
+    "meaning": "beanie",
+    "example": "Talvella käytän pipoa.",
+    "exampleTranslation": "In winter I wear a beanie.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hanskat",
+    "meaning": "gloves",
+    "example": "Tarvitsen hanskat, koska on kylmä.",
+    "exampleTranslation": "I need gloves because it's cold.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kaulahuivi",
+    "meaning": "scarf",
+    "example": "Kaulahuivi pitää minut lämpimänä.",
+    "exampleTranslation": "A scarf keeps me warm.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "laittaa",
+    "meaning": "to put",
+    "example": "Laitan kirjan pöydälle.",
+    "exampleTranslation": "I put the book on the table.",
+    "category": "verb",
+    "difficulty": "easy"
+  }
+  
 ]
 
 
