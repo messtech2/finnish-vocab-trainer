@@ -2020,6 +2020,245 @@
     "exampleTranslation": "I put the book on the table.",
     "category": "verb",
     "difficulty": "easy"
+  },{
+    "word": "eka",
+    "meaning": "first",
+    "example": "Tämä on eka kerta täällä.",
+    "exampleTranslation": "This is the first time here.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "majoitus",
+    "meaning": "accommodation",
+    "example": "Meidän majoitus on keskustassa.",
+    "exampleTranslation": "Our accommodation is in the city center.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "varata",
+    "meaning": "to reserve, to book",
+    "example": "Varataan hotelli etukäteen.",
+    "exampleTranslation": "Let's book the hotel in advance.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "jostain",
+    "meaning": "from somewhere",
+    "example": "Ostin tämän jostain kaupasta.",
+    "exampleTranslation": "I bought this from some shop.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kelvata",
+    "meaning": "to be suitable, acceptable",
+    "example": "Tämä paikka kelpaa meille hyvin.",
+    "exampleTranslation": "This place suits us well.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vuokrata",
+    "meaning": "to rent",
+    "example": "Haluamme vuokrata auton.",
+    "exampleTranslation": "We want to rent a car.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "alue",
+    "meaning": "area",
+    "example": "Tämä alue on rauhallinen.",
+    "exampleTranslation": "This area is peaceful.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "päästä",
+    "meaning": "to get (somewhere)",
+    "example": "Pääsen töihin bussilla.",
+    "exampleTranslation": "I get to work by bus.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ratikka",
+    "meaning": "tram",
+    "example": "Mennään ratikalla keskustaan.",
+    "exampleTranslation": "Let's go to the center by tram.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "helposti",
+    "meaning": "easily",
+    "example": "Tänne pääsee helposti.",
+    "exampleTranslation": "You can get here easily.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hoitaa",
+    "meaning": "to take care of, handle",
+    "example": "Minä hoidan tämän asian.",
+    "exampleTranslation": "I will handle this matter.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tarkistaa",
+    "meaning": "to check",
+    "example": "Tarkistan aikataulun.",
+    "exampleTranslation": "I check the schedule.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "äsken",
+    "meaning": "a moment ago",
+    "example": "Näin hänet äsken.",
+    "exampleTranslation": "I saw him a moment ago.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aikataulu",
+    "meaning": "schedule, timetable",
+    "example": "Aikataulu muuttui.",
+    "exampleTranslation": "The schedule changed.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "netti",
+    "meaning": "internet",
+    "example": "Etsin tiedot netistä.",
+    "exampleTranslation": "I search the information on the internet.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ehtiä",
+    "meaning": "to have time",
+    "example": "En ehdi tulla tänään.",
+    "exampleTranslation": "I don't have time to come today.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "heittää",
+    "meaning": "to take, to drop off",
+    "example": "Voitko heittää minut kotiin?",
+    "exampleTranslation": "Can you drop me home?",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kestää",
+    "meaning": "to last, take time",
+    "example": "Matka kestää tunnin.",
+    "exampleTranslation": "The trip takes one hour.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "olla perillä",
+    "meaning": "to be at the destination",
+    "example": "Olemme perillä.",
+    "exampleTranslation": "We have arrived.",
+    "category": "phrase",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kaveri",
+    "meaning": "friend, buddy",
+    "example": "Tapaan kaverin illalla.",
+    "exampleTranslation": "I will meet a friend in the evening.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hakea",
+    "meaning": "to fetch, pick up",
+    "example": "Haen sinut asemalta.",
+    "exampleTranslation": "I will pick you up from the station.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kyyti",
+    "meaning": "ride, lift",
+    "example": "Tarvitsen kyydin kotiin.",
+    "exampleTranslation": "I need a ride home.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tietysti",
+    "meaning": "of course",
+    "example": "Tulen tietysti mukaan.",
+    "exampleTranslation": "Of course I will come along.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "silti",
+    "meaning": "still, anyway",
+    "example": "Olen väsynyt, mutta tulen silti.",
+    "exampleTranslation": "I am tired, but I will still come.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tulla vastaan",
+    "meaning": "to come towards, meet",
+    "example": "Hän tuli minua vastaan kadulla.",
+    "exampleTranslation": "He came towards me on the street.",
+    "category": "phrase",
+    "difficulty": "medium"
+  },
+  {
+    "word": "joka tapauksessa",
+    "meaning": "in any case",
+    "example": "Menen sinne joka tapauksessa.",
+    "exampleTranslation": "I will go there in any case.",
+    "category": "phrase",
+    "difficulty": "medium"
+  },
+  {
+    "word": "takaisin",
+    "meaning": "back",
+    "example": "Palaan kotiin takaisin illalla.",
+    "exampleTranslation": "I return back home in the evening.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "äsken",
+    "meaning": "a moment ago",
+    "example": "Näin hänet äsken.",
+    "exampleTranslation": "I saw him a moment ago.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mielellään",
+    "meaning": "gladly, willingly",
+    "example": "Autan sinua mielelläni.",
+    "exampleTranslation": "I will gladly help you.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tietysti",
+    "meaning": "of course",
+    "example": "Tulen tietysti mukaan.",
+    "exampleTranslation": "Of course I will come along.",
+    "category": "adverb",
+    "difficulty": "easy"
   }
   
 ]
