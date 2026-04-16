@@ -2259,6 +2259,94 @@
     "exampleTranslation": "Of course I will come along.",
     "category": "adverb",
     "difficulty": "easy"
+  },
+  {
+    "word": "märkä",
+    "meaning": "wet",
+    "example": "Vaatteet ovat märät sateen jälkeen.",
+    "exampleTranslation": "The clothes are wet after the rain.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "uima-allas",
+    "meaning": "swimming pool",
+    "example": "Hotellissa on iso uima-allas.",
+    "exampleTranslation": "The hotel has a big swimming pool.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "varmasti",
+    "meaning": "certainly, definitely",
+    "example": "Tulen varmasti huomenna.",
+    "exampleTranslation": "I will definitely come tomorrow.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mukava",
+    "meaning": "nice, pleasant",
+    "example": "Hän on todella mukava ihminen.",
+    "exampleTranslation": "He/She is a really nice person.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ihana",
+    "meaning": "wonderful, lovely",
+    "example": "Tämä paikka on ihana kesällä.",
+    "exampleTranslation": "This place is wonderful in summer.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kamala",
+    "meaning": "terrible, awful",
+    "example": "Sää on tänään kamala.",
+    "exampleTranslation": "The weather is terrible today.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "teltta",
+    "meaning": "tent",
+    "example": "Yövymme teltassa metsässä.",
+    "exampleTranslation": "We sleep in a tent in the forest.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "linna",
+    "meaning": "castle",
+    "example": "Kävimme vanhassa linnassa.",
+    "exampleTranslation": "We visited an old castle.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lossi",
+    "meaning": "ferry (short-distance, usually free)",
+    "example": "Menemme saareen lossilla.",
+    "exampleTranslation": "We go to the island by ferry.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "saari",
+    "meaning": "island",
+    "example": "Suomessa on paljon saaria.",
+    "exampleTranslation": "There are many islands in Finland.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "saapua",
+    "meaning": "to arrive",
+    "example": "Juna saapuu asemalle ajoissa.",
+    "exampleTranslation": "The train arrives at the station on time.",
+    "category": "verb",
+    "difficulty": "medium"
   }
   
 ]
