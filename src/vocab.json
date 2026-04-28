@@ -2431,6 +2431,48 @@
     "type": "noun",
     "meaning": "single parent",
     "example": "Hän on yksinhuoltaja."
+  },
+  {
+    "word": "yhtä pitkä",
+    "type": "phrase",
+    "meaning": "as long (same length)",
+    "example": "Tämä tie on yhtä pitkä kuin tuo tie."
+  },
+  {
+    "word": "pidempi",
+    "type": "adjective (comparative)",
+    "meaning": "longer",
+    "example": "Tämä tie on pidempi kuin tuo tie."
+  },
+  {
+    "word": "yhtä paljon",
+    "type": "phrase",
+    "meaning": "as much / as many",
+    "example": "Minulla on yhtä paljon rahaa kuin sinulla."
+  },
+  {
+    "word": "enemmän",
+    "type": "adverb (comparative)",
+    "meaning": "more",
+    "example": "Haluan enemmän aikaa."
+  },
+  {
+    "word": "eniten",
+    "type": "adverb (superlative)",
+    "meaning": "the most",
+    "example": "Hän työskentelee eniten meistä kaikista."
+  },
+  {
+    "word": "yhtä vähän",
+    "type": "phrase",
+    "meaning": "as little / as few",
+    "example": "Minulla on yhtä vähän aikaa kuin sinulla."
+  },
+  {
+    "word": "vähiten",
+    "type": "adverb (superlative)",
+    "meaning": "the least",
+    "example": "Hänellä on vähiten kokemusta."
   }
   
 ]
