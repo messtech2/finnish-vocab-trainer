@@ -2347,6 +2347,90 @@
     "exampleTranslation": "The train arrives at the station on time.",
     "category": "verb",
     "difficulty": "medium"
+  },
+  {
+    "word": "ahkera",
+    "type": "adjective",
+    "meaning": "hardworking",
+    "example": "Olen ahkera työntekijä."
+  },
+  {
+    "word": "täsmällinen",
+    "type": "adjective",
+    "meaning": "punctual, precise",
+    "example": "Olen täsmällinen ja tulen ajoissa töihin."
+  },
+  {
+    "word": "tulla toimeen",
+    "type": "verb phrase",
+    "meaning": "to get along",
+    "example": "Tulen hyvin toimeen muiden kanssa."
+  },
+  {
+    "word": "muut",
+    "type": "pronoun",
+    "meaning": "others",
+    "example": "Autan muita ihmisiä."
+  },
+  {
+    "word": "asia",
+    "type": "noun",
+    "meaning": "thing, matter",
+    "example": "Haluan oppia uusia asioita."
+  },
+  {
+    "word": "vakituisen",
+    "type": "adjective (partitive/genitive form)",
+    "meaning": "permanent (job)",
+    "example": "Haluan vakituisen työn."
+  },
+  {
+    "word": "mukanasi",
+    "type": "adverb",
+    "meaning": "with you",
+    "example": "Ota passi mukanasi."
+  },
+  {
+    "word": "työharjoittelupaikka",
+    "type": "noun",
+    "meaning": "internship place",
+    "example": "Etsin työharjoittelupaikkaa."
+  },
+  {
+    "word": "ainakaan",
+    "type": "adverb",
+    "meaning": "at least not",
+    "example": "En ole ainakaan myöhässä."
+  },
+  {
+    "word": "eronnut",
+    "type": "verb (past participle)",
+    "meaning": "divorced",
+    "example": "Hän on eronnut."
+  },
+  {
+    "word": "esikoinen",
+    "type": "noun",
+    "meaning": "firstborn child",
+    "example": "Hän on perheen esikoinen."
+  },
+  {
+    "word": "avoliitossa",
+    "type": "noun (inessive form)",
+    "meaning": "in a cohabiting relationship",
+    "example": "He asuvat avoliitossa."
+  },
+  {
+    "word": "kaksoset",
+    "type": "noun",
+    "meaning": "twins",
+    "example": "Heillä on kaksoset."
+  },
+  {
+    "word": "yksinhuoltaja",
+    "type": "noun",
+    "meaning": "single parent",
+    "example": "Hän on yksinhuoltaja."
   }
   
 ]
