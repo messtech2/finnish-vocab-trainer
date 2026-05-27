@@ -2473,6 +2473,134 @@
     "type": "adverb (superlative)",
     "meaning": "the least",
     "example": "Hänellä on vähiten kokemusta."
+  },
+  {
+    "word": "lähettäjä",
+    "meaning": "sender",
+    "example": "Kirjoita lähettäjän nimi kirjeeseen.",
+    "exampleTranslation": "Write the sender's name on the letter.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vastaanottaja",
+    "meaning": "receiver / recipient",
+    "example": "Vastaanottajan osoite on kirjekuoressa.",
+    "exampleTranslation": "The recipient's address is on the envelope.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "otsikko",
+    "meaning": "title / heading",
+    "example": "Kirjoita sähköpostiin selkeä otsikko.",
+    "exampleTranslation": "Write a clear title in the email.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "terveisiä",
+    "meaning": "greetings",
+    "example": "Lähetän terveisiä perheelleni.",
+    "exampleTranslation": "I send greetings to my family.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "toivottavasti",
+    "meaning": "hopefully",
+    "example": "Toivottavasti sää on huomenna hyvä.",
+    "exampleTranslation": "Hopefully the weather is good tomorrow.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hassu",
+    "meaning": "funny / silly",
+    "example": "Se oli hassu tarina.",
+    "exampleTranslation": "That was a funny story.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yleensä",
+    "meaning": "usually",
+    "example": "Minä yleensä juon kahvia aamulla.",
+    "exampleTranslation": "I usually drink coffee in the morning.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "etsiä",
+    "meaning": "to search / to look for",
+    "example": "Etsin avaimiani.",
+    "exampleTranslation": "I am looking for my keys.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "onkia",
+    "meaning": "to fish",
+    "example": "Hän tykkää onkia kesällä.",
+    "exampleTranslation": "He likes to fish in the summer.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ottaa",
+    "meaning": "to take",
+    "example": "Voit ottaa yhden omenan.",
+    "exampleTranslation": "You can take one apple.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "antaa",
+    "meaning": "to give",
+    "example": "Opettaja antaa tehtävän.",
+    "exampleTranslation": "The teacher gives an assignment.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vastakohdat",
+    "meaning": "opposites",
+    "example": "Kuuma ja kylmä ovat vastakohdat.",
+    "exampleTranslation": "Hot and cold are opposites.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "on selkeää",
+    "meaning": "it is clear (weather)",
+    "example": "Tänään on selkeää ja aurinko paistaa.",
+    "exampleTranslation": "Today it is clear and the sun is shining.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "on sumuista",
+    "meaning": "it is foggy",
+    "example": "Aamulla on sumuista.",
+    "exampleTranslation": "It is foggy in the morning.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "on viileä",
+    "meaning": "it is cool / chilly",
+    "example": "Illalla on viileä sää.",
+    "exampleTranslation": "The weather is cool in the evening.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "on ukkonen",
+    "meaning": "there is a thunderstorm",
+    "example": "Ulkona on ukkonen.",
+    "exampleTranslation": "There is a thunderstorm outside.",
+    "category": "expression",
+    "difficulty": "medium"
   }
   
 ]

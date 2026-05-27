@@ -40,5 +40,32 @@
     "label": "Suomen kielen oppiminen",
     "text": "Suomen kielen oppiminen on minulle tärkeää, koska se auttaa arjessa ja työelämässä. Opiskelen suomea päivittäin ja yritän käyttää sitä mahdollisimman paljon. Kuitenkin joskus kieli on vaikeaa, mutta en luovuta. Lisäksi uskon, että harjoittelu auttaa minua kehittymään koko ajan.",
     "difficulty": "easy"
-  }
+  },
+  {
+  "id": "traffic",
+  "topic": "transportation_and_traffic",
+  "label": "Minä liikenteessä",
+  "text": "Onneksi asun kaupungin keskustassa. Asuntoni on lähellä kauppoja, kouluja, apteekkeja, sairaalaa ja yliopistoa. Siksi kävelen tai pyöräilen töihin ja kauppaan joka päivä. Käytän harvoin julkista liikennettä. Jos käymme muissa kaupungeissa tai menemme kauas, matkustamme autolla tai junalla, koska ne ovat mukavia, käteviä ja nopeita. Tykkään kävellä ja pyöräillä, koska ne ovat terveellisiä ja ympäristöystävällisiä. Ne säästävät myös rahaa. Liikenteessä pelkään moottoripyöriä, koska mielestäni ne ajavat usein nopeasti ja voivat olla vaarallisia.",
+  "difficulty": "easy"
+},
+{
+  "id": "home",
+  "topic": "housing_and_home",
+  "label": "Minun kotini",
+  "text": "Asun kerrostalossa, ja asuntoni on toisessa kerroksessa. Talossa on hissi, mutta yritän välttää hissin käyttöä ja kuljen mieluummin portaita. Asunnossa on kolme huonetta. Olohuone on iso ja valoisa. Olohuoneessa on beige sohva ja iso ikkuna. Makuuhuoneessa on leveä sänky. Sängyn molemmilla puolilla on lipastot ja pöytälamput. Tyttäreni makuuhuone on pienempi kuin meidän makuuhuoneemme. Siellä on leveä sänky ja työpöytä. Pöydällä on lamppu, tietokone, kyniä ja kirjoja. Siellä on myös pieni kirjahylly. Hänellä on paljon kirjoja, koska hän opiskelee ja lukee paljon. Keittiöni on pieni mutta moderni ja valoisa. Minulla on paljon kodinkoneita ja kaappeja. Tykkään keittiöstäni, koska siellä on mukava tehdä ruokaa.",
+  "difficulty": "easy"
+},
+{
+  "id": "siblings",
+  "topic": "family_and_life_story",
+  "label": "Veljeni ja siskoni elämä",
+  "text": "Minulla on veli ja sisko, ja he ovat kaksoset. Molemmat ovat syntyneet melkein samaan aikaan. Heidän välillään on vain 15 minuuttia eroa. He kävivät koulua samalla luokalla, mutta he ovat aina olleet erilaisia. He eivät olleet kiinnostuneita samoista asioista. Veljeni pitää matematiikasta, kun taas siskoni ei pidä siitä. Hän pitää enemmän sosiaalisista aineista. Siskollani oli nuorena paljon ystäviä, ja hän piti juhlista. Veljeni taas ei pitänyt juhlista. Hän oli ujo eikä hänellä ollut montaa ystävää. Hän viihtyi enemmän kotona. Kun he kasvoivat aikuisiksi, veljeni valmistui insinööriksi. Hän on työskennellyt IT-alalla pari vuotta japanilaisessa yrityksessä. Siskoni on vielä opiskelija. Hän opiskelee kirjanpitäjäksi Hollannissa. Halusin kertoa heistä, koska on mielenkiintoista nähdä, kuinka kaksoset voivat olla niin erilaisia toisistaan.",
+  "difficulty": "medium"
+},{
+  "id": "clothing",
+  "topic": "appearance_and_clothing",
+  "label": "Minä ja pukeutumiseni",
+  "text": "Pidän klassisesta tyylistä. Minulle on tärkeintä, että vaatteet ovat laadukkaita ja käytännöllisiä, mutta niiden pitää myös näyttää omasta mielestäni hyviltä. Monet ystäväni seuraavat muotia, mutta minä en seuraa sitä. Ostan vain vaatteita, jotka sopivat minulle hyvin. Joskus on todella vaikea löytää itselle sopivia vaatteita. Olen tyytyväinen siihen, että minulla on pieni keho, joten näytän ikäistäni nuoremmalta. Olen kuitenkin lyhyt, minkä vuoksi oikean koon löytäminen on joskus vaikeaa. En olisi valmis kauneusleikkaukseen, koska leikkauksiin liittyy aina riskejä. Jos leikkaus epäonnistuu, lopputulos ei ehkä olisi sellainen kuin toivoisin.",
+  "difficulty": "medium"
+}
 ]
