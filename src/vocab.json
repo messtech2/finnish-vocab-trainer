@@ -2601,6 +2601,326 @@
     "exampleTranslation": "There is a thunderstorm outside.",
     "category": "expression",
     "difficulty": "medium"
+  },
+  {
+    "word": "bussikuski",
+    "meaning": "bus driver",
+    "example": "Bussikuski odottaa matkustajia pysäkillä.",
+    "exampleTranslation": "The bus driver is waiting for passengers at the bus stop.",
+    "category": "profession",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hoikka",
+    "meaning": "slim",
+    "example": "Hän on pitkä ja hoikka.",
+    "exampleTranslation": "He is tall and slim.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ujo",
+    "meaning": "shy",
+    "example": "Ujo opiskelija ei puhunut paljon tunnilla.",
+    "exampleTranslation": "The shy student did not speak much in class.",
+    "category": "personality",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vaalea",
+    "meaning": "blonde / light-colored",
+    "example": "Hänellä on vaalea tukka.",
+    "exampleTranslation": "She has blonde hair.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tukka",
+    "meaning": "hair",
+    "example": "Minun tukkani on lyhyt.",
+    "exampleTranslation": "My hair is short.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ilmoittautua",
+    "meaning": "to register",
+    "example": "Haluan ilmoittautua suomen kurssille.",
+    "exampleTranslation": "I want to register for the Finnish course.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kesäyliopisto",
+    "meaning": "summer university",
+    "example": "Opiskelen kesäyliopistossa kesällä.",
+    "exampleTranslation": "I study at the summer university during summer.",
+    "category": "education",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tarkistaa",
+    "meaning": "to check",
+    "example": "Tarkistan sähköpostini aamulla.",
+    "exampleTranslation": "I check my email in the morning.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sihteeri",
+    "meaning": "secretary",
+    "example": "Sihteeri vastasi puhelimeen.",
+    "exampleTranslation": "The secretary answered the phone.",
+    "category": "profession",
+    "difficulty": "easy"
+  },
+  {
+    "word": "viettää",
+    "meaning": "to spend (time)",
+    "example": "Vietän viikonlopun kotona.",
+    "exampleTranslation": "I spend the weekend at home.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tilata",
+    "meaning": "to order",
+    "example": "Tilaan kahvin kahvilassa.",
+    "exampleTranslation": "I order coffee at the café.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sateenvarjo",
+    "meaning": "umbrella",
+    "example": "Tarvitsen sateenvarjon sateella.",
+    "exampleTranslation": "I need an umbrella when it rains.",
+    "category": "object",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lompakko",
+    "meaning": "wallet",
+    "example": "Lompakkoni on musta.",
+    "exampleTranslation": "My wallet is black.",
+    "category": "object",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kampa",
+    "meaning": "comb",
+    "example": "Käytän kampaa joka aamu.",
+    "exampleTranslation": "I use a comb every morning.",
+    "category": "object",
+    "difficulty": "easy"
+  },
+  {
+    "word": "käyntikortti",
+    "meaning": "business card",
+    "example": "Annoin hänelle käyntikorttini.",
+    "exampleTranslation": "I gave him my business card.",
+    "category": "work",
+    "difficulty": "medium"
+  },
+  {
+    "word": "surullinen",
+    "meaning": "sad",
+    "example": "Hän oli surullinen huonojen uutisten jälkeen.",
+    "exampleTranslation": "She was sad after the bad news.",
+    "category": "feeling",
+    "difficulty": "easy"
+  },
+  {
+    "word": "puhelias",
+    "meaning": "talkative",
+    "example": "Naapurini on todella puhelias.",
+    "exampleTranslation": "My neighbor is very talkative.",
+    "category": "personality",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hiljainen",
+    "meaning": "quiet",
+    "example": "Kirjasto on hiljainen paikka.",
+    "exampleTranslation": "The library is a quiet place.",
+    "category": "personality",
+    "difficulty": "easy"
+  },
+  {
+    "word": "epäystävällinen",
+    "meaning": "unfriendly",
+    "example": "Myyjä vaikutti epäystävälliseltä.",
+    "exampleTranslation": "The salesperson seemed unfriendly.",
+    "category": "personality",
+    "difficulty": "medium"
+  },
+  {
+    "word": "epäkohtelias",
+    "meaning": "rude",
+    "example": "On epäkohteliasta huutaa toisille.",
+    "exampleTranslation": "It is rude to shout at others.",
+    "category": "personality",
+    "difficulty": "medium"
+  },
+  {
+    "word": "nätti",
+    "meaning": "pretty",
+    "example": "Sinulla on nätti mekko.",
+    "exampleTranslation": "You have a pretty dress.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hyvännäköinen",
+    "meaning": "good-looking",
+    "example": "Hän on todella hyvännäköinen.",
+    "exampleTranslation": "He is very good-looking.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "luoda",
+    "meaning": "to create",
+    "example": "Haluan luoda uuden verkkosivun.",
+    "exampleTranslation": "I want to create a new website.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kalju",
+    "meaning": "bald",
+    "example": "Setäni on kalju.",
+    "exampleTranslation": "My uncle is bald.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "parta ja viikset",
+    "meaning": "beard and mustache",
+    "example": "Hänellä on parta ja viikset.",
+    "exampleTranslation": "He has a beard and a mustache.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "komea",
+    "meaning": "handsome",
+    "example": "Monet pitävät häntä komeana.",
+    "exampleTranslation": "Many people think he is handsome.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lyhyt",
+    "meaning": "short",
+    "example": "Olen melko lyhyt.",
+    "exampleTranslation": "I am quite short.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tukeva",
+    "meaning": "sturdy / heavily built",
+    "example": "Hän on tukeva mies.",
+    "exampleTranslation": "He is a heavily built man.",
+    "category": "appearance",
+    "difficulty": "medium"
+  },
+  {
+    "word": "söpö",
+    "meaning": "cute",
+    "example": "Tuo kissa on söpö.",
+    "exampleTranslation": "That cat is cute.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "suloinen",
+    "meaning": "sweet / adorable",
+    "example": "Vauva näyttää todella suloiselta.",
+    "exampleTranslation": "The baby looks very adorable.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "viikset",
+    "meaning": "mustache",
+    "example": "Hänellä on pitkät viikset.",
+    "exampleTranslation": "He has a long mustache.",
+    "category": "appearance",
+    "difficulty": "easy"
+  },
+  {
+    "word": "naimisissa",
+    "meaning": "married",
+    "example": "Vanhempani ovat naimisissa.",
+    "exampleTranslation": "My parents are married.",
+    "category": "relationship",
+    "difficulty": "easy"
+  },
+  {
+    "word": "naimaton",
+    "meaning": "unmarried",
+    "example": "Hän on vielä naimaton.",
+    "exampleTranslation": "He is still unmarried.",
+    "category": "relationship",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sinkku",
+    "meaning": "single",
+    "example": "Olen tällä hetkellä sinkku.",
+    "exampleTranslation": "I am currently single.",
+    "category": "relationship",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kihloissa",
+    "meaning": "engaged",
+    "example": "He ovat kihloissa.",
+    "exampleTranslation": "They are engaged.",
+    "category": "relationship",
+    "difficulty": "easy"
+  },
+  {
+    "word": "eronnut",
+    "meaning": "divorced",
+    "example": "Hän on eronnut jo monta vuotta sitten.",
+    "exampleTranslation": "He got divorced many years ago.",
+    "category": "relationship",
+    "difficulty": "medium"
+  },
+  {
+    "word": "työtön",
+    "meaning": "unemployed",
+    "example": "Hän on tällä hetkellä työtön.",
+    "exampleTranslation": "He is currently unemployed.",
+    "category": "work",
+    "difficulty": "easy"
+  },
+  {
+    "word": "eläkkeellä",
+    "meaning": "retired",
+    "example": "Isoisäni on eläkkeellä.",
+    "exampleTranslation": "My grandfather is retired.",
+    "category": "work",
+    "difficulty": "easy"
+  },
+  {
+    "word": "avoliitossa",
+    "meaning": "in a common-law relationship",
+    "example": "He ovat asuneet avoliitossa viisi vuotta.",
+    "exampleTranslation": "They have lived together in a common-law relationship for five years.",
+    "category": "relationship",
+    "difficulty": "medium"
+  },
+  {
+    "word": "allekirjoitus",
+    "meaning": "signature",
+    "example": "Tarvitsen allekirjoituksesi tähän paperiin.",
+    "exampleTranslation": "I need your signature on this paper.",
+    "category": "document",
+    "difficulty": "easy"
   }
   
 ]
