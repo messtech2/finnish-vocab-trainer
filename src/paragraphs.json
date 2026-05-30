@@ -67,5 +67,12 @@
   "label": "Minä ja pukeutumiseni",
   "text": "Pidän klassisesta tyylistä. Minulle on tärkeintä, että vaatteet ovat laadukkaita ja käytännöllisiä, mutta niiden pitää myös näyttää omasta mielestäni hyviltä. Monet ystäväni seuraavat muotia, mutta minä en seuraa sitä. Ostan vain vaatteita, jotka sopivat minulle hyvin. Joskus on todella vaikea löytää itselle sopivia vaatteita. Olen tyytyväinen siihen, että minulla on pieni keho, joten näytän ikäistäni nuoremmalta. Olen kuitenkin lyhyt, minkä vuoksi oikean koon löytäminen on joskus vaikeaa. En olisi valmis kauneusleikkaukseen, koska leikkauksiin liittyy aina riskejä. Jos leikkaus epäonnistuu, lopputulos ei ehkä olisi sellainen kuin toivoisin.",
   "difficulty": "medium"
+},
+{
+  "id": "time_management",
+  "topic": "time_and_daily_routines",
+  "label": "Minä ja ajankäyttö",
+  "text": "Olen useimmiten ajoissa, koska en halua tuhlata muiden ihmisten aikaa. Tykkään aikatauluista, koska ne auttavat minua organisoimaan aikaani. Minusta on mukavaa, kun asiat sujuvat suunnitelmien mukaan. Aamulla ja päivällä olen töissä. Illalla käyn harrastuksissa tai katson televisiota perheeni kanssa. Viikonloppuisin käyn tanssimassa mieheni kanssa tai menen metsään ulkoilemaan. En halua hukata aikaani sosiaalisessa mediassa, kuten Facebookissa tai Instagramissa. En myöskään halua käyttää liikaa aikaa elokuvien katsomiseen. On mukavaa katsoa elokuva silloin tällöin, mutta liiallinen katsominen on mielestäni ajan haaskaamista. Mielestäni paras tapa sopia aikataulusta on keskustella siitä etukäteen ja varmistaa, että aika sopii kaikille osapuolille.",
+  "difficulty": "medium"
 }
 ]
