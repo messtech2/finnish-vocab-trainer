@@ -2921,6 +2921,86 @@
     "exampleTranslation": "I need your signature on this paper.",
     "category": "document",
     "difficulty": "easy"
+  },
+  {
+    "word": "hotellipäällikkö",
+    "meaning": "hotel manager",
+    "example": "Hotellipäällikkö vastasi asiakkaan valitukseen.",
+    "exampleTranslation": "The hotel manager responded to the customer's complaint.",
+    "category": "profession",
+    "difficulty": "medium"
+  },
+  {
+    "word": "en ollut tyytyväinen",
+    "meaning": "I was not satisfied",
+    "example": "En ollut tyytyväinen hotellihuoneen kuntoon.",
+    "exampleTranslation": "I was not satisfied with the condition of the hotel room.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "likainen",
+    "meaning": "dirty",
+    "example": "Kylpyhuone oli likainen.",
+    "exampleTranslation": "The bathroom was dirty.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "siivooja ei tullut",
+    "meaning": "the cleaner did not come",
+    "example": "Siivooja ei tullut siivoamaan huonetta.",
+    "exampleTranslation": "The cleaner did not come to clean the room.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kahden päivän ajan",
+    "meaning": "for two days",
+    "example": "Odotimme vastausta kahden päivän ajan.",
+    "exampleTranslation": "We waited for a response for two days.",
+    "category": "time_expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "laatu",
+    "meaning": "quality",
+    "example": "Palvelun laatu oli hyvä.",
+    "exampleTranslation": "The quality of the service was good.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "parantaa",
+    "meaning": "to improve",
+    "example": "Yritys haluaa parantaa asiakaspalveluaan.",
+    "exampleTranslation": "The company wants to improve its customer service.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "viipymättä",
+    "meaning": "without delay / immediately",
+    "example": "Pyydän, että asia käsitellään viipymättä.",
+    "exampleTranslation": "I request that the matter be handled without delay.",
+    "category": "adverb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hyvitys",
+    "meaning": "compensation / refund",
+    "example": "Pyysin hyvitystä huonosta palvelusta.",
+    "exampleTranslation": "I requested compensation for poor service.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pyydän teitä",
+    "meaning": "I request you / I ask you",
+    "example": "Pyydän teitä vastaamaan mahdollisimman pian.",
+    "exampleTranslation": "I ask you to respond as soon as possible.",
+    "category": "expression",
+    "difficulty": "medium"
   }
   
 ]
