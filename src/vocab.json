@@ -3001,6 +3001,70 @@
     "exampleTranslation": "I ask you to respond as soon as possible.",
     "category": "expression",
     "difficulty": "medium"
+  },
+  {
+    "word": "soida",
+    "meaning": "to ring / to play (music)",
+    "example": "Puhelin soi kesken kokouksen.",
+    "exampleTranslation": "The phone rang during the meeting.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "valita",
+    "meaning": "to choose",
+    "example": "Voit valita minkä tahansa värin.",
+    "exampleTranslation": "You can choose any color.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pyyhkiä",
+    "meaning": "to wipe",
+    "example": "Pyyhin pöydän ruokailun jälkeen.",
+    "exampleTranslation": "I wipe the table after the meal.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tiskata",
+    "meaning": "to wash dishes",
+    "example": "Minun täytyy tiskata illallisen jälkeen.",
+    "exampleTranslation": "I have to wash the dishes after dinner.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tarvita",
+    "meaning": "to need",
+    "example": "Tarvitsen uuden tietokoneen.",
+    "exampleTranslation": "I need a new computer.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "osata",
+    "meaning": "to know how to / be able to (a learned skill)",
+    "example": "Osaan puhua vähän suomea.",
+    "exampleTranslation": "I can speak a little Finnish.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "voida",
+    "meaning": "can / to be able to",
+    "example": "Voin auttaa sinua huomenna.",
+    "exampleTranslation": "I can help you tomorrow.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "häiritä",
+    "meaning": "to disturb / to bother",
+    "example": "Anteeksi, en halua häiritä sinua.",
+    "exampleTranslation": "Sorry, I don't want to bother you.",
+    "category": "verb",
+    "difficulty": "medium"
   }
   
 ]
