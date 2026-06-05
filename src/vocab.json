@@ -3065,6 +3065,77 @@
     "exampleTranslation": "Sorry, I don't want to bother you.",
     "category": "verb",
     "difficulty": "medium"
+  },{
+    "word": "vasta",
+    "meaning": "only / not until",
+    "example": "Saavuin kotiin vasta kello kahdeksan.",
+    "exampleTranslation": "I arrived home only at eight o'clock.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aikaisin",
+    "meaning": "early",
+    "example": "Herään yleensä aikaisin aamulla.",
+    "exampleTranslation": "I usually wake up early in the morning.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aina",
+    "meaning": "always",
+    "example": "Hän on aina hyvällä tuulella.",
+    "exampleTranslation": "He is always in a good mood.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "koripallo",
+    "meaning": "basketball",
+    "example": "Pelaan koripalloa ystävieni kanssa viikonloppuisin.",
+    "exampleTranslation": "I play basketball with my friends on weekends.",
+    "category": "sport",
+    "difficulty": "easy"
+  },
+  {
+    "word": "puolipäivältä",
+    "meaning": "from noon / around midday",
+    "example": "Työvuoroni alkaa puolipäivältä.",
+    "exampleTranslation": "My work shift starts around midday.",
+    "category": "time_expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "harvoin",
+    "meaning": "rarely",
+    "example": "Käyn elokuvissa harvoin.",
+    "exampleTranslation": "I rarely go to the movies.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kohta",
+    "meaning": "soon / in a moment",
+    "example": "Bussi tulee kohta.",
+    "exampleTranslation": "The bus will arrive soon.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "juuri",
+    "meaning": "just / exactly",
+    "example": "Saavuin juuri kotiin.",
+    "exampleTranslation": "I just arrived home.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "enää",
+    "meaning": "anymore / no longer",
+    "example": "En asu enää Helsingissä.",
+    "exampleTranslation": "I no longer live in Helsinki.",
+    "category": "adverb",
+    "difficulty": "easy"
   }
   
 ]
