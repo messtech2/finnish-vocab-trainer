@@ -3496,7 +3496,193 @@
     "exampleTranslation": "– This place is beautiful. – That's true!",
     "category": "expression",
     "difficulty": "easy"
+  },
+
+  {
+    "word": "saapua",
+    "meaning": "to arrive",
+    "example": "Juna saapui asemalle ajoissa.",
+    "exampleTranslation": "The train arrived at the station on time.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vastaanotto",
+    "meaning": "reception / front desk",
+    "example": "Kysyin neuvoa hotellin vastaanotosta.",
+    "exampleTranslation": "I asked for advice at the hotel reception.",
+    "category": "hotel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "varaus",
+    "meaning": "reservation / booking",
+    "example": "Minulla on varaus kahdeksi yöksi.",
+    "exampleTranslation": "I have a reservation for two nights.",
+    "category": "hotel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hetkinen",
+    "meaning": "just a moment",
+    "example": "Hetkinen, tarkistan tiedot.",
+    "exampleTranslation": "Just a moment, I'll check the information.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tarkistaa",
+    "meaning": "to check",
+    "example": "Virkailija tarkisti varauksen.",
+    "exampleTranslation": "The clerk checked the reservation.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kone",
+    "meaning": "computer",
+    "example": "Tarkistan tiedot koneelta.",
+    "exampleTranslation": "I will check the information on the computer.",
+    "category": "technology",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kahden hengen huone",
+    "meaning": "double room",
+    "example": "Varasimme kahden hengen huoneen.",
+    "exampleTranslation": "We booked a double room.",
+    "category": "hotel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yhdeksi yöksi",
+    "meaning": "for one night",
+    "example": "Jäimme hotelliin yhdeksi yöksi.",
+    "exampleTranslation": "We stayed at the hotel for one night.",
+    "category": "time_expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "Juuri niin",
+    "meaning": "exactly / that's right",
+    "example": "– Teillä on varaus? – Juuri niin.",
+    "exampleTranslation": "– You have a reservation? – Exactly.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "voisitteko",
+    "meaning": "could you",
+    "example": "Voisitteko näyttää henkilöllisyystodistuksenne?",
+    "exampleTranslation": "Could you show your ID?",
+    "category": "expression",
+    "difficulty": "medium"
+  },
+  {
+    "word": "henkilötiedot",
+    "meaning": "personal information",
+    "example": "Tarvitsemme henkilötietonne varauksen vuoksi.",
+    "exampleTranslation": "We need your personal information for the reservation.",
+    "category": "administration",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tietysti",
+    "meaning": "of course",
+    "example": "– Voitteko auttaa? – Tietysti.",
+    "exampleTranslation": "– Can you help? – Of course.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "siis",
+    "meaning": "so / therefore",
+    "example": "Huone on valmis, siis voitte mennä sinne.",
+    "exampleTranslation": "The room is ready, so you can go there.",
+    "category": "conjunction",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yhteensä",
+    "meaning": "in total",
+    "example": "Hinta on yhteensä 120 euroa.",
+    "exampleTranslation": "The total price is 120 euros.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kuulua hintaan",
+    "meaning": "to be included in the price",
+    "example": "Aamiainen kuuluu hintaan.",
+    "exampleTranslation": "Breakfast is included in the price.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "selvä",
+    "meaning": "clear / okay",
+    "example": "Selvä, ymmärsin asian.",
+    "exampleTranslation": "Okay, I understood the matter.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "avainkortti",
+    "meaning": "key card",
+    "example": "Tässä on avainkorttinne.",
+    "exampleTranslation": "Here is your key card.",
+    "category": "hotel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "Olkaa hyvä",
+    "meaning": "here you are / you're welcome",
+    "example": "Olkaa hyvä, tässä on kuittinne.",
+    "exampleTranslation": "Here you are, this is your receipt.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aamiainen",
+    "meaning": "breakfast",
+    "example": "Aamiainen tarjoillaan kello seitsemästä alkaen.",
+    "exampleTranslation": "Breakfast is served starting at seven o'clock.",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "word": "täytyy",
+    "meaning": "must / have to",
+    "example": "Minun täytyy lähteä nyt.",
+    "exampleTranslation": "I have to leave now.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "luovuttaa",
+    "meaning": "to hand over / surrender",
+    "example": "Avainkortti täytyy luovuttaa lähtiessä.",
+    "exampleTranslation": "The key card must be handed over when leaving.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "saunaosasto",
+    "meaning": "sauna area",
+    "example": "Hotellissa on viihtyisä saunaosasto.",
+    "exampleTranslation": "The hotel has a cozy sauna area.",
+    "category": "hotel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "Hauskaa päivää",
+    "meaning": "have a nice day",
+    "example": "Kiitos vierailusta ja hauskaa päivää!",
+    "exampleTranslation": "Thank you for your visit and have a nice day!",
+    "category": "expression",
+    "difficulty": "easy"
   }
+
   
 ]
 
