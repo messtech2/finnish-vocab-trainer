@@ -3136,6 +3136,366 @@
     "exampleTranslation": "I no longer live in Helsinki.",
     "category": "adverb",
     "difficulty": "easy"
+  },
+  {
+    "word": "vuokralle",
+    "meaning": "for rent",
+    "example": "Tämä asunto on vuokralle tarjolla.",
+    "exampleTranslation": "This apartment is available for rent.",
+    "category": "housing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rauhallinen",
+    "meaning": "peaceful / quiet",
+    "example": "Asun rauhallisella alueella.",
+    "exampleTranslation": "I live in a peaceful area.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "parkkipaikka",
+    "meaning": "parking space",
+    "example": "Talon edessä on parkkipaikka.",
+    "exampleTranslation": "There is a parking space in front of the house.",
+    "category": "housing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "yhteydenotto",
+    "meaning": "contact / inquiry",
+    "example": "Kiitos yhteydenotostanne.",
+    "exampleTranslation": "Thank you for your inquiry.",
+    "category": "communication",
+    "difficulty": "medium"
+  },
+  {
+    "word": "näyttää",
+    "meaning": "to look / to show",
+    "example": "Asunto näyttää todella hyvältä.",
+    "exampleTranslation": "The apartment looks really good.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hirveän",
+    "meaning": "very / terribly",
+    "example": "Tämä asunto on hirveän kallis.",
+    "exampleTranslation": "This apartment is very expensive.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mennään",
+    "meaning": "let's go / we go",
+    "example": "Mennään katsomaan asuntoa.",
+    "exampleTranslation": "Let's go see the apartment.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "hyvältä",
+    "meaning": "good (looks/sounds/feels good)",
+    "example": "Suunnitelma kuulostaa hyvältä.",
+    "exampleTranslation": "The plan sounds good.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "katsomaan",
+    "meaning": "to see / to look at",
+    "example": "Menemme katsomaan uutta asuntoa.",
+    "exampleTranslation": "We are going to see the new apartment.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sijainti",
+    "meaning": "location",
+    "example": "Asunnon sijainti on erinomainen.",
+    "exampleTranslation": "The apartment's location is excellent.",
+    "category": "housing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kallis",
+    "meaning": "expensive",
+    "example": "Vuokra on liian kallis.",
+    "exampleTranslation": "The rent is too expensive.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "annetaan",
+    "meaning": "is given / is offered",
+    "example": "Asunto annetaan vuokralle ensi kuussa.",
+    "exampleTranslation": "The apartment will be offered for rent next month.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "etupihalla",
+    "meaning": "in the front yard",
+    "example": "Lapset leikkivät etupihalla.",
+    "exampleTranslation": "The children are playing in the front yard.",
+    "category": "location",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sähköpostitse",
+    "meaning": "by email",
+    "example": "Lähetä hakemus sähköpostitse.",
+    "exampleTranslation": "Send the application by email.",
+    "category": "communication",
+    "difficulty": "easy"
+  },
+  {
+    "word": "käydä kylässä",
+    "meaning": "to visit someone",
+    "example": "Kävimme viikonloppuna ystävien luona kylässä.",
+    "exampleTranslation": "We visited our friends during the weekend.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kiva",
+    "meaning": "nice",
+    "example": "Oli kiva nähdä sinua.",
+    "exampleTranslation": "It was nice to see you.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pitkästä aikaa",
+    "meaning": "after a long time",
+    "example": "Tapasimme pitkästä aikaa.",
+    "exampleTranslation": "We met after a long time.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "Niin sinuakin!",
+    "meaning": "You too!",
+    "example": "– Mukava nähdä sinua! – Niin sinuakin!",
+    "exampleTranslation": "– Nice to see you! – You too!",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tässä",
+    "meaning": "here",
+    "example": "Tässä on kahvisi.",
+    "exampleTranslation": "Here is your coffee.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kassi",
+    "meaning": "bag",
+    "example": "Minulla on raskas kassi.",
+    "exampleTranslation": "I have a heavy bag.",
+    "category": "object",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tuliainen",
+    "meaning": "souvenir / gift from a trip",
+    "example": "Toin sinulle tuliaisen Tampereelta.",
+    "exampleTranslation": "I brought you a souvenir from Tampere.",
+    "category": "noun",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tuore",
+    "meaning": "fresh",
+    "example": "Leipä on tuoretta.",
+    "exampleTranslation": "The bread is fresh.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pulla",
+    "meaning": "Finnish sweet bun",
+    "example": "Söin pullan kahvin kanssa.",
+    "exampleTranslation": "I ate a sweet bun with coffee.",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mielellämme",
+    "meaning": "gladly",
+    "example": "Autamme teitä mielellämme.",
+    "exampleTranslation": "We will gladly help you.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "Tulkaa pöytään!",
+    "meaning": "Come to the table!",
+    "example": "Ruoka on valmis, tulkaa pöytään!",
+    "exampleTranslation": "The food is ready, come to the table!",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "matka",
+    "meaning": "trip / journey",
+    "example": "Matka Tampereelle oli mukava.",
+    "exampleTranslation": "The trip to Tampere was pleasant.",
+    "category": "travel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "mennä",
+    "meaning": "to go",
+    "example": "Miten matka meni?",
+    "exampleTranslation": "How did the trip go?",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tulla",
+    "meaning": "to come",
+    "example": "Te tulitte junalla.",
+    "exampleTranslation": "You came by train.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "juna",
+    "meaning": "train",
+    "example": "Juna saapui ajoissa.",
+    "exampleTranslation": "The train arrived on time.",
+    "category": "transport",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vaikka",
+    "meaning": "although / even though",
+    "example": "Menimme ulos, vaikka satoi.",
+    "exampleTranslation": "We went outside even though it was raining.",
+    "category": "conjunction",
+    "difficulty": "easy"
+  },
+  {
+    "word": "melkein",
+    "meaning": "almost",
+    "example": "Myöhästyimme melkein junasta.",
+    "exampleTranslation": "We almost missed the train.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "olla myöhässä",
+    "meaning": "to be late",
+    "example": "En halua olla myöhässä töistä.",
+    "exampleTranslation": "I don't want to be late for work.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "aikoa",
+    "meaning": "to intend / to plan",
+    "example": "Aiomme käydä museossa.",
+    "exampleTranslation": "We plan to visit a museum.",
+    "category": "verb",
+    "difficulty": "medium"
+  },
+  {
+    "word": "näyttää",
+    "meaning": "to look / to show",
+    "example": "Tämä paikka näyttää upealta.",
+    "exampleTranslation": "This place looks amazing.",
+    "category": "verb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tärkeä",
+    "meaning": "important",
+    "example": "Perhe on minulle tärkeä.",
+    "exampleTranslation": "Family is important to me.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "paikka",
+    "meaning": "place",
+    "example": "Tämä on kaunis paikka.",
+    "exampleTranslation": "This is a beautiful place.",
+    "category": "noun",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ensimmäistä kertaa",
+    "meaning": "for the first time",
+    "example": "Kävin Tampereella ensimmäistä kertaa.",
+    "exampleTranslation": "I visited Tampere for the first time.",
+    "category": "expression",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ensimmäinen",
+    "meaning": "first",
+    "example": "Hän oli ensimmäinen paikalla.",
+    "exampleTranslation": "He was the first one there.",
+    "category": "number",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sieltä",
+    "meaning": "from there",
+    "example": "Ostimme sieltä kahvia.",
+    "exampleTranslation": "We bought coffee from there.",
+    "category": "adverb",
+    "difficulty": "easy"
+  },
+  {
+    "word": "upea",
+    "meaning": "amazing",
+    "example": "Näköala oli upea.",
+    "exampleTranslation": "The view was amazing.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "näköala",
+    "meaning": "view",
+    "example": "Hotellista oli hieno näköala järvelle.",
+    "exampleTranslation": "The hotel had a great view of the lake.",
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kahvila",
+    "meaning": "café",
+    "example": "Istumme kahvilassa juomassa kahvia.",
+    "exampleTranslation": "We are sitting in a café drinking coffee.",
+    "category": "place",
+    "difficulty": "easy"
+  },
+  {
+    "word": "herkullinen",
+    "meaning": "delicious",
+    "example": "Munkki oli herkullinen.",
+    "exampleTranslation": "The doughnut was delicious.",
+    "category": "adjective",
+    "difficulty": "easy"
+  },
+  {
+    "word": "munkki",
+    "meaning": "Finnish doughnut",
+    "example": "Söin kahvilassa munkin.",
+    "exampleTranslation": "I ate a doughnut at the café.",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "word": "Niin onkin!",
+    "meaning": "That's true!",
+    "example": "– Tämä paikka on kaunis. – Niin onkin!",
+    "exampleTranslation": "– This place is beautiful. – That's true!",
+    "category": "expression",
+    "difficulty": "easy"
   }
   
 ]
