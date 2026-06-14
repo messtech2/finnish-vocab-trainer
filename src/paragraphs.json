@@ -6,6 +6,274 @@
     "text": "Olen Mesfin, ja olen asunut Suomessa yli kymmenen vuotta. Olen opiskellut media-alan insinööriksi sekä Business Information Technology -tutkinnon. Opinnot olivat englanniksi, joten suomen kielen taitoni ei kehittynyt paljon silloin. Viime aikoina olen kuitenkin opiskellut suomea aktiivisesti, koska haluan parantaa kielitaitoani.",
     "difficulty": "medium"
   },
+  
+  {
+    "id": "opener_personal",
+    "topic": "essay_openers",
+    "label": "Avaus — Henkilökohtainen",
+    "text": "Haluan puhua [aiheesta]. Se on minulle tärkeä aihe, koska [henkilökohtainen syy].",
+    "difficulty": "easy"
+  },
+  {
+    "id": "opener_general",
+    "topic": "essay_openers",
+    "label": "Avaus — Yleinen",
+    "text": "Nykyään monet ihmiset keskustelevat siitä, onko parempi [A vai B]. Minun mielestäni tämä on tärkeä kysymys.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "opener_question",
+    "topic": "essay_openers",
+    "label": "Avaus — Kysymyshook",
+    "text": "Se on usein sanottu, että [aihe] on tärkeää — mutta onko se totta? Minun mielestäni kyllä, ja kerron miksi.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "opener_speaking",
+    "topic": "essay_openers",
+    "label": "Avaus — Puhuminen",
+    "text": "Haluan kertoa [aiheesta]. Se on minulle tärkeä, koska [syy]. Ensinnäkin [pääpointti].",
+    "difficulty": "easy"
+  },
+  {
+    "id": "closer_summary",
+    "topic": "essay_closers",
+    "label": "Lopetus — Yhteenveto",
+    "text": "Yhteenvetona voin sanoa, että [aihe] on tärkeää minulle. Uskon, että [johtopäätös]. Kiitos.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "closer_opinion",
+    "topic": "essay_closers",
+    "label": "Lopetus — Mielipide",
+    "text": "Kaiken kaikkiaan minä uskon, että [A] on parempi vaihtoehto, koska [tärkein syy]. Siksi suosittelen sitä kaikille.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "closer_speaking",
+    "topic": "essay_closers",
+    "label": "Lopetus — Puhuminen",
+    "text": "Tämä on minun mielipiteeni [aiheesta]. Toivon, että se oli mielenkiintoista. Kiitos kuuntelemisesta.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "closer_hope",
+    "topic": "essay_closers",
+    "label": "Lopetus — Toivo",
+    "text": "Toivon, että tulevaisuudessa [asia paranee]. Uskon, että yhdessä voimme [tavoite]. Kiitos.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "email_informal_opener",
+    "topic": "email_templates",
+    "label": "Sähköposti — Epävirallinen avaus",
+    "text": "Moi [nimi]! Kuulin, että [tilanne]. Kirjoitan sinulle, koska [syy].",
+    "difficulty": "easy"
+  },
+  {
+    "id": "email_informal_closer",
+    "topic": "email_templates",
+    "label": "Sähköposti — Epävirallinen lopetus",
+    "text": "Kiitos etukäteen! Odotan vastaustasi. Terveisin, [nimi]",
+    "difficulty": "easy"
+  },
+  {
+    "id": "email_formal_opener",
+    "topic": "email_templates",
+    "label": "Sähköposti — Virallinen avaus",
+    "text": "Hyvä [vastaanottaja], kirjoitan teille, koska [tilanne]. Haluaisin [pyyntö].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "email_formal_closer",
+    "topic": "email_templates",
+    "label": "Sähköposti — Virallinen lopetus",
+    "text": "Pyydän teitä ystävällisesti [toimenpide]. Odotan vastaustanne. Ystävällisin terveisin, [nimi]",
+    "difficulty": "medium"
+  },
+  {
+    "id": "valitus_opener",
+    "topic": "complaint_templates",
+    "label": "Valitus — Avaus",
+    "text": "Hyvä [vastaanottaja], kirjoitan teille, koska ilmoittauduin [kohde] mutta [ongelma]. En ollut tyytyväinen saamaani palveluun.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "valitus_body",
+    "topic": "complaint_templates",
+    "label": "Valitus — Runko",
+    "text": "Ensinnäkin [ensimmäinen ongelma]. Toiseksi [toinen ongelma]. Lisäksi [kolmas ongelma, valinnainen].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "valitus_request",
+    "topic": "complaint_templates",
+    "label": "Valitus — Pyyntö",
+    "text": "Pyydän teitä ystävällisesti harkitsemaan asiaa uudelleen. Toivon, että [toimenpide] mahdollisimman pian.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "valitus_closer",
+    "topic": "complaint_templates",
+    "label": "Valitus — Lopetus",
+    "text": "Odotan vastaustanne. Ystävällisin terveisin, [nimi]",
+    "difficulty": "easy"
+  },
+  {
+    "id": "mielipide_opener",
+    "topic": "opinion_templates",
+    "label": "Mielipide — Avaus",
+    "text": "Minun mielestäni [aihe] on erittäin tärkeä asia. Uskon, että [kanta], ja perustelen sen seuraavasti.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "mielipide_body_1",
+    "topic": "opinion_templates",
+    "label": "Mielipide — Ensimmäinen perustelu",
+    "text": "Ensinnäkin [perustelu 1]. Esimerkiksi [konkreettinen esimerkki]. Siksi uskon, että [johtopäätös 1].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "mielipide_body_2",
+    "topic": "opinion_templates",
+    "label": "Mielipide — Toinen perustelu",
+    "text": "Toiseksi [perustelu 2]. Lisäksi [lisätieto]. Tämä osoittaa, että [johtopäätös 2].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "mielipide_counterpoint",
+    "topic": "opinion_templates",
+    "label": "Mielipide — Vastaargumentti",
+    "text": "Toisaalta jotkut ihmiset ajattelevat, että [vastaargumentti]. Kuitenkin minun mielestäni [oma kanta on silti vahvempi], koska [syy].",
+    "difficulty": "hard"
+  },
+  {
+    "id": "mielipide_closer",
+    "topic": "opinion_templates",
+    "label": "Mielipide — Lopetus",
+    "text": "Yhteenvetona voidaan todeta, että [pääpointti]. Siksi uskon vahvasti, että [lopullinen kanta].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "situation_doctor",
+    "topic": "speaking_situations",
+    "label": "Tilanne — Lääkärille soittaminen",
+    "text": "Hei, haluaisin varata ajan lääkärille. Minulla on [oire] ja [oire]. Nimeni on [nimi]. Milloin on seuraava vapaa aika?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "situation_sick_boss",
+    "topic": "speaking_situations",
+    "label": "Tilanne — Esimiehelle sairaana",
+    "text": "Hei [nimi], anteeksi että keskeytän. Minulla on kova [oire]. Voisinko lähteä kotiin lepäämään? Palaan töihin heti kun voin — todennäköisesti huomenna. Kiitos ymmärryksestä.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "situation_maintenance",
+    "topic": "speaking_situations",
+    "label": "Tilanne — Huoltoyhtiölle soittaminen",
+    "text": "Hei, soitan, koska minulla on ongelma asunnossani. [Ongelma, esim. Keittiön hana vuotaa]. Osoitteeni on [osoite]. Voitteko lähettää jonkun korjaamaan sen mahdollisimman pian?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "situation_emergency",
+    "topic": "speaking_situations",
+    "label": "Tilanne — Hätänumeroon soittaminen 112",
+    "text": "Hei, tarvitsen ambulanssin! Osoite on [osoite]. Henkilö on [tajuton / kaatunut / ei hengitä]. Tulkaa nopeasti!",
+    "difficulty": "hard"
+  },
+  {
+    "id": "situation_complaint_shop",
+    "topic": "speaking_situations",
+    "label": "Tilanne — Reklamointi kaupassa",
+    "text": "Hei, haluaisin reklamoida. Ostin [tuote] [päivämäärä], mutta se on [rikki / väärä / huonolaatuinen]. Voisitteko [vaihtaa / palauttaa rahat]?",
+    "difficulty": "medium"
+  },
+  {
+    "id": "situation_not_understand",
+    "topic": "speaking_situations",
+    "label": "Tilanne — En ymmärtänyt",
+    "text": "Anteeksi, voisitteko toistaa? En kuullut kunnolla. / Voisitteko puhua hitaammin? Opiskelen vielä suomea.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "monologue_hobby",
+    "topic": "speaking_monologues",
+    "label": "Monologi — Lempiharrastus (Parkrun)",
+    "text": "Haluan puhua lempiharrastuksestani — juoksemisesta. Osallistun joka lauantaina Parkrun-tapahtumaan Espoossa. Juoksemme aina viisi kilometriä yhdessä. Pidän juoksemisesta, koska se on sosiaalista ja hyvää liikuntaa. Siellä on paljon ihmisiä — vanhoja, nuoria, naisia, miehiä — kaikki juoksevat yhdessä. Kuntosali on myös ok, mutta siellä harjoitellaan yksin. Parkrunissa on yhteisö ja hyvä ilmapiiri. Se on tosi hyvä harjoitus sekä keholle että mielelle. Suosittelen sitä kaikille!",
+    "difficulty": "medium"
+  },
+  {
+    "id": "monologue_introduction",
+    "topic": "speaking_monologues",
+    "label": "Monologi — Esittäytyminen",
+    "text": "Hei! Nimeni on Mesfin Tegegne. Olen kotoisin Etiopiasta ja olen asunut Suomessa yli kymmenen vuotta. Asun Espoossa vaimoni ja poikani kanssa. Poikani käy koulua. Teen ruoan toimitustyötä ja minulla on mediainsinöörin tutkinto. Harrastan juoksemista — osallistun joka lauantaina Parkrun-tapahtumaan. Opiskelen suomea, koska haluan läpäistä YKI-testin ja saada Suomen kansalaisuuden. Olen iloinen, että asun Suomessa. Se on hieno maa!",
+    "difficulty": "easy"
+  },
+  {
+    "id": "monologue_retirement",
+    "topic": "speaking_monologues",
+    "label": "Monologi — Eläkkeelle jääminen 65v",
+    "text": "Minun mielestäni 65 vuotta on sopiva ikä jäädä eläkkeelle. Ensinnäkin ihminen on työskennellyt pitkään ja ansaitsee levätä. Toiseksi eläkkeellä on enemmän aikaa harrastuksille ja perheelle. Esimerkiksi minä haluaisin juosta enemmän ja viettää aikaa lastenlasteni kanssa. Toisaalta jotkut ihmiset haluavat jatkaa töitä pidempään, koska työ antaa tarkoituksen elämälle. Kuitenkin uskon, että eläke on tärkeä oikeus kaikille työntekijöille. Yhteenvetona totean, että 65 vuotta on hyvä eläkeikä, mutta jokaisen pitäisi saada valita itse.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "monologue_multicultural",
+    "topic": "speaking_monologues",
+    "label": "Monologi — Monikulttuurisuus Suomessa",
+    "text": "Minun mielestäni monikulttuurisuus on Suomen rikkaus. Minä olen asunut Suomessa yli kymmenen vuotta. Olen osa tätä yhteiskuntaa. Ensinnäkin monikulttuurisuus tuo uusia ideoita ja näkökulmia. Toiseksi erilaiset kulttuurit rikastuttavat suomalaista yhteiskuntaa. Lisäksi maahanmuuttajat tekevät tärkeää työtä Suomessa. Toisaalta jotkut ihmiset pelkäävät muutosta. Kuitenkin uskon, että kunnioitus ja tasa-arvo ovat tärkeitä arvoja. Yhteenvetona: Suomi on parempi maa, kun kaikki ihmiset voivat elää yhdenvertaisesti.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "connector_adding",
+    "topic": "connectors",
+    "label": "Konnektori — Lisääminen",
+    "text": "Lisäksi... / Myös... / Sekä... että... / Paitsi... myös...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "connector_contrast",
+    "topic": "connectors",
+    "label": "Konnektori — Kontrasti",
+    "text": "Mutta... / Kuitenkin... / Vaikka... / Toisaalta... / Silti...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "connector_reason",
+    "topic": "connectors",
+    "label": "Konnektori — Syy",
+    "text": "Koska... / Siksi... / Sen takia... / Joten... / Jotta...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "connector_sequence",
+    "topic": "connectors",
+    "label": "Konnektori — Järjestys",
+    "text": "Ensinnäkin... / Toiseksi... / Lisäksi... / Lopuksi... / Yhteenvetona...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "connector_opinion",
+    "topic": "connectors",
+    "label": "Konnektori — Mielipide",
+    "text": "Minun mielestäni... / Uskon, että... / Luulen, että... / Mielestäni...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "filler_thinking",
+    "topic": "spoken_fillers",
+    "label": "Täytesana — Ajatteluaika",
+    "text": "Tota... / Niinku... / Siis... / No niin... / Öö...",
+    "difficulty": "easy"
+  },
+  {
+    "id": "filler_difficult_situation",
+    "topic": "spoken_fillers",
+    "label": "Täytesana — Vaikea tilanne",
+    "text": "Anteeksi, voisitteko toistaa? / Se on hyvä kysymys. / Miten sanotaan... / Tarkoitan sitä, että...",
+    "difficulty": "easy"
+  },
+
   {
     "id": "omnia",
     "topic": "why_omnia",

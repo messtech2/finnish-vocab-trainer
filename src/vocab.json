@@ -3681,9 +3681,324 @@
     "exampleTranslation": "Thank you for your visit and have a nice day!",
     "category": "expression",
     "difficulty": "easy"
+  },
+  
+  {
+    "word": "loukkaus",
+    "meaning": "insult, offense",
+    "example": "Se oli vakava loukkaus.",
+    "exampleTranslation": "That was a serious insult.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "loukata",
+    "meaning": "to insult, to offend",
+    "example": "Sinun käytöksesi loukkaa minua.",
+    "exampleTranslation": "Your behaviour offends me.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "rasismi",
+    "meaning": "racism",
+    "example": "En hyväksy rasismia missään muodossa.",
+    "exampleTranslation": "I don't accept racism in any form.",
+    "category": "social_issues",
+    "difficulty": "easy"
+  },
+  {
+    "word": "rasistinen",
+    "meaning": "racist (adjective)",
+    "example": "Se on rasistinen kommentti.",
+    "exampleTranslation": "That is a racist comment.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "käytös",
+    "meaning": "behaviour",
+    "example": "Sinun käytöksesi on hyväksymätöntä.",
+    "exampleTranslation": "Your behaviour is unacceptable.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "hyväksymätön",
+    "meaning": "unacceptable",
+    "example": "Tämä käytös on täysin hyväksymätöntä.",
+    "exampleTranslation": "This behaviour is completely unacceptable.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "hyväksyä",
+    "meaning": "to accept",
+    "example": "En hyväksy tällaisia kommentteja.",
+    "exampleTranslation": "I don't accept such comments.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "häpeällinen",
+    "meaning": "shameful, disgraceful",
+    "example": "Tällainen käytös on häpeällistä.",
+    "exampleTranslation": "Such behaviour is shameful.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "häpeä",
+    "meaning": "shame",
+    "example": "Sinun pitäisi tuntea häpeää.",
+    "exampleTranslation": "You should feel shame.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tasa-arvo",
+    "meaning": "equality",
+    "example": "Suomessa tasa-arvo on tärkeä arvo.",
+    "exampleTranslation": "In Finland equality is an important value.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kunnioitus",
+    "meaning": "respect",
+    "example": "Kaikki ihmiset ansaitsevat kunnioitusta.",
+    "exampleTranslation": "All people deserve respect.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "monikulttuurinen",
+    "meaning": "multicultural",
+    "example": "Suomi on monikulttuurinen maa.",
+    "exampleTranslation": "Finland is a multicultural country.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "ennakkoluulo",
+    "meaning": "prejudice",
+    "example": "Ennakkoluulot ovat vaarallisia.",
+    "exampleTranslation": "Prejudices are dangerous.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "syrjintä",
+    "meaning": "discrimination",
+    "example": "Syrjintä on laitonta Suomessa.",
+    "exampleTranslation": "Discrimination is illegal in Finland.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "maahanmuuttaja",
+    "meaning": "immigrant",
+    "example": "Olen maahanmuuttaja Etiopiasta.",
+    "exampleTranslation": "I am an immigrant from Ethiopia.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ihmisoikeudet",
+    "meaning": "human rights",
+    "example": "Ihmisoikeudet kuuluvat kaikille.",
+    "exampleTranslation": "Human rights belong to everyone.",
+    "category": "social_issues",
+    "difficulty": "hard"
+  },
+  {
+    "word": "ansaita",
+    "meaning": "to deserve, to earn",
+    "example": "Kaikki ihmiset ansaitsevat kunnioitusta.",
+    "exampleTranslation": "All people deserve respect.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "siellä",
+    "meaning": "there (static, far away)",
+    "example": "Paolon perhe asuu Italiassa. Siellä on lämmin.",
+    "exampleTranslation": "Paolo's family lives in Italy. There it is warm.",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sinne",
+    "meaning": "to there (movement toward far place)",
+    "example": "Matkustamme Tanskaan. Sinne on pitkä matka.",
+    "exampleTranslation": "We travel to Denmark. It is a long way there.",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sieltä",
+    "meaning": "from there (movement from far place)",
+    "example": "Lennän Rovaniemelle. Sieltä jatkan Ouluun.",
+    "exampleTranslation": "I fly to Rovaniemi. From there I continue to Oulu.",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "täällä",
+    "meaning": "here (static, near speaker)",
+    "example": "Asun täällä Espoossa.",
+    "exampleTranslation": "I live here in Espoo.",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tänne",
+    "meaning": "to here (movement toward speaker)",
+    "example": "Tuo tuoli tänne!",
+    "exampleTranslation": "Bring the chair here!",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "täältä",
+    "meaning": "from here (movement away from speaker)",
+    "example": "Vie kahvinkeitin täältä tuonne!",
+    "exampleTranslation": "Take the coffee maker from here to over there!",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tuolla",
+    "meaning": "over there (static, near listener)",
+    "example": "Tuolla on kauppa.",
+    "exampleTranslation": "Over there is a shop.",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tuonne",
+    "meaning": "to over there (movement away toward listener)",
+    "example": "Vie taulu tuonne!",
+    "exampleTranslation": "Take the painting over there!",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tuolta",
+    "meaning": "from over there (movement from listener's side)",
+    "example": "Tuo tuoli tuolta!",
+    "exampleTranslation": "Bring the chair from over there!",
+    "category": "location_adverbs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "laivalla",
+    "meaning": "by ship",
+    "example": "Matkustamme Tukholmaan laivalla.",
+    "exampleTranslation": "We travel to Stockholm by ship.",
+    "category": "transport",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lentokoneella",
+    "meaning": "by plane",
+    "example": "Lennän Etiopiaan lentokoneella.",
+    "exampleTranslation": "I fly to Ethiopia by plane.",
+    "category": "transport",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kävellen",
+    "meaning": "on foot, walking",
+    "example": "Menen töihin kävellen.",
+    "exampleTranslation": "I go to work on foot.",
+    "category": "transport",
+    "difficulty": "easy"
+  },
+  {
+    "word": "loukkaus",
+    "meaning": "insult",
+    "example": "Se oli loukkaus minulle.",
+    "exampleTranslation": "That was an insult to me.",
+    "category": "social_issues",
+    "difficulty": "medium"
+  },
+  {
+    "word": "uuni",
+    "meaning": "oven",
+    "example": "Paistan pizzan uunissa.",
+    "exampleTranslation": "I bake the pizza in the oven.",
+    "category": "household",
+    "difficulty": "easy"
+  },
+  {
+    "word": "astianpesukone",
+    "meaning": "dishwasher",
+    "example": "Asunnossa on astianpesukone.",
+    "exampleTranslation": "The apartment has a dishwasher.",
+    "category": "household",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pesukone",
+    "meaning": "washing machine",
+    "example": "Pesen vaatteet pesukoneessa.",
+    "exampleTranslation": "I wash clothes in the washing machine.",
+    "category": "household",
+    "difficulty": "easy"
+  },
+  {
+    "word": "pyörävarasto",
+    "meaning": "bike storage",
+    "example": "Asunnossa on siisti pyörävarasto.",
+    "exampleTranslation": "The apartment has a tidy bike storage.",
+    "category": "household",
+    "difficulty": "medium"
+  },
+  {
+    "word": "sähkömaksu",
+    "meaning": "electricity bill",
+    "example": "Sähkömaksu tulee erikseen.",
+    "exampleTranslation": "The electricity bill comes separately.",
+    "category": "housing",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vesimaksu",
+    "meaning": "water fee",
+    "example": "Vesimaksu sisältyy vuokraan.",
+    "exampleTranslation": "The water fee is included in the rent.",
+    "category": "housing",
+    "difficulty": "medium"
+  },
+  {
+    "word": "erikseen",
+    "meaning": "separately",
+    "example": "Vesimaksu ja sähkömaksu tulevat erikseen.",
+    "exampleTranslation": "Water and electricity fees come separately.",
+    "category": "housing",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kerrostalo",
+    "meaning": "apartment block, multi-storey building",
+    "example": "Asunto on kerrostalossa.",
+    "exampleTranslation": "The apartment is in an apartment block.",
+    "category": "housing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "parkkipaikka",
+    "meaning": "parking spot",
+    "example": "Asunnossa on oma parkkipaikka.",
+    "exampleTranslation": "The apartment has its own parking spot.",
+    "category": "housing",
+    "difficulty": "easy"
   }
-
   
 ]
+
+  
+
 
 
