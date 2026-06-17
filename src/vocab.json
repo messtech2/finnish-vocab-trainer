@@ -3994,7 +3994,72 @@
     "exampleTranslation": "The apartment has its own parking spot.",
     "category": "housing",
     "difficulty": "easy"
+  },
+  {
+    "word": "liikkeessä",
+    "meaning": "in the shop/business (inessive of liike)",
+    "example": "Työskentelen tässä liikkeessä.",
+    "exampleTranslation": "I work in this shop.",
+    "category": "grammar_sanatyypit",
+    "difficulty": "hard"
+  },
+  {
+    "word": "huoneessa",
+    "meaning": "in the room (inessive of huone)",
+    "example": "Lapset leikkivät huoneessa.",
+    "exampleTranslation": "The children are playing in the room.",
+    "category": "grammar_sanatyypit",
+    "difficulty": "medium"
+  },
+  {
+    "word": "koneessa",
+    "meaning": "in the machine (inessive of kone)",
+    "example": "Vaatteet ovat pesukoneessa.",
+    "exampleTranslation": "The clothes are in the washing machine.",
+    "category": "grammar_sanatyypit",
+    "difficulty": "medium"
+  },
+  {
+    "word": "järvessä",
+    "meaning": "in the lake (inessive of järvi)",
+    "example": "Uin järvessä kesällä.",
+    "exampleTranslation": "I swim in the lake in summer.",
+    "category": "grammar_sanatyypit",
+    "difficulty": "medium"
+  },
+  {
+    "word": "taksissa",
+    "meaning": "in the taxi (inessive of taksi)",
+    "example": "Istuin taksissa lentokentälle.",
+    "exampleTranslation": "I sat in the taxi to the airport.",
+    "category": "transport",
+    "difficulty": "medium"
+  },
+  {
+    "word": "yöpyä",
+    "meaning": "to stay overnight",
+    "example": "Yöpyimme hotellissa keskustassa.",
+    "exampleTranslation": "We stayed overnight in a hotel in the city centre.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kahdeksi yöksi",
+    "meaning": "for two nights (translative)",
+    "example": "Haluaisin huoneen kahdeksi yöksi.",
+    "exampleTranslation": "I would like a room for two nights.",
+    "category": "travel",
+    "difficulty": "hard"
+  },
+  {
+    "word": "lähellä",
+    "meaning": "near (+ partitive)",
+    "example": "Hotelli on lähellä vanhaa linnaa.",
+    "exampleTranslation": "The hotel is near the old castle.",
+    "category": "location",
+    "difficulty": "medium"
   }
+
   
 ]
 
