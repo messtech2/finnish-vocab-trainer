@@ -4058,7 +4058,89 @@
     "exampleTranslation": "The hotel is near the old castle.",
     "category": "location",
     "difficulty": "medium"
+  },
+  
+  {
+    "word": "tupaantuliaiset",
+    "meaning": "housewarming party",
+    "example": "Illalla on Hannan ja Pedron tupaantuliaiset.",
+    "exampleTranslation": "Tonight is Hanna and Pedro's housewarming party.",
+    "category": "celebrations",
+    "difficulty": "medium"
+  },
+  {
+    "word": "maistua hyvältä",
+    "meaning": "to taste good",
+    "example": "Toivottavasti kakku maistuu hyvältä.",
+    "exampleTranslation": "Hopefully the cake tastes good.",
+    "category": "sensory_verbs",
+    "difficulty": "medium"
+  },
+  {
+    "word": "näyttää herkulliselta",
+    "meaning": "to look delicious",
+    "example": "Tuo sitruunakakku näyttää herkulliselta.",
+    "exampleTranslation": "That lemon cake looks delicious.",
+    "category": "sensory_verbs",
+    "difficulty": "hard"
+  },
+  {
+    "word": "suolaton",
+    "meaning": "unsalted, without salt",
+    "example": "Ostin suolatonta voita.",
+    "exampleTranslation": "I bought unsalted butter.",
+    "category": "food_adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "word": "rasvaton",
+    "meaning": "fat-free",
+    "example": "Juon rasvatonta maitoa.",
+    "exampleTranslation": "I drink fat-free milk.",
+    "category": "food_adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "word": "risteys",
+    "meaning": "intersection, crossroads",
+    "example": "Käänny ensimmäisestä risteyksestä oikealle.",
+    "exampleTranslation": "Turn right at the first intersection.",
+    "category": "directions",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kääntyä oikealle",
+    "meaning": "to turn right",
+    "example": "Käänny risteyksestä oikealle Puistotielle.",
+    "exampleTranslation": "Turn right at the intersection onto Puistotie.",
+    "category": "directions",
+    "difficulty": "medium"
+  },
+  {
+    "word": "pöydän ääressä",
+    "meaning": "at the table (postposition)",
+    "example": "Hanna ja Meri istuvat pöydän ääressä.",
+    "exampleTranslation": "Hanna and Meri sit at the table.",
+    "category": "postpositions",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kahden välissä",
+    "meaning": "between two (things/people)",
+    "example": "Alex istuu kahden tytön välissä.",
+    "exampleTranslation": "Alex sits between two girls.",
+    "category": "postpositions",
+    "difficulty": "hard"
+  },
+  {
+    "word": "lämmin osanottoni",
+    "meaning": "my condolences",
+    "example": "Lämmin osanottoni sinulle ja perheellesi.",
+    "exampleTranslation": "My condolences to you and your family.",
+    "category": "celebrations",
+    "difficulty": "hard"
   }
+
 
   
 ]
