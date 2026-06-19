@@ -4139,7 +4139,18 @@
     "exampleTranslation": "My condolences to you and your family.",
     "category": "celebrations",
     "difficulty": "hard"
-  }
+  },
+  {"word":"mainita","meaning":"to mention","example":"Mainitse ainakin kolme asiaa.","exampleTranslation":"Mention at least three things.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"perustella","meaning":"to justify, give reasons","example":"Perustele mielipiteesi hyvin.","exampleTranslation":"Justify your opinion well.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"kuvailla","meaning":"to describe","example":"Kuvaile myymääsi tavaraa.","exampleTranslation":"Describe the item you're selling.","category":"yki_instructions","difficulty":"easy"},
+  {"word":"kieltäytyä","meaning":"to decline, refuse","example":"Kieltäydy kohteliaasti kutsusta.","exampleTranslation":"Politely decline the invitation.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"vaatia","meaning":"to demand","example":"Vaadi korvausta kustannuksista.","exampleTranslation":"Demand compensation for the costs.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"väittämä","meaning":"statement (true/false item)","example":"Vastaa, onko väittämä oikein vai väärin.","exampleTranslation":"Answer whether the statement is true or false.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"vaihtoehto","meaning":"option, alternative","example":"Valitse oikea vaihtoehto.","exampleTranslation":"Choose the correct option.","category":"yki_instructions","difficulty":"easy"},
+  {"word":"äänimerkki","meaning":"beep, signal tone","example":"Aloita puhuminen äänimerkin jälkeen.","exampleTranslation":"Start speaking after the beep.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"peräkkäin","meaning":"in a row, consecutively","example":"Kuulet sen kaksi kertaa peräkkäin.","exampleTranslation":"You'll hear it two times in a row.","category":"yki_instructions","difficulty":"medium"},
+  {"word":"kuuntelukerta","meaning":"listening round/pass","example":"Vastaa toisen kuuntelukerran jälkeen.","exampleTranslation":"Answer after the second listening round.","category":"yki_instructions","difficulty":"hard"}
+
 
 
   
