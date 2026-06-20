@@ -4193,6 +4193,104 @@
     "category": "connectors",
     "difficulty": "easy"
   }
+,
+
+  {
+    "word": "tammikuu",
+    "meaning": "January",
+    "example": "Tammikuussa on kylmä.",
+    "exampleTranslation": "In January it is cold.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "helmikuu",
+    "meaning": "February",
+    "example": "Helmikuussa satelee paljon lunta.",
+    "exampleTranslation": "In February it snows a lot.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "maaliskuu",
+    "meaning": "March",
+    "example": "Maaliskuussa päivät pitenevät.",
+    "exampleTranslation": "In March the days get longer.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "huhtikuu",
+    "meaning": "April",
+    "example": "Huhtikuussa lumi sulaa.",
+    "exampleTranslation": "In April the snow melts.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "toukokuu",
+    "meaning": "May",
+    "example": "Toukokuussa luonto herää.",
+    "exampleTranslation": "In May nature wakes up.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "kesäkuu",
+    "meaning": "June",
+    "example": "Kesäkuussa alkaa kesä.",
+    "exampleTranslation": "In June summer begins.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "heinäkuu",
+    "meaning": "July",
+    "example": "Heinäkuussa on tosi lämmin.",
+    "exampleTranslation": "In July it is really warm.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "elokuu",
+    "meaning": "August",
+    "example": "YKI-testi on elokuussa.",
+    "exampleTranslation": "The YKI test is in August.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "syyskuu",
+    "meaning": "September",
+    "example": "Syyskuussa alkaa syksy.",
+    "exampleTranslation": "In September autumn begins.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lokakuu",
+    "meaning": "October",
+    "example": "Lokakuussa lehdet putoavat.",
+    "exampleTranslation": "In October the leaves fall.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "marraskuu",
+    "meaning": "November",
+    "example": "Marraskuussa on pimeää.",
+    "exampleTranslation": "In November it is dark.",
+    "category": "months",
+    "difficulty": "easy"
+  },
+  {
+    "word": "joulukuu",
+    "meaning": "December",
+    "example": "Joulukuussa on joulu.",
+    "exampleTranslation": "In December there is Christmas.",
+    "category": "months",
+    "difficulty": "easy"
+  }
 
 
   
