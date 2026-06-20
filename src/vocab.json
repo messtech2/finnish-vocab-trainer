@@ -4151,6 +4151,48 @@
   {"word":"peräkkäin","meaning":"in a row, consecutively","example":"Kuulet sen kaksi kertaa peräkkäin.","exampleTranslation":"You'll hear it two times in a row.","category":"yki_instructions","difficulty":"medium"},
   {"word":"kuuntelukerta","meaning":"listening round/pass","example":"Vastaa toisen kuuntelukerran jälkeen.","exampleTranslation":"Answer after the second listening round.","category":"yki_instructions","difficulty":"hard"}
 
+,
+
+  {
+    "word": "kypsä",
+    "meaning": "cooked, ripe, mature",
+    "example": "Kun keitän riisiä 20 minuuttia, se on kypsää.",
+    "exampleTranslation": "When I cook rice for 20 minutes, it is cooked.",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "word": "lähtö",
+    "meaning": "departure",
+    "example": "Lähtö on kello kahdeksan.",
+    "exampleTranslation": "Departure is at eight o'clock.",
+    "category": "travel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "maali",
+    "meaning": "paint / goal, finish line",
+    "example": "Juoksin maaliin ensimmäisenä.",
+    "exampleTranslation": "I ran to the finish line first.",
+    "category": "general",
+    "difficulty": "easy"
+  },
+  {
+    "word": "konditoria",
+    "meaning": "patisserie, cake shop",
+    "example": "Ostan vadelmakakkua konditoriasta.",
+    "exampleTranslation": "I'm buying a raspberry cake from the patisserie.",
+    "category": "food",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tietysti",
+    "meaning": "of course, certainly",
+    "example": "Juomme tietysti kahvia ja ehkä myös teetä.",
+    "exampleTranslation": "We'll of course drink coffee and maybe also tea.",
+    "category": "connectors",
+    "difficulty": "easy"
+  }
 
 
   
