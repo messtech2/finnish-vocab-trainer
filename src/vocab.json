@@ -4339,7 +4339,89 @@
     "exampleTranslation": "I have a transfer in Stockholm.",
     "category": "travel",
     "difficulty": "medium"
+  },
+  
+  {
+    "word": "matkavakuutus",
+    "meaning": "travel insurance",
+    "example": "Ostin matkavakuutuksen ennen lomaa.",
+    "exampleTranslation": "I bought travel insurance before the vacation.",
+    "category": "travel",
+    "difficulty": "hard"
+  },
+  {
+    "word": "käsimatkatavarat",
+    "meaning": "hand luggage, carry-on baggage",
+    "example": "Käsimatkatavarat täytyy mahtua tähän laatikkoon.",
+    "exampleTranslation": "Hand luggage must fit in this box.",
+    "category": "travel",
+    "difficulty": "hard"
+  },
+  {
+    "word": "lento",
+    "meaning": "flight",
+    "example": "Lentomme lähtee kello kahdeksalta.",
+    "exampleTranslation": "Our flight leaves at eight o'clock.",
+    "category": "travel",
+    "difficulty": "easy"
+  },
+  {
+    "word": "vuokrata",
+    "meaning": "to rent",
+    "example": "Vuokrasimme auton lomalla.",
+    "exampleTranslation": "We rented a car on vacation.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "majoitus",
+    "meaning": "accommodation, lodging",
+    "example": "Majoitus sisältyy matkan hintaan.",
+    "exampleTranslation": "Accommodation is included in the trip price.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "opas",
+    "meaning": "guide (person or guidebook)",
+    "example": "Opas kertoi meille kaupungin historiasta.",
+    "exampleTranslation": "The guide told us about the city's history.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "meno-paluu",
+    "meaning": "round trip (ticket)",
+    "example": "Ostin meno-paluulipun Tukholmaan.",
+    "exampleTranslation": "I bought a round-trip ticket to Stockholm.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "viisumi",
+    "meaning": "visa",
+    "example": "Tarvitsen viisumin tähän maahan.",
+    "exampleTranslation": "I need a visa for this country.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kiertoajelu",
+    "meaning": "sightseeing tour (by vehicle)",
+    "example": "Teimme kiertoajelun bussilla Helsingissä.",
+    "exampleTranslation": "We took a sightseeing tour by bus in Helsinki.",
+    "category": "travel",
+    "difficulty": "hard"
+  },
+  {
+    "word": "turvatarkastus",
+    "meaning": "security check",
+    "example": "Turvatarkastus lentokentällä kesti pitkään.",
+    "exampleTranslation": "The security check at the airport took a long time.",
+    "category": "travel",
+    "difficulty": "hard"
   }
+
 
 
 
