@@ -4290,7 +4290,57 @@
     "exampleTranslation": "In December there is Christmas.",
     "category": "months",
     "difficulty": "easy"
+  },
+  
+  {
+    "word": "tulli",
+    "meaning": "customs (border control)",
+    "example": "Matkalaukku tarkistettiin tullissa.",
+    "exampleTranslation": "The suitcase was checked at customs.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "lähtöportti",
+    "meaning": "departure gate",
+    "example": "Lentomme lähtee lähtöportista 12.",
+    "exampleTranslation": "Our flight departs from gate 12.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "nähtävyys",
+    "meaning": "sight, tourist attraction",
+    "example": "Suomenlinna on Helsingin tärkeä nähtävyys.",
+    "exampleTranslation": "Suomenlinna is an important sight in Helsinki.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "paikkavaraus",
+    "meaning": "seat reservation",
+    "example": "Tein paikkavarauksen junaan.",
+    "exampleTranslation": "I made a seat reservation for the train.",
+    "category": "travel",
+    "difficulty": "hard"
+  },
+  {
+    "word": "laituri",
+    "meaning": "platform (train), pier/dock",
+    "example": "Juna lähtee laiturilta kolme.",
+    "exampleTranslation": "The train departs from platform three.",
+    "category": "travel",
+    "difficulty": "medium"
+  },
+  {
+    "word": "vaihto",
+    "meaning": "transfer, change (transport); exchange",
+    "example": "Minulla on vaihto Tukholmassa.",
+    "exampleTranslation": "I have a transfer in Stockholm.",
+    "category": "travel",
+    "difficulty": "medium"
   }
+
 
 
   
