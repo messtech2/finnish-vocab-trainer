@@ -4420,7 +4420,89 @@
     "exampleTranslation": "The security check at the airport took a long time.",
     "category": "travel",
     "difficulty": "hard"
+  },
+  
+  {
+    "word": "saapas",
+    "meaning": "boot (footwear)",
+    "example": "Ostan uudet saappaat talvea varten.",
+    "exampleTranslation": "I am buying new boots for winter.",
+    "category": "clothing",
+    "difficulty": "medium"
+  },
+  {
+    "word": "särkylääke",
+    "meaning": "painkiller",
+    "example": "Minulla on päänsärky — tarvitsen särkylääkettä.",
+    "exampleTranslation": "I have a headache — I need a painkiller.",
+    "category": "health",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kaiutin",
+    "meaning": "speaker (audio)",
+    "example": "Kaiutin on rikki — en kuule musiikkia.",
+    "exampleTranslation": "The speaker is broken — I can't hear the music.",
+    "category": "technology",
+    "difficulty": "medium"
+  },
+  {
+    "word": "kaukosäädin",
+    "meaning": "remote control",
+    "example": "Missä kaukosäädin on? Haluan vaihtaa kanavaa.",
+    "exampleTranslation": "Where is the remote control? I want to change the channel.",
+    "category": "household",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tehdas",
+    "meaning": "factory",
+    "example": "Hän työskentelee tehtaassa.",
+    "exampleTranslation": "He works in a factory.",
+    "category": "work",
+    "difficulty": "medium"
+  },
+  {
+    "word": "tehtaassa",
+    "meaning": "in the factory (inessive of tehdas)",
+    "example": "Tehtaassa työskentelee satoja ihmisiä.",
+    "exampleTranslation": "Hundreds of people work in the factory.",
+    "category": "work",
+    "difficulty": "medium"
+  },
+  {
+    "word": "osoite",
+    "meaning": "address",
+    "example": "Mikä on sinun osoitteesi?",
+    "exampleTranslation": "What is your address?",
+    "category": "general",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tehosekoitin",
+    "meaning": "blender",
+    "example": "Teen smoothien tehosekoittimessa.",
+    "exampleTranslation": "I make a smoothie in the blender.",
+    "category": "household",
+    "difficulty": "hard"
+  },
+  {
+    "word": "taide",
+    "meaning": "art",
+    "example": "Pidän taiteesta — käyn usein taidemuseossa.",
+    "exampleTranslation": "I like art — I often go to the art museum.",
+    "category": "culture",
+    "difficulty": "medium"
+  },
+  {
+    "word": "varvas",
+    "meaning": "toe",
+    "example": "Löin varpaani pöydän jalkaan.",
+    "exampleTranslation": "I hit my toe on the table leg.",
+    "category": "health",
+    "difficulty": "medium"
   }
+
 
 
 
